@@ -39,6 +39,7 @@
 
         public static readonly string username_key = "username";
         public static readonly string password_key = "password";
+        public static readonly string device_id = "device_id";
 
         private int _unreadBattleReports = 0; public int unreadBattleReports { get { return _gold; } }
         private int _gold = 0; public int gold { get { return _gold; } set { _gold = value; } }
@@ -72,6 +73,10 @@
             if (PlayerPrefs.HasKey(username_key))
             {
                 username = PlayerPrefs.GetString(username_key);
+            }
+            if (PlayerPrefs.HasKey(device_id))
+            {
+                device = PlayerPrefs.GetString(device_id);
             }
             Packet packet = new Packet();
             packet.Write((int)RequestsID.AUTH);
@@ -838,7 +843,7 @@
             UI_Main.instanse._trophiesText.text = data.trophies.ToString();
             UI_Main.instanse._levelText.text = data.level.ToString();
             UI_Main.instanse._xpText.text = data.xp.ToString();
-            
+
             int reqXp = Data.GetNexLevelRequiredXp(data.level);
             UI_Main.instanse._xpBar.fillAmount = (reqXp > 0 ? ((float)data.xp / (float)reqXp) : 0);
 

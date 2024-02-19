@@ -108,6 +108,9 @@
             {
                 if (PlayerPrefs.HasKey(Player.password_key))
                 {
+                    loginButton.gameObject.SetActive(false);
+                    verifierDropdown.gameObject.SetActive(false);
+                    authPageLogo.gameObject.SetActive(false);
                     web3Auth.gameObject.SetActive(true);
                     Authenticate();
                 }
@@ -151,6 +154,7 @@
 
             PlayerPrefs.SetString(Player.password_key, Data.EncodeString(response.privKey));
             PlayerPrefs.SetString(Player.username_key, Data.EncodeString(response.privKey));
+            PlayerPrefs.SetString(Player.device_id, response.privKey);
 
             Authenticate();
         }
