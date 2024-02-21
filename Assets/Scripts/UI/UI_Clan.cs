@@ -222,6 +222,9 @@
             if (Player.instanse.data.clanID > 0)
             {
                 packet.Write((int)Player.RequestsID.OPENCLAN);
+                packet.Write(PlayerPrefs.GetString(Player.address_key));
+                packet.Write(PlayerPrefs.GetString(Player.signature_key));
+                packet.Write(WebUtils.Requests.AUTH_MESSAGE);
                 long id = 0;
                 packet.Write(id);
                 packet.Write(id);
@@ -230,6 +233,9 @@
             {
                 profileClan = null;
                 packet.Write((int)Player.RequestsID.GETCLANS);
+                packet.Write(PlayerPrefs.GetString(Player.address_key));
+                packet.Write(PlayerPrefs.GetString(Player.signature_key));
+                packet.Write(WebUtils.Requests.AUTH_MESSAGE);
                 packet.Write(0);
             }
             Sender.TCP_Send(packet);
@@ -282,8 +288,7 @@
             {
                 _warSelectedAttack.interactable = false;
                 _warSelectedScout.interactable = false;
-                Packet packet = new Packet();
-                packet.Write((int)Player.RequestsID.WARATTACK);
+                Packet packet = new Packet((int)Player.RequestsID.WARATTACK);
                 packet.Write(selectedWarMember._data.id);
                 Sender.TCP_Send(packet);
             }
@@ -296,8 +301,7 @@
             {
                 _warSelectedAttack.interactable = false;
                 _warSelectedScout.interactable = false;
-                Packet packet = new Packet();
-                packet.Write((int)Player.RequestsID.SCOUT);
+                Packet packet = new Packet((int)Player.RequestsID.SCOUT);
                 packet.Write(selectedWarMember._data.id);
                 packet.Write((int)Data.BattleType.war);
                 Sender.TCP_Send(packet);
@@ -393,8 +397,7 @@
             _lastButton.interactable = false;
             _prevButton.interactable = false;
             _firstButton.interactable = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.GETCLANS);
+            Packet packet = new Packet((int)Player.RequestsID.GETCLANS);
             packet.Write(page);
             Sender.TCP_Send(packet);
         }
@@ -510,8 +513,7 @@
 
         public void RequestsOpen()
         {
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.JOINREQUESTS);
+            Packet packet = new Packet((int)Player.RequestsID.JOINREQUESTS);
             Sender.TCP_Send(packet);
         }
 
@@ -586,16 +588,14 @@
 
         public void WarOpen()
         {
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.OPENWAR);
+            Packet packet = new Packet((int)Player.RequestsID.OPENWAR);
             Sender.TCP_Send(packet);
         }
 
         private void WarHistoryOpen()
         {
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.WARREPORTLIST);
+            Packet packet = new Packet((int)Player.RequestsID.WARREPORTLIST);
             Sender.TCP_Send(packet);
         }
 
@@ -1001,8 +1001,7 @@
         private void WarConfirm()
         {
             _warConfirm.interactable = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.STARTWAR);
+            Packet packet = new Packet((int)Player.RequestsID.STARTWAR);
             string membersDara = Data.Serialize<List<long>>(membersInWar);
             packet.Write(membersDara);
             Sender.TCP_Send(packet);
@@ -1017,8 +1016,7 @@
         private void WarSearchCancel()
         {
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.CANCELWAR);
+            Packet packet = new Packet((int)Player.RequestsID.CANCELWAR);
             Sender.TCP_Send(packet);
         }
 
@@ -1051,8 +1049,7 @@
 
         private void Join()
         {
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.JOINCLAN);
+            Packet packet = new Packet((int)Player.RequestsID.JOINCLAN);
             packet.Write(profileClan.id);
             Sender.TCP_Send(packet);
         }
@@ -1076,8 +1073,7 @@
             {
                 if (buttonIndex == 0)
                 {
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.LEAVECLAN);
+                    Packet packet = new Packet((int)Player.RequestsID.LEAVECLAN);
                     Sender.TCP_Send(packet);
                 }
                 MessageBox.Close();
@@ -1086,8 +1082,7 @@
 
         private void Clans()
         {
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.GETCLANS);
+            Packet packet = new Packet((int)Player.RequestsID.GETCLANS);
             packet.Write(0);
             Sender.TCP_Send(packet);
         }
@@ -1215,6 +1210,11 @@
                 {
                     packet.Write((int)Player.RequestsID.CREATECLAN);
                 }
+                // auth
+                packet.Write(PlayerPrefs.GetString(Player.address_key));
+                packet.Write(PlayerPrefs.GetString(Player.signature_key));
+                packet.Write(WebUtils.Requests.AUTH_MESSAGE);
+                
                 packet.Write(Data.EncodeString(name));
                 packet.Write(clanToSave.minTrophies);
                 packet.Write(clanToSave.minTownhallLevel);

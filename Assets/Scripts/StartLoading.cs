@@ -256,8 +256,7 @@
                     _inputCode.interactable = false;
                     _buttonConfirm.interactable = false;
                     _buttonCancel.interactable = false;
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.CONFIRMCODE);
+                    Packet packet = new Packet((int)Player.RequestsID.CONFIRMCODE);
                     string device = SystemInfo.deviceUniqueIdentifier;
                     packet.Write(device);
                     packet.Write(email);
@@ -273,8 +272,7 @@
                     _inputEmail.interactable = false;
                     _buttonConfirm.interactable = false;
                     _buttonCancel.interactable = false;
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.SENDCODE);
+                    Packet packet = new Packet((int)Player.RequestsID.SENDCODE);
                     string device = SystemInfo.deviceUniqueIdentifier;
                     packet.Write(device);
                     packet.Write(email);

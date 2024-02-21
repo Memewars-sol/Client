@@ -32,8 +32,7 @@ namespace Summoners.Memewars
         public void Open()
         {
             ClearItems();
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.BATTLEREPORTS);
+            Packet packet = new Packet((int)Player.RequestsID.BATTLEREPORTS);
             Sender.TCP_Send(packet);
             _active = true;
             _elements.SetActive(true);

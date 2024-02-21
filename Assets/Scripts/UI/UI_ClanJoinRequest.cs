@@ -44,8 +44,7 @@ namespace Summoners.Memewars
             active = this;
             _acceptButton.interactable = false;
             _rejectButton.interactable = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.JOINRESPONSE);
+            Packet packet = new Packet((int)Player.RequestsID.JOINRESPONSE);
             packet.Write(_data.id);
             packet.Write(true);
             Sender.TCP_Send(packet);
@@ -57,8 +56,7 @@ namespace Summoners.Memewars
             active = this;
             _acceptButton.interactable = false;
             _rejectButton.interactable = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.JOINRESPONSE);
+            Packet packet = new Packet((int)Player.RequestsID.JOINRESPONSE);
             packet.Write(_data.id);
             packet.Write(false);
             Sender.TCP_Send(packet);

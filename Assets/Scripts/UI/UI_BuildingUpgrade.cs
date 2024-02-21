@@ -306,8 +306,7 @@
                     selectedInstanse.AdjustUI(true);
                 }
                 selectedInstanse.lastChange = DateTime.Now;
-                Packet packet = new Packet();
-                packet.Write((int)Player.RequestsID.UPGRADE);
+                Packet packet = new Packet((int)Player.RequestsID.UPGRADE);
                 packet.Write(id);
                 Sender.TCP_Send(packet);
                 Close2();

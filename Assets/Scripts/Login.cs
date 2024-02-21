@@ -1,17 +1,19 @@
-using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
-using Solana.Unity.Wallet;
-using Solana.Unity.SDK;
-using System.Text;
-using System;
-using WebUtils;
-using UnityEngine.Networking;
-using UnityEngine.SceneManagement;
-using System.Collections;
+
 
 namespace Summoners.Memewars
 {
+    using TMPro;
+    using UnityEngine;
+    using UnityEngine.UI;
+    using Solana.Unity.Wallet;
+    using Solana.Unity.SDK;
+    using System.Text;
+    using System;
+    using WebUtils;
+    using UnityEngine.SceneManagement;
+    using System.Collections;
+    using Summoners.RealtimeNetworking.Client;
+
     public class LoginScreen : MonoBehaviour
     {
 
@@ -75,6 +77,11 @@ namespace Summoners.Memewars
                 loginBtnWalletAdapter.onClick.AddListener(() =>
                     Debug.LogWarning("Wallet adapter login is not yet supported in the editor"));
             }
+
+            
+            RealtimeNetworking.OnPacketReceived += ReceivedPaket;
+            RealtimeNetworking.OnConnectingToServerResult += ConnectResult;
+            RealtimeNetworking.Connect();
         }
         private async void LoginChecker()
         {
@@ -119,7 +126,7 @@ namespace Summoners.Memewars
             string signature = Convert.ToBase64String(signed);
 
             // need to change this url
-            string url = "http://localhost:8081/api/";
+            // string url = "http://localhost:8081/api/";
 
             string address = account.PublicKey.ToString();
 
@@ -129,19 +136,68 @@ namespace Summoners.Memewars
             PlayerPrefs.SetString(Player.signature_key, signature);
 
             // Authenticate, CreateAccount, and LoadGame
-            var request = await Requests.Post(url);
+            /* var request = await Requests.Post(url);
 
             if (request.result == UnityWebRequest.Result.Success)
             {
                 StartCoroutine(LoadGame());
-            } 
+            } */ 
 
+            // send for authentication
+            var packet = new Packet((int)Player.RequestsID.PREAUTH);
+            Sender.TCP_Send(packet);
         }
 
         public void OnClose()
         {
             // var wallet = GameObject.Find("wallet");
             // wallet.SetActive(false);
+        }
+
+        private void ConnectResult(bool successful)
+        {
+            if (successful)
+            {
+                Debug.Log("Connected to server successfully.");
+
+            }
+            else
+            {
+                Debug.Log("Failed to connect the server.");
+            }
+        }
+
+        private void ReceivedPaket(Packet packet)
+        {
+            try
+            {
+                int id = packet.ReadInt();
+                switch ((Player.RequestsID)id) {
+                    case Player.RequestsID.PREAUTH:
+                        bool IsVerified = packet.ReadInt() == 1;
+
+                        // load game if verified in preauth
+                        if(IsVerified) 
+                            StartCoroutine(LoadGame());
+                        else
+                            Debug.Log("Signature mismatch");
+                        break;
+
+                    default:
+                        Debug.Log((Player.RequestsID)id);
+                        break;
+                    
+                }
+            }
+            catch (Exception exception)
+            {
+                Debug.Log(exception.ToString());
+            }
+        }
+
+        private void OnDestroy()
+        {
+            RealtimeNetworking.OnPacketReceived -= ReceivedPaket;
         }
 
         

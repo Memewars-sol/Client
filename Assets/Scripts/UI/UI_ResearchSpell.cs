@@ -137,8 +137,7 @@ namespace Summoners.Memewars
         private void Clicked()
         {
             _button.interactable = false;
-            Packet paket = new Packet();
-            paket.Write((int)Player.RequestsID.RESEARCH);
+            Packet paket = new Packet((int)Player.RequestsID.RESEARCH);
             paket.Write((int)Data.ResearchType.spell);
             paket.Write(_id.ToString());
             Sender.TCP_Send(paket);

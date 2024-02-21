@@ -49,8 +49,7 @@ namespace Summoners.Memewars
         private void Reply()
         {
             _playButton.interactable = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.BATTLEREPORT);
+            Packet packet = new Packet((int)Player.RequestsID.BATTLEREPORT);
             packet.Write(_data.id);
             Sender.TCP_Send(packet);
         }

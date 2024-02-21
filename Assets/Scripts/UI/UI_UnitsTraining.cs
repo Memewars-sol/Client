@@ -91,8 +91,7 @@ namespace Summoners.Memewars
                 return;
             }
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
-            Packet paket = new Packet();
-            paket.Write((int)Player.RequestsID.CANCELTRAIN);
+            Packet paket = new Packet((int)Player.RequestsID.CANCELTRAIN);
             paket.Write(_unit.databaseID);
             Sender.TCP_Send(paket);
             gameObject.SetActive(false);

@@ -428,8 +428,7 @@
             _damagePanel.SetActive(true);
             readyToStart = false;
             baseTime = DateTime.Now;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.BATTLESTART);
+            Packet packet = new Packet((int)Player.RequestsID.BATTLESTART);
             packet.Write(opponentBytes.Length);
             packet.Write(opponentBytes);
             packet.Write((int)_battleType);
@@ -556,8 +555,7 @@
             battle.end = true;
             battle.surrender = surrender;
             isStarted = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.BATTLEEND);
+            Packet packet = new Packet((int)Player.RequestsID.BATTLEEND);
             packet.Write(surrender);
             packet.Write(surrenderFrame);
             Sender.TCP_Send(packet);
@@ -796,8 +794,7 @@
                                 }
                             }
 
-                            Packet packet = new Packet();
-                            packet.Write((int)Player.RequestsID.BATTLEFRAME);
+                            Packet packet = new Packet((int)Player.RequestsID.BATTLEFRAME);
                             byte[] bytes = Data.Compress(Data.Serialize<Data.BattleFrame>(battleFrame));
                             packet.Write(bytes.Length);
                             packet.Write(bytes);

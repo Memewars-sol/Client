@@ -29,7 +29,7 @@
 
         public enum RequestsID
         {
-            AUTH = 1, SYNC = 2, BUILD = 3, REPLACE = 4, COLLECT = 5, PREUPGRADE = 6, UPGRADE = 7, INSTANTBUILD = 8, TRAIN = 9, CANCELTRAIN = 10, BATTLEFIND = 11, BATTLESTART = 12, BATTLEFRAME = 13, BATTLEEND = 14, OPENCLAN = 15, GETCLANS = 16, JOINCLAN = 17, LEAVECLAN = 18, EDITCLAN = 19, CREATECLAN = 20, OPENWAR = 21, STARTWAR = 22, CANCELWAR = 23, WARSTARTED = 24, WARATTACK = 25, WARREPORTLIST = 26, WARREPORT = 27, JOINREQUESTS = 28, JOINRESPONSE = 29, GETCHATS = 30, SENDCHAT = 31, SENDCODE = 32, CONFIRMCODE = 33, EMAILCODE = 34, EMAILCONFIRM = 35, LOGOUT = 36, KICKMEMBER = 37, BREW = 38, CANCELBREW = 39, RESEARCH = 40, PROMOTEMEMBER = 41, DEMOTEMEMBER = 42, SCOUT = 43, BUYSHIELD = 44, BUYGEM = 45, BYUGOLD = 46, REPORTCHAT = 47, PLAYERSRANK = 48, BOOST = 49, BUYRESOURCE = 50, BATTLEREPORTS = 51, BATTLEREPORT = 52, RENAME = 53
+            AUTH = 1, SYNC = 2, BUILD = 3, REPLACE = 4, COLLECT = 5, PREUPGRADE = 6, UPGRADE = 7, INSTANTBUILD = 8, TRAIN = 9, CANCELTRAIN = 10, BATTLEFIND = 11, BATTLESTART = 12, BATTLEFRAME = 13, BATTLEEND = 14, OPENCLAN = 15, GETCLANS = 16, JOINCLAN = 17, LEAVECLAN = 18, EDITCLAN = 19, CREATECLAN = 20, OPENWAR = 21, STARTWAR = 22, CANCELWAR = 23, WARSTARTED = 24, WARATTACK = 25, WARREPORTLIST = 26, WARREPORT = 27, JOINREQUESTS = 28, JOINRESPONSE = 29, GETCHATS = 30, SENDCHAT = 31, SENDCODE = 32, CONFIRMCODE = 33, EMAILCODE = 34, EMAILCONFIRM = 35, LOGOUT = 36, KICKMEMBER = 37, BREW = 38, CANCELBREW = 39, RESEARCH = 40, PROMOTEMEMBER = 41, DEMOTEMEMBER = 42, SCOUT = 43, BUYSHIELD = 44, BUYGEM = 45, BYUGOLD = 46, REPORTCHAT = 47, PLAYERSRANK = 48, BOOST = 49, BUYRESOURCE = 50, BATTLEREPORTS = 51, BATTLEREPORT = 52, RENAME = 53, PREAUTH = 54
         }
 
         public enum Panel
@@ -69,26 +69,18 @@
             // Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.Full);
             RealtimeNetworking.OnPacketReceived += ReceivedPaket;
             RealtimeNetworking.OnDisconnectedFromServer += DisconnectedFromServer;
-            string device = SystemInfo.deviceUniqueIdentifier;
-            string password = "";
-            string username = "";
-            if (PlayerPrefs.HasKey(password_key))
-            {
-                password = PlayerPrefs.GetString(password_key);
+
+            if(!PlayerPrefs.HasKey(address_key)) {
+                SceneManager.LoadScene(0); // account login page
+                return;
             }
-            if (PlayerPrefs.HasKey(username_key))
-            {
-                username = PlayerPrefs.GetString(username_key);
+
+            if(!PlayerPrefs.HasKey(signature_key)) {
+                SceneManager.LoadScene(0); // account login page
+                return;
             }
-            if (PlayerPrefs.HasKey(device_id))
-            {
-                device = PlayerPrefs.GetString(device_id);
-            }
-            Packet packet = new Packet();
-            packet.Write((int)RequestsID.AUTH);
-            packet.Write(device);
-            packet.Write(password);
-            packet.Write(username);
+            
+            Packet packet = new Packet((int)RequestsID.AUTH);
             Sender.TCP_Send(packet);
         }
 
@@ -771,8 +763,7 @@
         {
             Debug.Log("Request Sent."); // For some wierd reason if I remove this debug then buildings upgrade button will delay showing for a few seconds until next update
             lastUpdateSent = DateTime.Now;
-            Packet p = new Packet();
-            p.Write((int)RequestsID.SYNC);
+            Packet p = new Packet((int)RequestsID.SYNC);
             p.Write(SystemInfo.deviceUniqueIdentifier);
             Sender.TCP_Send(p);
         }

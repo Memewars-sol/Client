@@ -65,8 +65,7 @@
         private void Clicked()
         {
             _detailsButton.interactable = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.WARREPORT);
+            Packet packet = new Packet((int)Player.RequestsID.WARREPORT);
             packet.Write(_data.id);
             Sender.TCP_Send(packet);
         }

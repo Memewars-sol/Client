@@ -67,8 +67,7 @@
             {
                 if (buttonIndex == 0)
                 {
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.REPORTCHAT);
+                    Packet packet = new Packet((int)Player.RequestsID.REPORTCHAT);
                     packet.Write(_data.id);
                     Sender.TCP_Send(packet);
                     CancelClicked();

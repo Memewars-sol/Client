@@ -42,8 +42,7 @@
                 if(buttonIndex == 0)
                 {
                     SetStatus(false);
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.BUYSHIELD);
+                    Packet packet = new Packet((int)Player.RequestsID.BUYSHIELD);
                     packet.Write(_pack);
                     Sender.TCP_Send(packet);
                 }

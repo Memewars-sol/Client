@@ -6,7 +6,6 @@ namespace Summoners.RealtimeNetworking.Client
     using System.Net.Sockets;
     using System;
     using System.Linq;
-    using codebase;
 
     public class Client : MonoBehaviour
     {

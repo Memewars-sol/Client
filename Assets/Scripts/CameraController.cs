@@ -163,8 +163,7 @@ namespace Summoners.Memewars
                                 if (cost <= Player.instanse.data.gems)
                                 {
                                     SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
-                                    Packet packet = new Packet();
-                                    packet.Write((int)Player.RequestsID.INSTANTBUILD);
+                                    Packet packet = new Packet((int)Player.RequestsID.INSTANTBUILD);
                                     Building.selectedInstanse.isCons = false;
                                     Building.selectedInstanse.level = Building.selectedInstanse.level + 1;
                                     Building.selectedInstanse.AdjustUI(true);
@@ -200,8 +199,7 @@ namespace Summoners.Memewars
                             else if (results[i].gameObject == UI_BuildingOptions.instanse.removeButton.gameObject)
                             {
                                 handled = true;
-                                Packet packet = new Packet();
-                                packet.Write((int)Player.RequestsID.UPGRADE);
+                                Packet packet = new Packet((int)Player.RequestsID.UPGRADE);
                                 packet.Write(Building.selectedInstanse.data.databaseID);
                                 Sender.TCP_Send(packet);
                                 SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
@@ -211,8 +209,7 @@ namespace Summoners.Memewars
                                 handled = true;
                                 if (UI_BuildingOptions.instanse.canDo)
                                 {
-                                    Packet packet = new Packet();
-                                    packet.Write((int)Player.RequestsID.BOOST);
+                                    Packet packet = new Packet((int)Player.RequestsID.BOOST);
                                     packet.Write(Building.selectedInstanse.data.databaseID);
                                     Sender.TCP_Send(packet);
                                     SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);

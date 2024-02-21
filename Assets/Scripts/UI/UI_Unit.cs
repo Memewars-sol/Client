@@ -104,8 +104,7 @@ namespace Summoners.Memewars
         {
             UI_Train.instanse.StartTrainUnit(id);
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
-            Packet paket = new Packet();
-            paket.Write((int)Player.RequestsID.TRAIN);
+            Packet paket = new Packet((int)Player.RequestsID.TRAIN);
             paket.Write(_id.ToString());
             Sender.TCP_Send(paket);
         }

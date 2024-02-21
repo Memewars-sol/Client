@@ -96,8 +96,7 @@ namespace Summoners.Memewars
             }
             _remove = true;
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
-            Packet paket = new Packet();
-            paket.Write((int)Player.RequestsID.CANCELBREW);
+            Packet paket = new Packet((int)Player.RequestsID.CANCELBREW);
             paket.Write(_spell.databaseID);
             Sender.TCP_Send(paket);
             UI_Spell.instanse.RemoveTrainingItem(index);

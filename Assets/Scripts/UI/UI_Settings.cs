@@ -226,8 +226,7 @@
                 Loading.Open();
                 _saveButton.interactable = false;
                 _cancelButton.interactable = false;
-                Packet packet = new Packet();
-                packet.Write((int)Player.RequestsID.EMAILCODE);
+                Packet packet = new Packet((int)Player.RequestsID.EMAILCODE);
                 string device = SystemInfo.deviceUniqueIdentifier;
                 packet.Write(device);
                 packet.Write(email);
@@ -331,8 +330,7 @@
                     if (!string.IsNullOrEmpty(code))
                     {
                         MessageBox.Close();
-                        Packet packet = new Packet();
-                        packet.Write((int)Player.RequestsID.EMAILCONFIRM);
+                        Packet packet = new Packet((int)Player.RequestsID.EMAILCONFIRM);
                         string device = SystemInfo.deviceUniqueIdentifier;
                         packet.Write(device);
                         packet.Write(email);
@@ -351,8 +349,7 @@
             {
                 if (buttonIndex == 0)
                 {
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.LOGOUT);
+                    Packet packet = new Packet((int)Player.RequestsID.LOGOUT);
                     string device = SystemInfo.deviceUniqueIdentifier;
                     packet.Write(device);
                     Sender.TCP_Send(packet);
@@ -381,8 +378,7 @@
                     else if (!string.IsNullOrEmpty(str) && Data.IsMessageGoodToSend(str))
                     {
                         MessageBox.Close();
-                        Packet packet = new Packet();
-                        packet.Write((int)Player.RequestsID.RENAME);
+                        Packet packet = new Packet((int)Player.RequestsID.RENAME);
                         packet.Write(Data.EncodeString(str));
                         Sender.TCP_Send(packet);
                     }

@@ -41,8 +41,7 @@ namespace Summoners.Memewars
         private void Select()
         {
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.OPENCLAN);
+            Packet packet = new Packet((int)Player.RequestsID.OPENCLAN);
             long id = 0;
             packet.Write(id);
             packet.Write(_clan.id);

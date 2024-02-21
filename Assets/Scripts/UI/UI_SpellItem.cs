@@ -100,8 +100,7 @@ namespace Summoners.Memewars
         {
             UI_Spell.instanse.StartBrewingSpell(id);
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
-            Packet paket = new Packet();
-            paket.Write((int)Player.RequestsID.BREW);
+            Packet paket = new Packet((int)Player.RequestsID.BREW);
             paket.Write(_id.ToString());
             Sender.TCP_Send(paket);
         }

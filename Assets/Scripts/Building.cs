@@ -574,8 +574,7 @@ namespace Summoners.Memewars
             collecting = true;
             collectTimeout = true;
             collectTimer = 60;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.COLLECT);
+            Packet packet = new Packet((int)Player.RequestsID.COLLECT);
             packet.Write(_data.databaseID);
             Sender.TCP_Send(packet);
             if (id == Data.BuildingID.elixirmine)
@@ -770,8 +769,7 @@ namespace Summoners.Memewars
             if (UI_Main.instanse._grid.CanPlaceBuilding(this, currentX, currentY) && (_X != currentX || _Y != currentY) && !waitingReplaceResponse)
             {
                 waitingReplaceResponse = true;
-                Packet packet = new Packet();
-                packet.Write((int)Player.RequestsID.REPLACE);
+                Packet packet = new Packet((int)Player.RequestsID.REPLACE);
                 packet.Write(selectedInstanse.databaseID);
                 packet.Write(selectedInstanse.currentX);
                 packet.Write(selectedInstanse.currentY);

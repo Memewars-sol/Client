@@ -104,8 +104,7 @@ namespace Summoners.Memewars
             _lastButton.interactable = false;
             _prevButton.interactable = false;
             _firstButton.interactable = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.PLAYERSRANK);
+            Packet packet = new Packet((int)Player.RequestsID.PLAYERSRANK);
             packet.Write(page);
             Sender.TCP_Send(packet);
         }

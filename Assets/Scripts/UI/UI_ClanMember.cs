@@ -89,8 +89,7 @@ namespace Summoners.Memewars
                 if (buttonIndex == 0)
                 {
                     _kickButton.interactable = false;
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.KICKMEMBER);
+                    Packet packet = new Packet((int)Player.RequestsID.KICKMEMBER);
                     packet.Write(_data.id);
                     Sender.TCP_Send(packet);
                 }
@@ -119,8 +118,7 @@ namespace Summoners.Memewars
                 if (buttonIndex == 0)
                 {
                     _kickButton.interactable = false;
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.PROMOTEMEMBER);
+                    Packet packet = new Packet((int)Player.RequestsID.PROMOTEMEMBER);
                     packet.Write(_data.id);
                     Sender.TCP_Send(packet);
                 }
@@ -140,8 +138,7 @@ namespace Summoners.Memewars
                 if (buttonIndex == 0)
                 {
                     _kickButton.interactable = false;
-                    Packet packet = new Packet();
-                    packet.Write((int)Player.RequestsID.DEMOTEMEMBER);
+                    Packet packet = new Packet((int)Player.RequestsID.DEMOTEMEMBER);
                     packet.Write(_data.id);
                     Sender.TCP_Send(packet);
                 }

@@ -35,6 +35,9 @@ namespace Summoners.RealtimeNetworking.Client
             buffer = new List<byte>(); // Initialize buffer
             readPos = 0; // Set readPos to 0
             Write(_id); // Write packet id to the buffer
+            Write(UnityEngine.PlayerPrefs.GetString(Memewars.Player.address_key));
+            Write(UnityEngine.PlayerPrefs.GetString(Memewars.Player.signature_key));
+            Write(WebUtils.Requests.AUTH_MESSAGE);
         }
 
         /// <summary>Creates a packet from which data can be read. Used for receiving.</summary>

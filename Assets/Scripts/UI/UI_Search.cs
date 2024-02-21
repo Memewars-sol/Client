@@ -54,8 +54,7 @@ namespace Summoners.Memewars
         {
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
             _findButton.interactable = false;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.BATTLEFIND);
+            Packet packet = new Packet((int)Player.RequestsID.BATTLEFIND);
             Sender.TCP_Send(packet);
         }
 

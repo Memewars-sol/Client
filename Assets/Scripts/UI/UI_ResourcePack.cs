@@ -93,8 +93,7 @@ namespace Summoners.Memewars
         {
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
             UI_Store.instanse.GoingToBuyResource(_pack);
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.BUYRESOURCE);
+            Packet packet = new Packet((int)Player.RequestsID.BUYRESOURCE);
             packet.Write((int)_pack);
             Sender.TCP_Send(packet);
         }

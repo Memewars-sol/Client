@@ -131,8 +131,7 @@
                 sending = true;
                 _inputMessage.interactable = false;
                 _buttonSend.interactable = false;
-                Packet packet = new Packet();
-                packet.Write((int)Player.RequestsID.SENDCHAT);
+                Packet packet = new Packet((int)Player.RequestsID.SENDCHAT);
                 packet.Write(message);
                 packet.Write((int)type);
                 long target = 0;
@@ -219,8 +218,7 @@
         {
             timer = 0;
             updating = true;
-            Packet packet = new Packet();
-            packet.Write((int)Player.RequestsID.GETCHATS);
+            Packet packet = new Packet((int)Player.RequestsID.GETCHATS);
             packet.Write((int)type);
             long lastMessage = 0;
             if(type == Data.ChatType.clan)
