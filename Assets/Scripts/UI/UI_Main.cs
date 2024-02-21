@@ -91,7 +91,7 @@ namespace Summoners.Memewars
             _rankingButton.onClick.AddListener(RankingButtonClicked);
             _buyResourceButton.onClick.AddListener(BuyResource);
             _battleReportsButton.onClick.AddListener(BattleReportsButtonClicked);
-            SoundManager.instanse.PlayMusic(SoundManager.instanse.mainMusic);
+            // SoundManager.instanse.PlayMusic(SoundManager.instanse.mainMusic);
         }
 
         public void ChangeUnreadBattleReports(int count)
@@ -152,7 +152,7 @@ namespace Summoners.Memewars
             {
                 if (SoundManager.instanse.musicSource.clip != SoundManager.instanse.mainMusic)
                 {
-                    SoundManager.instanse.PlayMusic(SoundManager.instanse.mainMusic);
+                    // SoundManager.instanse.PlayMusic(SoundManager.instanse.mainMusic);
                 }
                 Player.instanse.RushSyncRequest();
             }

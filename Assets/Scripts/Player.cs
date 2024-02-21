@@ -55,7 +55,7 @@
         private int _maxElixir = 0; public int maxElixir { get { return _maxElixir; } }
 
         private int _darkElixir = 0; public int darkElixir { get { return _darkElixir; } set { _darkElixir = value; } }
-        private int _maxDarkElixir = 0; public int maxDarkElixir { get { return _maxDarkElixir; }  }
+        private int _maxDarkElixir = 0; public int maxDarkElixir { get { return _maxDarkElixir; } }
 
         private int _townHallLevel = 1; public int townHallLevel { get { return _townHallLevel; } }
         private int _spellFactoryLevel = 0; public int spellFactoryLevel { get { return _spellFactoryLevel; } }
@@ -70,16 +70,20 @@
             RealtimeNetworking.OnPacketReceived += ReceivedPaket;
             RealtimeNetworking.OnDisconnectedFromServer += DisconnectedFromServer;
 
-            if(!PlayerPrefs.HasKey(address_key)) {
+            if (!PlayerPrefs.HasKey(address_key))
+            {
+                Debug.Log("Dont have address");
                 SceneManager.LoadScene(0); // account login page
                 return;
             }
 
-            if(!PlayerPrefs.HasKey(signature_key)) {
+            if (!PlayerPrefs.HasKey(signature_key))
+            {
+                Debug.Log("Dont have signature");
                 SceneManager.LoadScene(0); // account login page
                 return;
             }
-            
+
             Packet packet = new Packet((int)RequestsID.AUTH);
             Sender.TCP_Send(packet);
         }
@@ -112,7 +116,7 @@
                 {
                     if (timer <= 0)
                     {
-                        if(updating == false)
+                        if (updating == false)
                         {
                             updating = true;
                             timer = syncTime;
@@ -142,7 +146,7 @@
                 {
                     case RequestsID.AUTH:
                         response = packet.ReadInt();
-                        if(response == 1)
+                        if (response == 1)
                         {
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
@@ -153,14 +157,14 @@
                             bool isThereNewerVersion = true;
                             for (int i = 0; i < initializationData.versions.Length; i++)
                             {
-                                if(initializationData.versions[i] == Application.version)
+                                if (initializationData.versions[i] == Application.version)
                                 {
                                     versionValid = true;
                                     isThereNewerVersion = (i < (initializationData.versions.Length - 1));
                                     break;
                                 }
                             }
-                            if(!versionValid)
+                            if (!versionValid)
                             {
                                 switch (Language.instanse.language)
                                 {
@@ -174,7 +178,7 @@
                             }
                             else
                             {
-                                if(isThereNewerVersion)
+                                if (isThereNewerVersion)
                                 {
                                     /*
                                     switch (Language.instanse.language)
@@ -192,11 +196,13 @@
                                 updating = true;
                                 timer = 0;
                                 PlayerPrefs.SetString(password_key, initializationData.password);
+                                Debug.Log("Sending sync request");
                                 SendSyncRequest();
                             }
                         }
                         else
                         {
+                            Debug.Log("Unable to authenticate");
                             switch (Language.instanse.language)
                             {
                                 case Language.LanguageID.persian:
@@ -212,7 +218,7 @@
                         break;
                     case RequestsID.SYNC:
                         response = packet.ReadInt();
-                        if(response == 1)
+                        if (response == 1)
                         {
                             int playerBytesLength = packet.ReadInt();
                             byte[] playerBytes = packet.ReadBytes(playerBytesLength);

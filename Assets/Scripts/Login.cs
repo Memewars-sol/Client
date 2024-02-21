@@ -13,6 +13,7 @@ namespace Summoners.Memewars
     using UnityEngine.SceneManagement;
     using System.Collections;
     using Summoners.RealtimeNetworking.Client;
+    using Solana.Unity.Wallet.Bip39;
 
     public class LoginScreen : MonoBehaviour
     {
@@ -77,16 +78,20 @@ namespace Summoners.Memewars
                 loginBtnWalletAdapter.onClick.AddListener(() =>
                     Debug.LogWarning("Wallet adapter login is not yet supported in the editor"));
             }
-
             
             RealtimeNetworking.OnPacketReceived += ReceivedPaket;
             RealtimeNetworking.OnConnectingToServerResult += ConnectResult;
             RealtimeNetworking.Connect();
+
         }
-        private async void LoginChecker()
+        private async void LoginTest()
         {
-            var password = passwordInputField.text;
+            var password = "asdasd";
             var account = await Web3.Instance.LoginInGameWallet(password);
+            if(account == null) {
+                var mnemonic = new Mnemonic(WordList.English, WordCount.TwentyFour).ToString();
+                account = await Web3.Instance.CreateAccount(mnemonic, password);
+            }
             CheckAccount(account);
         }
 
@@ -148,16 +153,18 @@ namespace Summoners.Memewars
             Sender.TCP_Send(packet);
         }
 
-        public void OnClose()
+        /* public void OnClose()
         {
             // var wallet = GameObject.Find("wallet");
             // wallet.SetActive(false);
-        }
+        } */
 
         private void ConnectResult(bool successful)
         {
             if (successful)
             {
+                // auto login test account
+                LoginTest();
                 Debug.Log("Connected to server successfully.");
 
             }
@@ -209,7 +216,7 @@ namespace Summoners.Memewars
             float loadingTimer = Time.realtimeSinceStartup;
             yield return new WaitForEndOfFrame();
             bool done = false;
-            AsyncOperation async = SceneManager.LoadSceneAsync(gameSceneIndex);
+            AsyncOperation async = SceneManager.LoadSceneAsync(gameSceneIndex, LoadSceneMode.Single);
             async.allowSceneActivation = false;
             while (!async.isDone && !done)
             {
