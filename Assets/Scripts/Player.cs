@@ -37,8 +37,14 @@
             main = 0, clan = 1
         }
 
+        //display name
         public static readonly string username_key = "username";
+        // unused
         public static readonly string password_key = "password";
+        // wallet address
+        public static readonly string address_key = "address";
+        // signature
+        public static readonly string signature_key = "signature";
         public static readonly string device_id = "device_id";
 
         private int _unreadBattleReports = 0; public int unreadBattleReports { get { return _gold; } }
