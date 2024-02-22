@@ -216,7 +216,7 @@ namespace Summoners.Memewars
             float loadingTimer = Time.realtimeSinceStartup;
             yield return new WaitForEndOfFrame();
             bool done = false;
-            AsyncOperation async = SceneManager.LoadSceneAsync(gameSceneIndex, LoadSceneMode.Single);
+            AsyncOperation async = SceneManager.LoadSceneAsync(gameSceneIndex);
             async.allowSceneActivation = false;
             while (!async.isDone && !done)
             {
@@ -239,6 +239,11 @@ namespace Summoners.Memewars
             }
             progressBar.fillAmount = 1;
             async.allowSceneActivation = true;
+        }
+
+        private void OnLevelWasLoaded(int level)
+        {
+            Destroy(gameObject);
         }
     }
 }
