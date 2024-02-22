@@ -113,7 +113,7 @@ namespace Summoners.Memewars
                 wallX = Building.buildInstanse.currentX;
                 wallY = Building.buildInstanse.currentY;
                 Packet packet = new Packet((int)Player.RequestsID.BUILD);
-                packet.Write(SystemInfo.deviceUniqueIdentifier);
+                // packet.Write(SystemInfo.deviceUniqueIdentifier);
                 packet.Write(Building.buildInstanse.id.ToString());
                 packet.Write(Building.buildInstanse.currentX);
                 packet.Write(Building.buildInstanse.currentY);

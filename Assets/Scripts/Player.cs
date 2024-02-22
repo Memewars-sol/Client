@@ -770,7 +770,7 @@
             Debug.Log("Request Sent."); // For some wierd reason if I remove this debug then buildings upgrade button will delay showing for a few seconds until next update
             lastUpdateSent = DateTime.Now;
             Packet p = new Packet((int)RequestsID.SYNC);
-            p.Write(SystemInfo.deviceUniqueIdentifier);
+            // p.Write(SystemInfo.deviceUniqueIdentifier);
             Sender.TCP_Send(p);
         }
 

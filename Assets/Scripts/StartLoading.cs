@@ -257,8 +257,8 @@
                     _buttonConfirm.interactable = false;
                     _buttonCancel.interactable = false;
                     Packet packet = new Packet((int)Player.RequestsID.CONFIRMCODE);
-                    string device = SystemInfo.deviceUniqueIdentifier;
-                    packet.Write(device);
+                    // string device = SystemInfo.deviceUniqueIdentifier;
+                    // packet.Write(device);
                     packet.Write(email);
                     packet.Write(code);
                     Sender.TCP_Send(packet);
@@ -273,8 +273,8 @@
                     _buttonConfirm.interactable = false;
                     _buttonCancel.interactable = false;
                     Packet packet = new Packet((int)Player.RequestsID.SENDCODE);
-                    string device = SystemInfo.deviceUniqueIdentifier;
-                    packet.Write(device);
+                    // string device = SystemInfo.deviceUniqueIdentifier;
+                    // packet.Write(device);
                     packet.Write(email);
                     Debug.Log(email);
                     Sender.TCP_Send(packet);

@@ -227,8 +227,8 @@
                 _saveButton.interactable = false;
                 _cancelButton.interactable = false;
                 Packet packet = new Packet((int)Player.RequestsID.EMAILCODE);
-                string device = SystemInfo.deviceUniqueIdentifier;
-                packet.Write(device);
+                // string device = SystemInfo.deviceUniqueIdentifier;
+                // packet.Write(device);
                 packet.Write(email);
                 Sender.TCP_Send(packet);
             }
@@ -331,8 +331,8 @@
                     {
                         MessageBox.Close();
                         Packet packet = new Packet((int)Player.RequestsID.EMAILCONFIRM);
-                        string device = SystemInfo.deviceUniqueIdentifier;
-                        packet.Write(device);
+                        // string device = SystemInfo.deviceUniqueIdentifier;
+                        // packet.Write(device);
                         packet.Write(email);
                         packet.Write(code);
                         Sender.TCP_Send(packet);
@@ -350,8 +350,8 @@
                 if (buttonIndex == 0)
                 {
                     Packet packet = new Packet((int)Player.RequestsID.LOGOUT);
-                    string device = SystemInfo.deviceUniqueIdentifier;
-                    packet.Write(device);
+                    // string device = SystemInfo.deviceUniqueIdentifier;
+                    // packet.Write(device);
                     Sender.TCP_Send(packet);
                     PlayerPrefs.DeleteAll();
                     Player.RestartGame();

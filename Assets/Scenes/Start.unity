@@ -2943,7 +2943,6 @@ RectTransform:
   m_Children:
   - {fileID: 2089836107}
   - {fileID: 1506095068}
-  - {fileID: 1760478165}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5736,7 +5735,7 @@ RectTransform:
   - {fileID: 1892378824}
   - {fileID: 1249800562}
   - {fileID: 581936411}
-  m_Father: {fileID: 857359735}
+  m_Father: {fileID: 2089836107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6953,9 +6952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1967253969}
-  - component: {fileID: 1967253968}
   - component: {fileID: 1967253971}
-  - component: {fileID: 1967253970}
   m_Layer: 0
   m_Name: LoginWalletController
   m_TagString: Untagged
@@ -6963,33 +6960,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1967253968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967253967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc1b4f7148b3d4f47892997ba7652f1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameSceneIndex: 1
-  progressBar: {fileID: 2093812219}
-  _termsPanel: {fileID: 38001437}
-  _loadingPanel: {fileID: 66279473}
-  _loginPanel: {fileID: 1760478164}
-  passwordInputField: {fileID: 0}
-  passwordText: {fileID: 0}
-  loginBtn: {fileID: 0}
-  loginBtnGoogle: {fileID: 1249800565}
-  loginBtnTwitter: {fileID: 581936414}
-  loginBtnWalletAdapter: {fileID: 1892378825}
-  loginBtnSms: {fileID: 0}
-  loginBtnXNFT: {fileID: 0}
-  messageTxt: {fileID: 0}
-  dropdownRpcCluster: {fileID: 0}
 --- !u!4 &1967253969
 Transform:
   m_ObjectHideFlags: 0
@@ -7005,50 +6975,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1967253970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967253967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b75a4e92c14884ea6bf3e46d07a33eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rpcCluster: 1
-  customRpc: 'https://devnet.helius-rpc.com/?api-key=daee637b-4cd9-4278-aece-47ea64feebe3 '
-  webSocketsRpc: 
-  autoConnectOnStartup: 0
-  web3AuthWalletOptions:
-    appName: Web3Auth Sample App
-    logoLight: 
-    logoDark: 
-    defaultLanguage: 0
-    mode: 2
-    themeName: primary
-    themeColor: '#123456'
-    redirectUrl: torusapp://com.torus.Web3AuthUnity/auth
-    clientId: BAwFgL-r7wzQKmtcdiz2uHJKNZdK7gzEf2q-m55xfzSZOw8jLOyIi4AVvvzaEQO5nv2dFLEmf9LBkF8kaq3aErg
-    network: 1
-    loginConfig: []
-  solanaWalletAdapterOptions:
-    solanaMobileWalletAdapterOptions:
-      identityUri: https://solana.unity-sdk.gg/
-      iconUri: /favicon.ico
-      name: Solana.Unity-SDK
-      keepConnectionAlive: 1
-    solanaWalletAdapterWebGLOptions:
-      walletAdapterButtonPrefab: {fileID: 0}
-      walletAdapterUIPrefab: {fileID: 0}
-    phantomWalletOptions:
-      apiVersion: v1
-      appMetaDataUrl: https://github.com/magicblock-labs/Solana.Unity-SDK
-      deeplinkUrlScheme: unitydl
-      sessionEncryptionPassword: use a strong password
-      baseUrl: https://phantom.app
-      walletName: phantom
 --- !u!114 &1967253971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7975,6 +7901,9 @@ GameObject:
   - component: {fileID: 2089836107}
   - component: {fileID: 2089836109}
   - component: {fileID: 2089836108}
+  - component: {fileID: 2089836112}
+  - component: {fileID: 2089836111}
+  - component: {fileID: 2089836110}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -7996,6 +7925,7 @@ RectTransform:
   m_Children:
   - {fileID: 66279474}
   - {fileID: 502869541}
+  - {fileID: 1760478165}
   m_Father: {fileID: 857359735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8041,6 +7971,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089836106}
   m_CullTransparentMesh: 1
+--- !u!114 &2089836110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089836106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75a4e92c14884ea6bf3e46d07a33eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rpcCluster: 1
+  customRpc: 'https://devnet.helius-rpc.com/?api-key=daee637b-4cd9-4278-aece-47ea64feebe3 '
+  webSocketsRpc: 
+  autoConnectOnStartup: 0
+  web3AuthWalletOptions:
+    appName: Web3Auth Sample App
+    logoLight: 
+    logoDark: 
+    defaultLanguage: 0
+    mode: 2
+    themeName: primary
+    themeColor: '#123456'
+    redirectUrl: torusapp://com.torus.Web3AuthUnity/auth
+    clientId: BAwFgL-r7wzQKmtcdiz2uHJKNZdK7gzEf2q-m55xfzSZOw8jLOyIi4AVvvzaEQO5nv2dFLEmf9LBkF8kaq3aErg
+    network: 1
+    loginConfig: []
+  solanaWalletAdapterOptions:
+    solanaMobileWalletAdapterOptions:
+      identityUri: https://solana.unity-sdk.gg/
+      iconUri: /favicon.ico
+      name: Solana.Unity-SDK
+      keepConnectionAlive: 1
+    solanaWalletAdapterWebGLOptions:
+      walletAdapterButtonPrefab: {fileID: 0}
+      walletAdapterUIPrefab: {fileID: 0}
+    phantomWalletOptions:
+      apiVersion: v1
+      appMetaDataUrl: https://github.com/magicblock-labs/Solana.Unity-SDK
+      deeplinkUrlScheme: unitydl
+      sessionEncryptionPassword: use a strong password
+      baseUrl: https://phantom.app
+      walletName: phantom
+--- !u!114 &2089836111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089836106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7daddfbeaa44729a122a269ac8fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2089836112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089836106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1b4f7148b3d4f47892997ba7652f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSceneIndex: 1
+  progressBar: {fileID: 2093812219}
+  _termsPanel: {fileID: 38001437}
+  _loadingPanel: {fileID: 66279473}
+  _loginPanel: {fileID: 1760478164}
+  passwordInputField: {fileID: 0}
+  passwordText: {fileID: 0}
+  loginBtn: {fileID: 0}
+  loginBtnGoogle: {fileID: 1249800565}
+  loginBtnTwitter: {fileID: 581936414}
+  loginBtnWalletAdapter: {fileID: 1892378825}
+  loginBtnSms: {fileID: 0}
+  loginBtnXNFT: {fileID: 0}
+  messageTxt: {fileID: 0}
+  dropdownRpcCluster: {fileID: 0}
 --- !u!1 &2093812217
 GameObject:
   m_ObjectHideFlags: 0
