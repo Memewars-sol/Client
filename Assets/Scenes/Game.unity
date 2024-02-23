@@ -68435,12 +68435,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d5f66e1cf208748a769e5c142af4c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldIcon: {fileID: 21300000, guid: 23947f9bbfb056947bf7177ca5b87f44, type: 3}
-  elixirIcon: {fileID: 21300000, guid: 50dd5d693297eba42a52da3d29d4fd77, type: 3}
-  darkIcon: {fileID: 21300000, guid: 0e59b16fedaa17f47bf912e8f4b590d4, type: 3}
+  goldIcon: {fileID: -488123851, guid: e463e9f632e3a48e09107df25359594d, type: 3}
+  elixirIcon: {fileID: 1365721571, guid: 3df0fae7333fb4dfcb6f9bd7fa7fea36, type: 3}
+  darkIcon: {fileID: 1365721571, guid: 3df0fae7333fb4dfcb6f9bd7fa7fea36, type: 3}
   gemsIcon: {fileID: 21300000, guid: a7a70ad37959b3e4f9ade073aa255348, type: 3}
-  townhallIcon: {fileID: 21300000, guid: 63ea8e61d7299da42b1bd1be4edff934, type: 3}
-  buildershutIcon: {fileID: 21300000, guid: 8e9b12cf7686e474e97e85aa35f88157, type: 3}
+  townhallIcon: {fileID: -4382582127196820597, guid: cac98385064a841869c83e26a0ec0468, type: 3}
+  buildershutIcon: {fileID: 2853892434892329259, guid: 594e78df34e7545b187c6ca192047a76, type: 3}
   wallIcons:
   - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
   - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
@@ -68459,25 +68459,25 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
   - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
   - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  goldmineIcon: {fileID: 21300000, guid: 018e701d3118a4340991330aaed53040, type: 3}
-  elixirmineIcon: {fileID: 21300000, guid: 8148d4d0ceaed8e42a6b6fe512377c13, type: 3}
+  goldmineIcon: {fileID: -6097260385343195527, guid: 27ecd6663285449c187ad54a986ed993, type: 3}
+  elixirmineIcon: {fileID: 7824999922974545324, guid: bdc08f5db345940dc8915b26ae1dfd07, type: 3}
   darkmineIcon: {fileID: 0}
-  goldstorageIcon: {fileID: 21300000, guid: f8ca6fa1138bf6440a0c338515782bb9, type: 3}
-  elixirstorageIcon: {fileID: 21300000, guid: 2572dd0acb374dd4990ea07f397f4169, type: 3}
+  goldstorageIcon: {fileID: -5833478015310130341, guid: 6fb9f7ac18e464c818663b9344c3bef7, type: 3}
+  elixirstorageIcon: {fileID: -6996836645682723406, guid: 6910858d3431f49ee807fa04ac4af8e8, type: 3}
   darkstorageIcon: {fileID: 0}
-  barracksIcon: {fileID: 21300000, guid: 22c162e7e27c849459abc4ebed0cb832, type: 3}
+  barracksIcon: {fileID: 8162177988736393988, guid: c57a391ce498d439d96e04ec14ec7b26, type: 3}
   darkbarracksIcon: {fileID: 0}
-  spellfacroryIcon: {fileID: 21300000, guid: 58efb22c6889d9b4b937526edc77561e, type: 3}
+  spellfacroryIcon: {fileID: 782683679456598844, guid: c09fc0f95d3f343de91ad9d273db59f4, type: 3}
   darkspellfacroryIcon: {fileID: 0}
-  armycampIcon: {fileID: 21300000, guid: ac2c67a319f4ab249a999b41c0edd5d0, type: 3}
-  clancastleIcon: {fileID: 21300000, guid: c914b7a270d10fc4cb1cfc8b0c8ff779, type: 3}
-  cannonIcon: {fileID: 21300000, guid: 05bfc3a19cb6d804892620a2268b214e, type: 3}
-  archertowerIcon: {fileID: 21300000, guid: 441b72c263c7aeb458a1b946d2dfc31d, type: 3}
-  mortorIcon: {fileID: 21300000, guid: ae3870eed4550f541abe663599d4e32e, type: 3}
-  airdefenseIcon: {fileID: 21300000, guid: 441b72c263c7aeb458a1b946d2dfc31d, type: 3}
-  wizardTowerIcon: {fileID: 21300000, guid: d48ecf05f8a39f84a81743a937e1c927, type: 3}
-  infernoTowerIcon: {fileID: 21300000, guid: d48ecf05f8a39f84a81743a937e1c927, type: 3}
-  labIcon: {fileID: 21300000, guid: 3d7ed90f037c1a741b8785eedc130359, type: 3}
+  armycampIcon: {fileID: 7131036274052586204, guid: 947186b7d5409451c87ebf954b428146, type: 3}
+  clancastleIcon: {fileID: 4826523197254607647, guid: fbb630be8662c42379f13f41aad97ce9, type: 3}
+  cannonIcon: {fileID: 8778463588381737207, guid: 5113bf72ccda24736b321b29b1e72dee, type: 3}
+  archertowerIcon: {fileID: -4263959346570876262, guid: e92983f5901264c5c83607ad4d5f8a84, type: 3}
+  mortorIcon: {fileID: -3460914650643409449, guid: aa7257a27ce384053b0f0482b3ec3820, type: 3}
+  airdefenseIcon: {fileID: -365769854991962045, guid: 7c1c52457325b4d018bb723e43bb3574, type: 3}
+  wizardTowerIcon: {fileID: 1642449929910608685, guid: cbfbd2ebe577848e9bb264225ea1e49a, type: 3}
+  infernoTowerIcon: {fileID: 8986516424020897920, guid: f8d31b7b907e94a89bfd3766de990449, type: 3}
+  labIcon: {fileID: -8976691131275056000, guid: bd1302b66b138463b848cd161646c964, type: 3}
   obsticle01Icon: {fileID: 21300000, guid: 8a207934226bf3244adef45f5d6c15e7, type: 3}
   obsticle02Icon: {fileID: 21300000, guid: 31f235657754e724aa825f18897f037f, type: 3}
   obsticle03Icon: {fileID: 21300000, guid: e4cbe6a62f0966d4bb4613cc51434f23, type: 3}
