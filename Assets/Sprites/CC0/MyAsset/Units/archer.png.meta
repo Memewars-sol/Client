@@ -321,6 +321,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1930,7 +1943,83 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      archer_0: 5731584507761909605
+      archer_1: -7615759149648210162
+      archer_10: 7135723650130993342
+      archer_11: -2211983078384136945
+      archer_12: -3783999413710591504
+      archer_13: -596610279889723890
+      archer_14: -4286994160140225813
+      archer_15: 4998874239661532241
+      archer_16: -5628293126165128258
+      archer_17: -8695892203303655000
+      archer_18: 1247079759622273812
+      archer_19: -1759791881078805778
+      archer_2: -1516033387003549848
+      archer_20: -749623694445501194
+      archer_21: 2755607612910650718
+      archer_22: -8210838736343395885
+      archer_23: 8091852143692746023
+      archer_24: -692223422303060308
+      archer_25: 1188899609483295625
+      archer_26: 6750193663811815428
+      archer_27: 6960232714566914390
+      archer_28: -6192669274392354610
+      archer_29: 7806576474772676222
+      archer_3: 4216426741142755077
+      archer_30: 1350054635072634140
+      archer_31: -8080865015671579504
+      archer_32: -3459434133057761668
+      archer_33: 9188993476735305784
+      archer_34: 3682876337854037964
+      archer_35: -8690252261703445637
+      archer_36: 2199431665083466589
+      archer_37: -1072846411591543831
+      archer_38: -7714815520443705118
+      archer_39: -5987821559882113715
+      archer_4: -4784937291257459594
+      archer_40: 586967662719736550
+      archer_41: 7378360416816036763
+      archer_42: -2208330394184020905
+      archer_43: 1577928163517143401
+      archer_44: -2364065484177769194
+      archer_45: 1558779912057075785
+      archer_46: 8564452691243391688
+      archer_47: -5748988529756982925
+      archer_48: -6732478904492060142
+      archer_49: 3124764041287118524
+      archer_5: -2896677429709300588
+      archer_50: -4403552341971712369
+      archer_51: 8893205280368066641
+      archer_52: -6142025346955041082
+      archer_53: 6405661358059915371
+      archer_54: 1419057897250634821
+      archer_55: -1678136111350858270
+      archer_56: -4506354873426227819
+      archer_57: 3924113110459149931
+      archer_58: -4269777419277910768
+      archer_59: -4182619616922715107
+      archer_6: -1237044410232977109
+      archer_60: 761788597796284461
+      archer_61: -1003139669945826838
+      archer_62: 696193222248307259
+      archer_63: 1833413127510296863
+      archer_64: -3297048573823678324
+      archer_65: 2439742709210466663
+      archer_66: 7446569851990114479
+      archer_67: 9118360648541791363
+      archer_68: -3212744512904996336
+      archer_69: 2346766979659017344
+      archer_7: 4255292104823726704
+      archer_70: 1698928254125892085
+      archer_71: -8952961088336653516
+      archer_72: 3955872933358598937
+      archer_73: 7303562153375264092
+      archer_74: 5821189487340929186
+      archer_75: 2550275670883171552
+      archer_8: 2375208054730090502
+      archer_9: 480887029864472272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

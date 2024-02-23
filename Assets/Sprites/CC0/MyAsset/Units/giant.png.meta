@@ -183,6 +183,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -826,7 +839,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      giant_0: -7992795678392965532
+      giant_1: 2558723208160776176
+      giant_10: -420125964237768693
+      giant_11: -5951222183645416338
+      giant_12: -3603846297521243706
+      giant_13: 8842528928289005413
+      giant_14: 5358347565288624674
+      giant_15: -8415298914875951537
+      giant_16: 1495703065704992343
+      giant_17: 3527289348207373971
+      giant_18: 4788891287929979191
+      giant_19: -5830889791531827817
+      giant_2: 3036695560442012720
+      giant_20: 5493135468827485931
+      giant_21: 3764984270664383922
+      giant_22: -7257480733276876928
+      giant_23: 435267471483261217
+      giant_24: 1005264464488911993
+      giant_25: 6079388112786742231
+      giant_26: -6504427910340567205
+      giant_27: 5442980408684336842
+      giant_28: 2295259951721356379
+      giant_29: 6829456763900786529
+      giant_3: 7592548485292325738
+      giant_4: -514913814743972184
+      giant_5: 4051683506735786264
+      giant_6: 1678032569955524606
+      giant_7: -4611700234075528446
+      giant_8: -6071434970362387642
+      giant_9: 124174905436886057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -375,6 +375,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2362,7 +2375,101 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wpns_16x16_black_outline_0: -6474470750129098406
+      wpns_16x16_black_outline_1: -8110588826120188023
+      wpns_16x16_black_outline_10: 7058371754757341713
+      wpns_16x16_black_outline_11: 1117262078680116179
+      wpns_16x16_black_outline_12: 811829627073085675
+      wpns_16x16_black_outline_13: -399344968215373819
+      wpns_16x16_black_outline_14: -6446114682604837305
+      wpns_16x16_black_outline_15: 5963304263792333815
+      wpns_16x16_black_outline_16: 5807629263011991916
+      wpns_16x16_black_outline_17: -1067014094246894415
+      wpns_16x16_black_outline_18: -3732490662695283642
+      wpns_16x16_black_outline_19: 5704035406407619202
+      wpns_16x16_black_outline_2: 3188651992945112008
+      wpns_16x16_black_outline_20: 3405256397670011109
+      wpns_16x16_black_outline_21: 3354742989861160254
+      wpns_16x16_black_outline_22: 2266616328982498836
+      wpns_16x16_black_outline_23: 4545071626466018549
+      wpns_16x16_black_outline_24: -7083161728158828715
+      wpns_16x16_black_outline_25: 2255468246810078123
+      wpns_16x16_black_outline_26: 134767468694252685
+      wpns_16x16_black_outline_27: -1643785846224045228
+      wpns_16x16_black_outline_28: -3761016059541900641
+      wpns_16x16_black_outline_29: -8761898493317825965
+      wpns_16x16_black_outline_3: -3017960991890453452
+      wpns_16x16_black_outline_30: -2932710077486866720
+      wpns_16x16_black_outline_31: -391034928914478462
+      wpns_16x16_black_outline_32: -3769193546230065920
+      wpns_16x16_black_outline_33: 6962381393932390926
+      wpns_16x16_black_outline_34: 5480258128598937363
+      wpns_16x16_black_outline_35: 7648999295125774911
+      wpns_16x16_black_outline_36: 6182107031101060032
+      wpns_16x16_black_outline_37: 1483433162459318971
+      wpns_16x16_black_outline_38: -3960763766605752122
+      wpns_16x16_black_outline_39: -2719997846398166090
+      wpns_16x16_black_outline_4: 5921223671142352773
+      wpns_16x16_black_outline_40: 6990603057318009356
+      wpns_16x16_black_outline_41: 2038952733756429145
+      wpns_16x16_black_outline_42: 1769615429690905806
+      wpns_16x16_black_outline_43: -6184662623883952240
+      wpns_16x16_black_outline_44: 7401665434839556812
+      wpns_16x16_black_outline_45: 6714941052950649138
+      wpns_16x16_black_outline_46: 7177255249152920263
+      wpns_16x16_black_outline_47: 5358280744269507695
+      wpns_16x16_black_outline_48: -7529894105388154218
+      wpns_16x16_black_outline_49: -6559402844196601875
+      wpns_16x16_black_outline_5: 4924622285651465768
+      wpns_16x16_black_outline_50: 2614931466197449116
+      wpns_16x16_black_outline_51: 8431386799493000789
+      wpns_16x16_black_outline_52: -5645101180813313822
+      wpns_16x16_black_outline_53: -3506547990956269935
+      wpns_16x16_black_outline_54: 6563406759117008766
+      wpns_16x16_black_outline_55: -805316816612818247
+      wpns_16x16_black_outline_56: -4956975974053869442
+      wpns_16x16_black_outline_57: 8791468185499946157
+      wpns_16x16_black_outline_58: 270055760041025490
+      wpns_16x16_black_outline_59: 1340720037831158135
+      wpns_16x16_black_outline_6: 6252218794896461545
+      wpns_16x16_black_outline_60: 5142486421737532801
+      wpns_16x16_black_outline_61: -68039761738473402
+      wpns_16x16_black_outline_62: 3036802494092877521
+      wpns_16x16_black_outline_63: -8137351912825000383
+      wpns_16x16_black_outline_64: 5213742053175657629
+      wpns_16x16_black_outline_65: -5935910925492273499
+      wpns_16x16_black_outline_66: -7885266563616606195
+      wpns_16x16_black_outline_67: 7020821636574660791
+      wpns_16x16_black_outline_68: -714863723516591164
+      wpns_16x16_black_outline_69: 6921717471334145728
+      wpns_16x16_black_outline_7: -7509761393153599853
+      wpns_16x16_black_outline_70: -1454157664612589815
+      wpns_16x16_black_outline_71: 8182417973824167723
+      wpns_16x16_black_outline_72: 7640894066346214525
+      wpns_16x16_black_outline_73: -1580428462815595511
+      wpns_16x16_black_outline_74: -7072628911545504681
+      wpns_16x16_black_outline_75: 7712542201755267691
+      wpns_16x16_black_outline_76: -2571466141986492833
+      wpns_16x16_black_outline_77: -3249227312072016705
+      wpns_16x16_black_outline_78: -2111469480851977588
+      wpns_16x16_black_outline_79: -5995040908754816930
+      wpns_16x16_black_outline_8: -1132913317201197196
+      wpns_16x16_black_outline_80: 1114358599684273974
+      wpns_16x16_black_outline_81: 2165175040968720753
+      wpns_16x16_black_outline_82: -1620341088957391575
+      wpns_16x16_black_outline_83: -7312566072667979968
+      wpns_16x16_black_outline_84: -9095170549030443026
+      wpns_16x16_black_outline_85: -1593506216448179426
+      wpns_16x16_black_outline_86: -4811900688601211790
+      wpns_16x16_black_outline_87: 7976496076282136282
+      wpns_16x16_black_outline_88: -332677224064064765
+      wpns_16x16_black_outline_89: -1848569037867469979
+      wpns_16x16_black_outline_9: 8160188365446012064
+      wpns_16x16_black_outline_90: -8807684788385168811
+      wpns_16x16_black_outline_91: -3215231855271434343
+      wpns_16x16_black_outline_92: 8416088344364277016
+      wpns_16x16_black_outline_93: -1239664205198874355
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
