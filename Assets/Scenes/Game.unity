@@ -68507,18 +68507,18 @@ MonoBehaviour:
   obsticle03Icon: {fileID: 21300000, guid: e4cbe6a62f0966d4bb4613cc51434f23, type: 3}
   obsticle04Icon: {fileID: 21300000, guid: 5174d9e6538b21d4ca0b34a5d4fea384, type: 3}
   obsticle05Icon: {fileID: 21300000, guid: 9077ffaa66982ca45a0c6a9efde45627, type: 3}
-  barbarianIcon: {fileID: 21300000, guid: 33450e7f192e69a4a91e495618be5afe, type: 3}
-  archerIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  goblinIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  healerIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  wallbreakerIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  giantIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  minerIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  balloonIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  wizardIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  dragonIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  pekkaIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
-  babydragonIcon: {fileID: 21300000, guid: 3f99971da98e7434b94a38da4714d42d, type: 3}
+  barbarianIcon: {fileID: 4889083202587923353, guid: 7f6419764ae2748dcb3387da53ab6046, type: 3}
+  archerIcon: {fileID: 7980839109703495272, guid: f03a7b11a30d64d0e8fb6d32a268d49d, type: 3}
+  goblinIcon: {fileID: 4961308380789386373, guid: 3026be4c8585344ee8ef24c0e492fd14, type: 3}
+  healerIcon: {fileID: 7275587250928016836, guid: 199522bfadf204840a62a7b6dc4aa75c, type: 3}
+  wallbreakerIcon: {fileID: 4180007251001537202, guid: 0c788c5e0ba0743d28ae29b72466ade6, type: 3}
+  giantIcon: {fileID: -7992795678392965532, guid: 311db5959dec5468fa071da77c29543c, type: 3}
+  minerIcon: {fileID: 7282116874285091003, guid: 1f6505a240caa48489764185d76d9df4, type: 3}
+  balloonIcon: {fileID: 128848091, guid: 15f09c952f8904254b4730df159b6867, type: 3}
+  wizardIcon: {fileID: 3422849895820167655, guid: ea969c6582f1849c39e77688ac751d9b, type: 3}
+  dragonIcon: {fileID: 3428391033546482049, guid: d76ac4ee991bc40148d5e312e1c30789, type: 3}
+  pekkaIcon: {fileID: -1705887949, guid: bf12e4cc7abd742539026f80897185fc, type: 3}
+  babydragonIcon: {fileID: 7892671619444580448, guid: 483b526fe2af2492583e0e4b043e2bab, type: 3}
   electrodragonIcon: {fileID: 0}
   yetiIcon: {fileID: 0}
   dragonriderIcon: {fileID: 0}
