@@ -1,0 +1,666 @@
+fileFormatVersion: 2
+guid: cec9d5acbfb6e4e06ab6ff803aced1a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8086480938542961098
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_0
+  - first:
+      213: -6547773947639502315
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_1
+  - first:
+      213: -5882855018538827525
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_2
+  - first:
+      213: 7338816899923227778
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_3
+  - first:
+      213: 3749973180668155353
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_4
+  - first:
+      213: 3605324235928816562
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_5
+  - first:
+      213: -6513745440757940395
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_6
+  - first:
+      213: -6008416866104405384
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_7
+  - first:
+      213: 2263364041400706551
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_8
+  - first:
+      213: -7883307319395089567
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_9
+  - first:
+      213: 2641737081841070373
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_10
+  - first:
+      213: 7953002346905955503
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_11
+  - first:
+      213: 8492825709824810557
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_12
+  - first:
+      213: -4010229818558444733
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_13
+  - first:
+      213: -3375626216633879555
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_14
+  - first:
+      213: 7327987888800893125
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_15
+  - first:
+      213: 9010404824287382660
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_16
+  - first:
+      213: -5042430574288334703
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_17
+  - first:
+      213: 2075236451519901572
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_18
+  - first:
+      213: -7802829393611148346
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_19
+  - first:
+      213: 8115605280807191066
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_20
+  - first:
+      213: -1122079631356593460
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_21
+  - first:
+      213: -7186988857102079495
+    second: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 379
+        width: 71
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac112d0d193f83070800000000000000
+      internalID: 8086480938542961098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 379
+        width: 73
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ae3654942a125a0800000000000000
+      internalID: -6547773947639502315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 377
+        width: 14
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf08ed28786eb5ea0800000000000000
+      internalID: -5882855018538827525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 377
+        width: 24
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284be877617b8d560800000000000000
+      internalID: 7338816899923227778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 373
+        width: 40
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d597f65db49a0430800000000000000
+      internalID: 3749973180668155353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 370
+        width: 20
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbc4ae6a4fa80230800000000000000
+      internalID: 3605324235928816562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 373
+        width: 30
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f7d4e68078a95a0800000000000000
+      internalID: -6513745440757940395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 383
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8729169b1b0dd9ca0800000000000000
+      internalID: -6008416866104405384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 281
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5e4159a95196f10800000000000000
+      internalID: 2263364041400706551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 271
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1630834b2cdd89290800000000000000
+      internalID: -7883307319395089567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 138
+        width: 131
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5213d1121e559a420800000000000000
+      internalID: 2641737081841070373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 146
+        width: 60
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac6d296f7dbe5e60800000000000000
+      internalID: 7953002346905955503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 285
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e99657cf39cd570800000000000000
+      internalID: 8492825709824810557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 157
+        width: 75
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b05252a3dc858c0800000000000000
+      internalID: -4010229818558444733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 157
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3ba0f37dd5721d0800000000000000
+      internalID: -3375626216633879555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 161
+        width: 84
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c88756d82e32b560800000000000000
+      internalID: 7327987888800893125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 79
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c8d12d2736b0d70800000000000000
+      internalID: 9010404824287382660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 16
+        width: 94
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19099fecb10b50ab0800000000000000
+      internalID: -5042430574288334703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 15
+        width: 72
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f29cdbe88bccc10800000000000000
+      internalID: 2075236451519901572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 16
+        width: 25
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3b4d6f108c6b390800000000000000
+      internalID: -7802829393611148346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 16
+        width: 23
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a120ccb210c60a070800000000000000
+      internalID: 8115605280807191066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 15
+        width: 23
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccaf94335829d60f0800000000000000
+      internalID: -1122079631356593460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 16
+        width: 79
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f96db776bfa24c90800000000000000
+      internalID: -7186988857102079495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
