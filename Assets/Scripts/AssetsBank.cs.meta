@@ -3,7 +3,83 @@ guid: 98d5f66e1cf208748a769e5c142af4c3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - goldIcon: {instanceID: 0}
+  - elixirIcon: {instanceID: 0}
+  - darkIcon: {instanceID: 0}
+  - gemsIcon: {instanceID: 0}
+  - townhallIcon: {instanceID: 0}
+  - buildershutIcon: {instanceID: 0}
+  - goldmineIcon: {instanceID: 0}
+  - elixirmineIcon: {instanceID: 0}
+  - darkmineIcon: {instanceID: 0}
+  - goldstorageIcon: {instanceID: 0}
+  - elixirstorageIcon: {instanceID: 0}
+  - darkstorageIcon: {instanceID: 0}
+  - barracksIcon: {instanceID: 0}
+  - darkbarracksIcon: {instanceID: 0}
+  - spellfacroryIcon: {instanceID: 0}
+  - darkspellfacroryIcon: {instanceID: 0}
+  - armycampIcon: {instanceID: 0}
+  - clancastleIcon: {instanceID: 0}
+  - cannonIcon: {instanceID: 0}
+  - archertowerIcon: {instanceID: 0}
+  - mortorIcon: {instanceID: 0}
+  - airdefenseIcon: {instanceID: 0}
+  - wizardTowerIcon: {instanceID: 0}
+  - infernoTowerIcon: {instanceID: 0}
+  - labIcon: {instanceID: 0}
+  - obsticle01Icon: {instanceID: 0}
+  - obsticle02Icon: {instanceID: 0}
+  - obsticle03Icon: {instanceID: 0}
+  - obsticle04Icon: {instanceID: 0}
+  - obsticle05Icon: {instanceID: 0}
+  - barbarianIcon: {fileID: 4889083202587923353, guid: 7f6419764ae2748dcb3387da53ab6046, type: 3}
+  - archerIcon: {instanceID: 0}
+  - goblinIcon: {instanceID: 0}
+  - healerIcon: {instanceID: 0}
+  - wallbreakerIcon: {instanceID: 0}
+  - giantIcon: {instanceID: 0}
+  - minerIcon: {instanceID: 0}
+  - balloonIcon: {instanceID: 0}
+  - wizardIcon: {instanceID: 0}
+  - dragonIcon: {instanceID: 0}
+  - pekkaIcon: {instanceID: 0}
+  - babydragonIcon: {instanceID: 0}
+  - electrodragonIcon: {instanceID: 0}
+  - yetiIcon: {instanceID: 0}
+  - dragonriderIcon: {instanceID: 0}
+  - electrotitanIcon: {instanceID: 0}
+  - minionIcon: {instanceID: 0}
+  - hogriderIcon: {instanceID: 0}
+  - valkyrieIcon: {instanceID: 0}
+  - golemIcon: {instanceID: 0}
+  - witchIcon: {instanceID: 0}
+  - lavahoundIcon: {instanceID: 0}
+  - bowlerIcon: {instanceID: 0}
+  - icegolemIcon: {instanceID: 0}
+  - headhunterIcon: {instanceID: 0}
+  - skeletonIcon: {instanceID: 0}
+  - batIcon: {instanceID: 0}
+  - lightningIcon: {instanceID: 0}
+  - healingIcon: {instanceID: 0}
+  - rageIcon: {instanceID: 0}
+  - jumpIcon: {instanceID: 0}
+  - freezeIcon: {instanceID: 0}
+  - invisibilityIcon: {instanceID: 0}
+  - recallIcon: {instanceID: 0}
+  - earthquakeIcon: {instanceID: 0}
+  - hasteIcon: {instanceID: 0}
+  - skeletonSommonIcon: {instanceID: 0}
+  - batSommonIcon: {instanceID: 0}
+  - englishIcon: {instanceID: 0}
+  - persianIcon: {instanceID: 0}
+  - arabicIcon: {instanceID: 0}
+  - russianIcon: {instanceID: 0}
+  - spanishIcon: {instanceID: 0}
+  - frenchIcon: {instanceID: 0}
+  - italianIcon: {instanceID: 0}
+  - germanIcon: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
