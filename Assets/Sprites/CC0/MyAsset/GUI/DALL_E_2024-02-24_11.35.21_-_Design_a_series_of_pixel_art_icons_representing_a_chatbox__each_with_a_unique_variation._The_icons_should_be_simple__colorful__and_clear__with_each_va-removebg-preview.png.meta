@@ -1,0 +1,666 @@
+fileFormatVersion: 2
+guid: bd30c9db3f079479ca74808326fd83d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6214270582549737546
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_0
+  - first:
+      213: 1073025869174625002
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_1
+  - first:
+      213: 7096804255055799577
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_2
+  - first:
+      213: 6551532919163906178
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_3
+  - first:
+      213: 433471416860169342
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_4
+  - first:
+      213: -3921585983532912167
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_5
+  - first:
+      213: 9137925645252564116
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_6
+  - first:
+      213: 5465804267999737992
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_7
+  - first:
+      213: -6720158755920827466
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_8
+  - first:
+      213: 2330358996459995066
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_9
+  - first:
+      213: 8373753818210661251
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_10
+  - first:
+      213: -8557026856082098657
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_11
+  - first:
+      213: 6764825352275926308
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_12
+  - first:
+      213: 8654562644226728857
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_13
+  - first:
+      213: -128272281716676673
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_14
+  - first:
+      213: -6940266882527753538
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_15
+  - first:
+      213: 7245518222504363679
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_16
+  - first:
+      213: 6866991244947047088
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_17
+  - first:
+      213: 6124684547676997049
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_18
+  - first:
+      213: 1762386517375757340
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_19
+  - first:
+      213: 469929526742768826
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_20
+  - first:
+      213: 5541078045299023955
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_21
+  - first:
+      213: 402073205900217554
+    second: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 327
+        width: 90
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf86fc64d972c9a0800000000000000
+      internalID: -6214270582549737546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 211
+        width: 145
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae255f6c75724ee00800000000000000
+      internalID: 1073025869174625002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 313
+        width: 96
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915e4179ed9ec7260800000000000000
+      internalID: 7096804255055799577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 211
+        width: 90
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288ea0d7a78bbea50800000000000000
+      internalID: 6551532919163906178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 211
+        width: 96
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e745c3ef4fff30600800000000000000
+      internalID: 433471416860169342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 135
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1be5f435ab399c0800000000000000
+      internalID: -3921585983532912167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 135
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4941635a5fe60de70800000000000000
+      internalID: 9137925645252564116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 141
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88830fdc5007adb40800000000000000
+      internalID: 5465804267999737992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 142
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbab1767333db2a0800000000000000
+      internalID: -6720158755920827466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 137
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf32271929175020800000000000000
+      internalID: 2330358996459995066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 137
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383740b4bbc853470800000000000000
+      internalID: 8373753818210661251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 92
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16bfb559655f3980800000000000000
+      internalID: -8557026856082098657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 86
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d96f9f0dc71ed50800000000000000
+      internalID: 6764825352275926308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 92
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993ef7ffede2b1870800000000000000
+      internalID: 8654562644226728857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 86
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7afb51a09483ef0800000000000000
+      internalID: -128272281716676673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 86
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba868c9a083faf90800000000000000
+      internalID: -6940266882527753538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 86
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f960ef95f604d8460800000000000000
+      internalID: 7245518222504363679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 34
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b249c687247c4f50800000000000000
+      internalID: 6866991244947047088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 35
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b58c9965204ff450800000000000000
+      internalID: 6124684547676997049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 34
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cae153331457810800000000000000
+      internalID: 1762386517375757340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 34
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc58fe2a66858600800000000000000
+      internalID: 469929526742768826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 35
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350a3c2df1dd5ec40800000000000000
+      internalID: 5541078045299023955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 34
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc82635373749500800000000000000
+      internalID: 402073205900217554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

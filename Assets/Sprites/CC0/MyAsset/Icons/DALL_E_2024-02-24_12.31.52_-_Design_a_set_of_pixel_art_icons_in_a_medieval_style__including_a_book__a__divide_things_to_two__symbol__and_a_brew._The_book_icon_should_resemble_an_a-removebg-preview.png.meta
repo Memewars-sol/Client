@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: 5fa79557f0af04afb8939421120a625f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7917172339217557132
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_0
+  - first:
+      213: -7565274716989687549
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_1
+  - first:
+      213: -9063493665302389288
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_2
+  - first:
+      213: -8870702229177464955
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_3
+  - first:
+      213: 4038876261759446555
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_4
+  - first:
+      213: 3705960318780774665
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_5
+  - first:
+      213: -7250689100848961998
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_6
+  - first:
+      213: -6297202218992397775
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_7
+  - first:
+      213: 1223354439357517588
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_8
+  - first:
+      213: -3104567271002967224
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_9
+  - first:
+      213: 4230870336059044842
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_10
+  - first:
+      213: 4811479686388034496
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_11
+  - first:
+      213: -8452814096773464088
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_12
+  - first:
+      213: 7121496659554230580
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_13
+  - first:
+      213: 74177267222798546
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_14
+  - first:
+      213: -7259326300724712828
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_15
+  - first:
+      213: -2218606103770376177
+    second: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 131
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479936754bd802290800000000000000
+      internalID: -7917172339217557132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 317
+        width: 187
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309f5993abeb20790800000000000000
+      internalID: -7565274716989687549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 321
+        width: 120
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddd5a72880083280800000000000000
+      internalID: -9063493665302389288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 136
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5878c91525fe4e480800000000000000
+      internalID: -8870702229177464955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 133
+        width: 162
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1eede9af88fc0830800000000000000
+      internalID: 4038876261759446555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 163
+        width: 120
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9091f9066473e6330800000000000000
+      internalID: 3705960318780774665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236e917bda0606b90800000000000000
+      internalID: -7250689100848961998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 127
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132182222f7db98a0800000000000000
+      internalID: -6297202218992397775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 147
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f4d48816a3af010800000000000000
+      internalID: 1223354439357517588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 28
+        width: 124
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8437096048c5ae4d0800000000000000
+      internalID: -3104567271002967224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 27
+        width: 45
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3798f872217ba30800000000000000
+      internalID: 4230870336059044842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 28
+        width: 116
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbaa2f484fc5c240800000000000000
+      internalID: 4811479686388034496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 124
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef37692d5291ba80800000000000000
+      internalID: -8452814096773464088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 128
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4316cd50b73a4d260800000000000000
+      internalID: 7121496659554230580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 122
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0693fd4d7870100800000000000000
+      internalID: 74177267222798546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 47
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a27a8e031b14b90800000000000000
+      internalID: -7259326300724712828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 59
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08d048d08de531e0800000000000000
+      internalID: -2218606103770376177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
