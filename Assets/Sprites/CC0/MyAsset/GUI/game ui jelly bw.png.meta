@@ -1,0 +1,1122 @@
+fileFormatVersion: 2
+guid: c89eceb1210d340feb6ad898141a8948
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3804771587590790006
+    second: game ui jelly bw_0
+  - first:
+      213: 8794900740661996864
+    second: game ui jelly bw_1
+  - first:
+      213: -7362024859779828207
+    second: game ui jelly bw_2
+  - first:
+      213: 7807533667673488075
+    second: game ui jelly bw_3
+  - first:
+      213: -8898990965322402961
+    second: game ui jelly bw_4
+  - first:
+      213: -8703196259483690085
+    second: game ui jelly bw_5
+  - first:
+      213: 8243712484635592039
+    second: game ui jelly bw_6
+  - first:
+      213: -8004942467795506330
+    second: game ui jelly bw_7
+  - first:
+      213: -4262427073985590004
+    second: game ui jelly bw_8
+  - first:
+      213: 1725194047668344378
+    second: game ui jelly bw_9
+  - first:
+      213: -9099384704805289562
+    second: game ui jelly bw_10
+  - first:
+      213: -3163300024886109050
+    second: game ui jelly bw_11
+  - first:
+      213: -6921230722066486826
+    second: game ui jelly bw_12
+  - first:
+      213: -3347218731710749768
+    second: game ui jelly bw_13
+  - first:
+      213: 2201807083952719198
+    second: game ui jelly bw_14
+  - first:
+      213: 7330347217915219518
+    second: game ui jelly bw_15
+  - first:
+      213: -2475883184751752646
+    second: game ui jelly bw_16
+  - first:
+      213: 6349813054405660399
+    second: game ui jelly bw_17
+  - first:
+      213: -7353288419516385158
+    second: game ui jelly bw_18
+  - first:
+      213: -3748231137854849204
+    second: game ui jelly bw_19
+  - first:
+      213: 1230657512583104171
+    second: game ui jelly bw_20
+  - first:
+      213: 575197620754088052
+    second: game ui jelly bw_21
+  - first:
+      213: 8630299346879347610
+    second: game ui jelly bw_22
+  - first:
+      213: 7140564536202133014
+    second: game ui jelly bw_23
+  - first:
+      213: 9143693883814026478
+    second: game ui jelly bw_24
+  - first:
+      213: -1592224927767182026
+    second: game ui jelly bw_25
+  - first:
+      213: 6839348356490294946
+    second: game ui jelly bw_26
+  - first:
+      213: -8849486807187222858
+    second: game ui jelly bw_27
+  - first:
+      213: 64655157292518991
+    second: game ui jelly bw_28
+  - first:
+      213: -3771035218039474297
+    second: game ui jelly bw_29
+  - first:
+      213: 5664649256524232083
+    second: game ui jelly bw_30
+  - first:
+      213: -1800300289727898405
+    second: game ui jelly bw_31
+  - first:
+      213: 3721524633430238812
+    second: game ui jelly bw_32
+  - first:
+      213: -7916576567208894912
+    second: game ui jelly bw_33
+  - first:
+      213: 6226568696082763333
+    second: game ui jelly bw_34
+  - first:
+      213: -8846549856055105306
+    second: game ui jelly bw_35
+  - first:
+      213: 7672175964228734405
+    second: game ui jelly bw_36
+  - first:
+      213: -2275979454698824595
+    second: game ui jelly bw_37
+  - first:
+      213: -8124811762463753294
+    second: game ui jelly bw_38
+  - first:
+      213: 2270914863811839505
+    second: game ui jelly bw_39
+  - first:
+      213: -4299882682086009693
+    second: game ui jelly bw_40
+  - first:
+      213: 8300802509996911171
+    second: game ui jelly bw_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: game ui jelly bw_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3778
+        width: 390
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b19d1b9934dc430800000000000000
+      internalID: 3804771587590790006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 3764
+        width: 420
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d6af150a3cd0a70800000000000000
+      internalID: 8794900740661996864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_2
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 3764
+        width: 421
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1167a3d4565d4d990800000000000000
+      internalID: -7362024859779828207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_3
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 3764
+        width: 420
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcab491318ee95c60800000000000000
+      internalID: 7807533667673488075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_4
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 3764
+        width: 421
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f633c8cadde608480800000000000000
+      internalID: -8898990965322402961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_5
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 3752
+        width: 420
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b57fe0d19083780800000000000000
+      internalID: -8703196259483690085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_6
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 3718
+        width: 423
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7654825e3dc876270800000000000000
+      internalID: 8243712484635592039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_7
+      rect:
+        serializedVersion: 2
+        x: 3746
+        y: 3732
+        width: 422
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b2c9fcc3bb8e090800000000000000
+      internalID: -8004942467795506330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_8
+      rect:
+        serializedVersion: 2
+        x: 4254
+        y: 3705
+        width: 422
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0dc416d821d8d4c0800000000000000
+      internalID: -4262427073985590004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_9
+      rect:
+        serializedVersion: 2
+        x: 4779
+        y: 3678
+        width: 433
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36d3eb88de11f710800000000000000
+      internalID: 1725194047668344378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1893
+        width: 1235
+        height: 1711
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1457352dd78b180800000000000000
+      internalID: -9099384704805289562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_11
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 3355
+        width: 853
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68cdda22363b914d0800000000000000
+      internalID: -3163300024886109050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_12
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 3354
+        width: 854
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d9e4ba1459d2ff90800000000000000
+      internalID: -6921230722066486826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_13
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 3252
+        width: 421
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3e8de3c4a4c81d0800000000000000
+      internalID: -3347218731710749768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_14
+      rect:
+        serializedVersion: 2
+        x: 3791
+        y: 3212
+        width: 424
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55c0fe80e36e8e10800000000000000
+      internalID: 2201807083952719198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_15
+      rect:
+        serializedVersion: 2
+        x: 4298
+        y: 3265
+        width: 1041
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e0c14f4ff9ab560800000000000000
+      internalID: 7330347217915219518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_16
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 2923
+        width: 853
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a428b7c55e3add0800000000000000
+      internalID: -2475883184751752646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_17
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 2937
+        width: 853
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feeccf984511f1850800000000000000
+      internalID: 6349813054405660399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_18
+      rect:
+        serializedVersion: 2
+        x: 3618
+        y: 2439
+        width: 1230
+        height: 619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a787bbf442fd3f990800000000000000
+      internalID: -7353288419516385158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_19
+      rect:
+        serializedVersion: 2
+        x: 4952
+        y: 2805
+        width: 275
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f7a1c93ab9bfbc0800000000000000
+      internalID: -3748231137854849204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_20
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 2472
+        width: 938
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba68ea5cc7c241110800000000000000
+      internalID: 1230657512583104171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_21
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 2473
+        width: 481
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47082b440338bf700800000000000000
+      internalID: 575197620754088052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_22
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 2499
+        width: 481
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b770cd78bf4c770800000000000000
+      internalID: 8630299346879347610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_23
+      rect:
+        serializedVersion: 2
+        x: 4937
+        y: 2428
+        width: 306
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e74140d91681360800000000000000
+      internalID: 7140564536202133014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_24
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1885
+        width: 1587
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec95a7542de4ee70800000000000000
+      internalID: 9143693883814026478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_25
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 1891
+        width: 1385
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6354ae93dd747e9e0800000000000000
+      internalID: -1592224927767182026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_26
+      rect:
+        serializedVersion: 2
+        x: 4947
+        y: 1988
+        width: 275
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a671c3081f3aee50800000000000000
+      internalID: 6839348356490294946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_27
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1643
+        width: 1417
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be891da2ae403580800000000000000
+      internalID: -8849486807187222858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_28
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 525
+        width: 1000
+        height: 1253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e4153e583b5e000800000000000000
+      internalID: 64655157292518991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_29
+      rect:
+        serializedVersion: 2
+        x: 2938
+        y: 1228
+        width: 1385
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787f441f2779aabc0800000000000000
+      internalID: -3771035218039474297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_30
+      rect:
+        serializedVersion: 2
+        x: 4969
+        y: 1603
+        width: 306
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395be487c70ec9e40800000000000000
+      internalID: 5664649256524232083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_31
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1415
+        width: 1418
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc5cb5cc6c0407e0800000000000000
+      internalID: -1800300289727898405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_32
+      rect:
+        serializedVersion: 2
+        x: 4357
+        y: 1161
+        width: 872
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56a976cfe285a330800000000000000
+      internalID: 3721524633430238812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 719
+        width: 1738
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e15525e8ba22290800000000000000
+      internalID: -7916576567208894912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_34
+      rect:
+        serializedVersion: 2
+        x: 3033
+        y: 621
+        width: 1376
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e84934d37396650800000000000000
+      internalID: 6226568696082763333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_35
+      rect:
+        serializedVersion: 2
+        x: 4694
+        y: 784
+        width: 306
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e86d06e6cdba3580800000000000000
+      internalID: -8846549856055105306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_36
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 106
+        width: 1339
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdc42af36b097a60800000000000000
+      internalID: 7672175964228734405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_37
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 0
+        width: 1376
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6cd69e9eb81a60e0800000000000000
+      internalID: -2275979454698824595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_38
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 13
+        width: 1376
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbbe67cfbede3f80800000000000000
+      internalID: -8124811762463753294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_39
+      rect:
+        serializedVersion: 2
+        x: 4402
+        y: 446
+        width: 275
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116c8ac6909e38f10800000000000000
+      internalID: 2270914863811839505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_40
+      rect:
+        serializedVersion: 2
+        x: 5023
+        y: 446
+        width: 275
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4d86e7b7fb354c0800000000000000
+      internalID: -4299882682086009693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game ui jelly bw_41
+      rect:
+        serializedVersion: 2
+        x: 4694
+        y: 138
+        width: 306
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a690f37ef523370800000000000000
+      internalID: 8300802509996911171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
