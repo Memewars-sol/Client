@@ -162,6 +162,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -658,7 +671,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_0: 8086480938542961098
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_1: -6547773947639502315
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_10: 2641737081841070373
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_11: 7953002346905955503
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_12: 8492825709824810557
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_13: -4010229818558444733
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_14: -3375626216633879555
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_15: 7327987888800893125
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_16: 9010404824287382660
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_17: -5042430574288334703
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_18: 2075236451519901572
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_19: -7802829393611148346
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_2: -5882855018538827525
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_20: 8115605280807191066
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_21: -1122079631356593460
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_22: -7186988857102079495
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_3: 7338816899923227778
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_4: 3749973180668155353
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_5: 3605324235928816562
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_6: -6513745440757940395
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_7: -6008416866104405384
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_8: 2263364041400706551
+      DALL_E_2024-02-24_12.24.29_-_Design_a_series_of_pixel_art_icons_that_depict_medieval_army_training__suitable_for_a_video_game_interface._Include_symbols_such_as_a_sword__bow_and_a-removebg-preview_9: -7883307319395089567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

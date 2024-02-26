@@ -219,6 +219,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1114,7 +1127,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      game ui jelly honey_0: -7233469862620467850
+      game ui jelly honey_1: 8871823342789026850
+      game ui jelly honey_10: 3130758011353054432
+      game ui jelly honey_11: 8663729903570659183
+      game ui jelly honey_12: 472500011208731245
+      game ui jelly honey_13: -2534377365139429426
+      game ui jelly honey_14: -5436305804101247593
+      game ui jelly honey_15: 7185182320785735362
+      game ui jelly honey_16: -1343604243977707610
+      game ui jelly honey_17: -172184165073826824
+      game ui jelly honey_18: 6930526116341005768
+      game ui jelly honey_19: 3113995540405816357
+      game ui jelly honey_2: -8566988401203782168
+      game ui jelly honey_20: -9047710627130751912
+      game ui jelly honey_21: -5606869769332351076
+      game ui jelly honey_22: -1388254998682204795
+      game ui jelly honey_23: -1226811172920058536
+      game ui jelly honey_24: -4938638922380910260
+      game ui jelly honey_25: 2869673127557869502
+      game ui jelly honey_26: -7457871270454462559
+      game ui jelly honey_27: 896293471413385318
+      game ui jelly honey_28: -2780151875752716716
+      game ui jelly honey_29: 5068979934659987539
+      game ui jelly honey_3: -3405049053415020418
+      game ui jelly honey_30: 2165522654508880727
+      game ui jelly honey_31: 1857428205165967468
+      game ui jelly honey_32: 6599473919840544234
+      game ui jelly honey_33: -7048630762879165619
+      game ui jelly honey_34: 4101080259307133767
+      game ui jelly honey_35: -1363782218590224394
+      game ui jelly honey_36: -212536648658800022
+      game ui jelly honey_37: -7912815830828339723
+      game ui jelly honey_38: -5355662980600896402
+      game ui jelly honey_39: -5768034148791676054
+      game ui jelly honey_4: 4242742983948240000
+      game ui jelly honey_40: -1636506405792691994
+      game ui jelly honey_41: -2749314872277982639
+      game ui jelly honey_5: -2746660261286358131
+      game ui jelly honey_6: 8453973921861072258
+      game ui jelly honey_7: 8414287517645980880
+      game ui jelly honey_8: -3040047099718367847
+      game ui jelly honey_9: 25178250640348497
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

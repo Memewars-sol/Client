@@ -219,6 +219,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1114,7 +1127,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      game ui jelly purple_0: 2566899784427649904
+      game ui jelly purple_1: -6382165989007428320
+      game ui jelly purple_10: -3280946545938950373
+      game ui jelly purple_11: 6539427405103682507
+      game ui jelly purple_12: 5432758732707427240
+      game ui jelly purple_13: 9178422415714097839
+      game ui jelly purple_14: -8385717793291109610
+      game ui jelly purple_15: -2835321069828861813
+      game ui jelly purple_16: -5844349853108220939
+      game ui jelly purple_17: -5289962144671401125
+      game ui jelly purple_18: -7575712656993912957
+      game ui jelly purple_19: 2448360040133656155
+      game ui jelly purple_2: -3634128465940889142
+      game ui jelly purple_20: 6955800043408918585
+      game ui jelly purple_21: 1632950072926804135
+      game ui jelly purple_22: 2186099009866501812
+      game ui jelly purple_23: 353107552089129032
+      game ui jelly purple_24: -8086969574176124159
+      game ui jelly purple_25: 5668691803783496096
+      game ui jelly purple_26: 6728283453350751102
+      game ui jelly purple_27: 3917845716976769103
+      game ui jelly purple_28: 5467209679569541358
+      game ui jelly purple_29: 7682920112422926620
+      game ui jelly purple_3: 7159068335733296094
+      game ui jelly purple_30: 2685169329912109799
+      game ui jelly purple_31: -7717895054562752711
+      game ui jelly purple_32: 5733585256547566700
+      game ui jelly purple_33: -4538941688321570034
+      game ui jelly purple_34: -2577423553697481906
+      game ui jelly purple_35: 5660079122907659219
+      game ui jelly purple_36: 1245717746170063656
+      game ui jelly purple_37: 5374108737432394219
+      game ui jelly purple_38: 9101564569076499405
+      game ui jelly purple_39: 5236491323185673408
+      game ui jelly purple_4: 3119894968524768238
+      game ui jelly purple_40: -8591290302452945424
+      game ui jelly purple_41: 5357413945362754414
+      game ui jelly purple_5: 8348087597521708542
+      game ui jelly purple_6: 9107162789674080508
+      game ui jelly purple_7: -6913072289421900997
+      game ui jelly purple_8: 746352340120565280
+      game ui jelly purple_9: 1739453560546150950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

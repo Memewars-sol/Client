@@ -141,6 +141,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -490,7 +503,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_0: 651762172270173054
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_1: 3754276488155081589
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_10: -3578187197587458623
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_11: 5779669377178898140
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_12: 5574366554758574136
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_13: 9163544461123317405
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_14: -3548500206996878370
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_15: 5122767014014604387
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_2: 7778096090245705933
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_3: 506183628240192577
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_4: 1778811234841347230
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_5: -238049352064308297
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_6: 8757993098600071561
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_7: -2663061369803911243
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_8: 5586387837944847826
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_9: -7912956358160192174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
