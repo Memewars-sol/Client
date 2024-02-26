@@ -144,6 +144,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -514,7 +527,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_0: -7917172339217557132
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_1: -7565274716989687549
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_10: 4230870336059044842
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_11: 4811479686388034496
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_12: -8452814096773464088
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_13: 7121496659554230580
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_14: 74177267222798546
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_15: -7259326300724712828
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_16: -2218606103770376177
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_2: -9063493665302389288
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_3: -8870702229177464955
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_4: 4038876261759446555
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_5: 3705960318780774665
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_6: -7250689100848961998
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_7: -6297202218992397775
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_8: 1223354439357517588
+      DALL_E_2024-02-24_12.31.52_-_Design_a_set_of_pixel_art_icons_in_a_medieval_style__including_a_book__a__divide_things_to_two__symbol__and_a_brew._The_book_icon_should_resemble_an_a-removebg-preview_9: -3104567271002967224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

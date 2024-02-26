@@ -162,6 +162,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -658,7 +671,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_0: -6214270582549737546
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_1: 1073025869174625002
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_10: 8373753818210661251
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_11: -8557026856082098657
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_12: 6764825352275926308
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_13: 8654562644226728857
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_14: -128272281716676673
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_15: -6940266882527753538
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_16: 7245518222504363679
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_17: 6866991244947047088
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_18: 6124684547676997049
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_19: 1762386517375757340
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_2: 7096804255055799577
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_20: 469929526742768826
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_21: 5541078045299023955
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_22: 402073205900217554
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_3: 6551532919163906178
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_4: 433471416860169342
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_5: -3921585983532912167
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_6: 9137925645252564116
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_7: 5465804267999737992
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_8: -6720158755920827466
+      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_9: 2330358996459995066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
