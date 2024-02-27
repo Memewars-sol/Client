@@ -6,6 +6,9 @@
     using Summoners.RealtimeNetworking.Client;
     using UnityEngine.SceneManagement;
     using System;
+    using Org.BouncyCastle.Utilities;
+    using WebSocketSharp;
+    using Summoners.RealtimeNetworking.WsClient;
 
     public class Player : MonoBehaviour
     {
@@ -63,12 +66,15 @@
         private int _barracksLevel = 0; public int barracksLevel { get { return _barracksLevel; } }
         private int _darkBarracksLevel = 0; public int darkBarracksLevel { get { return _townHallLevel; } }
         private bool _callDisconnectError = true;
+        private WebSocketClient webSocketClient;
 
         private void Start()
         {
             // Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.Full);
-            RealtimeNetworking.OnPacketReceived += ReceivedPaket;
-            RealtimeNetworking.OnDisconnectedFromServer += DisconnectedFromServer;
+            // RealtimeNetworking.OnPacketReceived += ReceivedPaket;
+            // RealtimeNetworking.OnDisconnectedFromServer += DisconnectedFromServer;
+            webSocketClient = WebSocketClient.GetInstance();
+            WebSocketClient.OnMessageReceived += ReceivedPaket;
 
             if (!PlayerPrefs.HasKey(address_key))
             {
@@ -85,7 +91,8 @@
             }
 
             Packet packet = new Packet((int)RequestsID.AUTH);
-            Sender.TCP_Send(packet);
+            // Sender.TCP_Send(packet);
+            webSocketClient.SendData(packet);
         }
 
         private void Awake()
@@ -97,8 +104,9 @@
 
         private void OnDestroy()
         {
-            RealtimeNetworking.OnPacketReceived -= ReceivedPaket;
-            RealtimeNetworking.OnDisconnectedFromServer -= DisconnectedFromServer;
+            // RealtimeNetworking.OnPacketReceived -= ReceivedPaket;
+            // RealtimeNetworking.OnDisconnectedFromServer -= DisconnectedFromServer;
+            WebSocketClient.OnMessageReceived -= ReceivedPaket;
         }
 
         private bool connected = false;
@@ -132,637 +140,1271 @@
             }
         }
 
-        private void ReceivedPaket(Packet packet)
+        // private void ReceivedPaket(Packet packet)
+        // {
+        //     try
+        //     {
+        //         int id = packet.ReadInt();
+        //         long databaseID = 0;
+        //         int response = 0;
+        //         int bytesLength = 0;
+        //         byte[] bytes;
+
+        //         switch ((RequestsID)id)
+        //         {
+        //             case RequestsID.AUTH:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     _unreadBattleReports = packet.ReadInt();
+        //                     UI_Main.instanse.ChangeUnreadBattleReports(_unreadBattleReports);
+        //                     initializationData = Data.Desrialize<Data.InitializationData>(Data.Decompress(bytes));
+        //                     bool versionValid = false;
+        //                     bool isThereNewerVersion = true;
+        //                     for (int i = 0; i < initializationData.versions.Length; i++)
+        //                     {
+        //                         if (initializationData.versions[i] == Application.version)
+        //                         {
+        //                             versionValid = true;
+        //                             isThereNewerVersion = (i < (initializationData.versions.Length - 1));
+        //                             break;
+        //                         }
+        //                     }
+        //                     if (!versionValid)
+        //                     {
+        //                         switch (Language.instanse.language)
+        //                         {
+        //                             case Language.LanguageID.persian:
+        //                                 MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "این ورژن منقضی شده. لطفاً ورژن جدید بازی را دانلود کنید." }, new string[] { "خروج" });
+        //                                 break;
+        //                             default:
+        //                                 MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "This version is expired. Please download the new version of the game." }, new string[] { "Exit" });
+        //                                 break;
+        //                         }
+        //                     }
+        //                     else
+        //                     {
+        //                         if (isThereNewerVersion)
+        //                         {
+        //                             /*
+        //                             switch (Language.instanse.language)
+        //                             {
+        //                                 case Language.LanguageID.persian:
+        //                                     MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "ورژن جدیدی از بازی منتشر شده و پیشنهاد میشود بازی را بروزرسانی کنید." }, new string[] { "باشه" });
+        //                                     break;
+        //                                 default:
+        //                                     MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "There is a new version available. We recommend you to update the game." }, new string[] { "OK" });
+        //                                     break;
+        //                             }
+        //                             */
+        //                         }
+        //                         connected = true;
+        //                         updating = true;
+        //                         timer = 0;
+        //                         PlayerPrefs.SetString(password_key, initializationData.password);
+        //                         Debug.Log("Sending sync request");
+        //                         SendSyncRequest();
+        //                     }
+        //                 }
+        //                 else
+        //                 {
+        //                     Debug.Log("Unable to authenticate");
+        //                     switch (Language.instanse.language)
+        //                     {
+        //                         case Language.LanguageID.persian:
+        //                             MessageBox.Open(0, 0.8f, false, MessageResponded, new string[] { "احراز حویت شما با خطا مواجه شد." }, new string[] { "باشه" });
+        //                             break;
+        //                         default:
+        //                             MessageBox.Open(0, 0.8f, false, MessageResponded, new string[] { "Failed to authenticate your account." }, new string[] { "OK" });
+        //                             break;
+        //                     }
+        //                     Client.instance.Disconnect(false);
+        //                     // RestartGame();
+        //                 }
+        //                 break;
+        //             case RequestsID.SYNC:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     int playerBytesLength = packet.ReadInt();
+        //                     byte[] playerBytes = packet.ReadBytes(playerBytesLength);
+        //                     string playerData = Data.Decompress(playerBytes);
+        //                     Data.Player playerSyncData = Data.Desrialize<Data.Player>(playerData);
+        //                     SyncData(playerSyncData);
+        //                     if (playerSyncData.banned)
+        //                     {
+        //                         switch (Language.instanse.language)
+        //                         {
+        //                             case Language.LanguageID.persian:
+        //                                 MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "حساب شما مسدود شده است. لطفاً جهت کسب اطلاعات بیشتر با ما تماس بگیرید." }, new string[] { "خروج" });
+        //                                 break;
+        //                             default:
+        //                                 MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "Your account has been banned. Please contact us for more information." }, new string[] { "Exit" });
+        //                                 break;
+        //                         }
+        //                         break;
+        //                     }
+        //                     lastUpdate = DateTime.Now;
+        //                 }
+        //                 updating = false;
+        //                 break;
+        //             case RequestsID.BUILD:
+        //                 response = packet.ReadInt();
+        //                 switch (response)
+        //                 {
+        //                     case 0:
+        //                         Debug.Log("Unknown");
+        //                         break;
+        //                     case 1:
+        //                         RushSyncRequest();
+        //                         break;
+        //                     case 2:
+        //                         Debug.Log("No resources");
+        //                         break;
+        //                     case 3:
+        //                         Debug.Log("Max level");
+        //                         break;
+        //                     case 4:
+        //                         Debug.Log("Place taken");
+        //                         break;
+        //                     case 5:
+        //                         Debug.Log("No builder");
+        //                         break;
+        //                     case 6:
+        //                         Debug.Log("Max limit reached");
+        //                         break;
+        //                 }
+        //                 break;
+        //             case RequestsID.REPLACE:
+        //                 int replaceResponse = packet.ReadInt();
+        //                 int replaceX = packet.ReadInt();
+        //                 int replaceY = packet.ReadInt();
+        //                 long replaceID = packet.ReadLong();
+        //                 for (int i = 0; i < UI_Main.instanse._grid.buildings.Count; i++)
+        //                 {
+        //                     if (UI_Main.instanse._grid.buildings[i].databaseID == replaceID)
+        //                     {
+        //                         switch (replaceResponse)
+        //                         {
+        //                             case 0:
+        //                                 Debug.Log("No building");
+        //                                 break;
+        //                             case 1:
+        //                                 UI_Main.instanse._grid.buildings[i].PlacedOnGrid(replaceX, replaceY, true);
+        //                                 if (UI_Main.instanse._grid.buildings[i] != Building.selectedInstanse)
+        //                                 {
+
+        //                                 }
+        //                                 RushSyncRequest();
+        //                                 break;
+        //                             case 2:
+        //                                 Debug.Log("Place taken");
+        //                                 break;
+        //                         }
+        //                         UI_Main.instanse._grid.buildings[i].waitingReplaceResponse = false;
+        //                         break;
+        //                     }
+        //                 }
+        //                 break;
+        //             case RequestsID.COLLECT:
+        //                 long db = packet.ReadLong();
+        //                 int collected = packet.ReadInt();
+        //                 for (int i = 0; i < UI_Main.instanse._grid.buildings.Count; i++)
+        //                 {
+        //                     if (db == UI_Main.instanse._grid.buildings[i].data.databaseID)
+        //                     {
+        //                         UI_Main.instanse._grid.buildings[i].collecting = false;
+        //                         switch (UI_Main.instanse._grid.buildings[i].id)
+        //                         {
+        //                             case Data.BuildingID.goldmine:
+        //                                 UI_Main.instanse._grid.buildings[i].data.goldStorage -= collected;
+        //                                 break;
+        //                             case Data.BuildingID.elixirmine:
+        //                                 UI_Main.instanse._grid.buildings[i].data.elixirStorage -= collected;
+        //                                 break;
+        //                             case Data.BuildingID.darkelixirmine:
+        //                                 UI_Main.instanse._grid.buildings[i].data.darkStorage -= collected;
+        //                                 break;
+        //                         }
+        //                         UI_Main.instanse._grid.buildings[i].AdjustUI();
+        //                         break;
+        //                     }
+        //                 }
+        //                 RushSyncRequest();
+        //                 break;
+        //             case RequestsID.PREUPGRADE:
+        //                 /*
+        //                 databaseID = packet.ReadLong();
+        //                 string re = packet.ReadString();
+        //                 Data.ServerBuilding sr = Data.Desrialize<Data.ServerBuilding>(re);
+        //                 UI_BuildingUpgrade.instanse.Open(sr, databaseID);
+        //                 */
+        //                 break;
+        //             case RequestsID.UPGRADE:
+        //                 response = packet.ReadInt();
+        //                 switch (response)
+        //                 {
+        //                     case 0:
+        //                         Debug.Log("Unknown");
+        //                         break;
+        //                     case 1:
+        //                         Debug.Log("Upgrade started");
+        //                         RushSyncRequest();
+        //                         break;
+        //                     case 2:
+        //                         Debug.Log("No resources");
+        //                         break;
+        //                     case 3:
+        //                         Debug.Log("Max level");
+        //                         break;
+        //                     case 5:
+        //                         Debug.Log("No builder");
+        //                         break;
+        //                     case 6:
+        //                         Debug.Log("Max limit reached");
+        //                         break;
+        //                 }
+        //                 break;
+        //             case RequestsID.INSTANTBUILD:
+        //                 response = packet.ReadInt();
+        //                 if (response == 2)
+        //                 {
+        //                     Debug.Log("No gems.");
+        //                 }
+        //                 else if (response == 1)
+        //                 {
+        //                     Debug.Log("Instant built.");
+        //                     RushSyncRequest();
+        //                 }
+        //                 else
+        //                 {
+        //                     Debug.Log("Nothing happend.");
+        //                 }
+        //                 break;
+        //             case RequestsID.TRAIN:
+        //                 response = packet.ReadInt();
+        //                 if (response == 4)
+        //                 {
+        //                     Debug.Log("Server unit not found.");
+        //                 }
+        //                 if (response == 3)
+        //                 {
+        //                     Debug.Log("No capacity.");
+        //                 }
+        //                 if (response == 2)
+        //                 {
+        //                     Debug.Log("No resources.");
+        //                 }
+        //                 else if (response == 1)
+        //                 {
+        //                     RushSyncRequest();
+        //                 }
+        //                 else
+        //                 {
+        //                     Debug.Log("Nothing happend.");
+        //                 }
+        //                 break;
+        //             case RequestsID.CANCELTRAIN:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     RushSyncRequest();
+        //                 }
+        //                 break;
+        //             case RequestsID.BATTLEFIND:
+        //                 long target = packet.ReadLong();
+        //                 Data.OpponentData opponent = null;
+        //                 if (target > 0)
+        //                 {
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     opponent = Data.Desrialize<Data.OpponentData>(Data.Decompress(bytes));
+        //                 }
+        //                 UI_Search.instanse.FindResponded(target, opponent);
+        //                 break;
+        //             case RequestsID.BATTLESTART:
+        //                 bool matched = packet.ReadBool();
+        //                 bool attack = packet.ReadBool();
+        //                 bool confirmed = matched && attack;
+        //                 List<Data.BattleStartBuildingData> buildings = null;
+        //                 int wt = 0;
+        //                 int lt = 0;
+        //                 if (confirmed)
+        //                 {
+        //                     wt = packet.ReadInt();
+        //                     lt = packet.ReadInt();
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     buildings = Data.Desrialize<List<Data.BattleStartBuildingData>>(Data.Decompress(bytes));
+        //                 }
+        //                 UI_Battle.instanse.StartBattleConfirm(confirmed, buildings, wt, lt);
+        //                 break;
+        //             case RequestsID.BATTLEEND:
+        //                 int stars = packet.ReadInt();
+        //                 int unitsDeployed = packet.ReadInt();
+        //                 int lootedGold = packet.ReadInt();
+        //                 int lootedElixir = packet.ReadInt();
+        //                 int lootedDark = packet.ReadInt();
+        //                 int trophies = packet.ReadInt();
+        //                 int frame = packet.ReadInt();
+        //                 UI_Battle.instanse.BattleEnded(stars, unitsDeployed, lootedGold, lootedElixir, lootedDark, trophies, frame);
+        //                 break;
+        //             case RequestsID.OPENCLAN:
+        //                 bool haveClan = packet.ReadBool();
+        //                 Data.Clan clan = null;
+        //                 List<Data.ClanMember> warMembers = null;
+        //                 if (haveClan)
+        //                 {
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     clan = Data.Desrialize<Data.Clan>(Data.Decompress(bytes));
+        //                     if (clan.war != null && clan.war.id > 0)
+        //                     {
+        //                         bytesLength = packet.ReadInt();
+        //                         bytes = packet.ReadBytes(bytesLength);
+        //                         warMembers = Data.Desrialize<List<Data.ClanMember>>(Data.Decompress(bytes));
+        //                     }
+        //                 }
+        //                 UI_Clan.instanse.ClanOpen(clan, warMembers);
+        //                 break;
+        //             case RequestsID.GETCLANS:
+        //                 bytesLength = packet.ReadInt();
+        //                 bytes = packet.ReadBytes(bytesLength);
+        //                 Data.ClansList clans = Data.Desrialize<Data.ClansList>(Data.Decompress(bytes));
+        //                 UI_Clan.instanse.ClansListOpen(clans);
+        //                 break;
+        //             case RequestsID.CREATECLAN:
+        //                 response = packet.ReadInt();
+        //                 UI_Clan.instanse.CreateResponse(response);
+        //                 break;
+        //             case RequestsID.JOINCLAN:
+        //                 response = packet.ReadInt();
+        //                 UI_Clan.instanse.JoinResponse(response);
+        //                 break;
+        //             case RequestsID.LEAVECLAN:
+        //                 response = packet.ReadInt();
+        //                 UI_Clan.instanse.LeaveResponse(response);
+        //                 break;
+        //             case RequestsID.EDITCLAN:
+        //                 response = packet.ReadInt();
+        //                 UI_Clan.instanse.EditResponse(response);
+        //                 break;
+        //             case RequestsID.OPENWAR:
+        //                 bytesLength = packet.ReadInt();
+        //                 bytes = packet.ReadBytes(bytesLength);
+        //                 Data.ClanWarData war = Data.Desrialize<Data.ClanWarData>(Data.Decompress(bytes));
+        //                 UI_Clan.instanse.WarOpen(war);
+        //                 break;
+        //             case RequestsID.STARTWAR:
+        //                 response = packet.ReadInt();
+        //                 UI_Clan.instanse.WarStartResponse(response);
+        //                 break;
+        //             case RequestsID.CANCELWAR:
+        //                 response = packet.ReadInt();
+        //                 UI_Clan.instanse.WarSearchCancelResponse(response);
+        //                 break;
+        //             case RequestsID.WARSTARTED:
+        //                 databaseID = packet.ReadInt();
+        //                 UI_Clan.instanse.WarStarted(databaseID);
+        //                 break;
+        //             case RequestsID.WARATTACK:
+        //                 databaseID = packet.ReadLong();
+        //                 Data.OpponentData warOpponent = null;
+        //                 if (databaseID > 0)
+        //                 {
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     warOpponent = Data.Desrialize<Data.OpponentData>(Data.Decompress(bytes));
+        //                 }
+        //                 UI_Clan.instanse.AttackResponse(databaseID, warOpponent);
+        //                 break;
+        //             case RequestsID.WARREPORTLIST:
+        //                 string warReportsData = packet.ReadString();
+        //                 List<Data.ClanWarData> warReports = Data.Desrialize<List<Data.ClanWarData>>(warReportsData);
+        //                 UI_Clan.instanse.OpenWarHistoryList(warReports);
+        //                 break;
+        //             case RequestsID.WARREPORT:
+        //                 bool hasReport = packet.ReadBool();
+        //                 Data.ClanWarData warReport = null;
+        //                 if (hasReport)
+        //                 {
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     warReport = Data.Desrialize<Data.ClanWarData>(Data.Decompress(bytes));
+        //                 }
+        //                 UI_Clan.instanse.WarOpen(warReport, true);
+        //                 break;
+        //             case RequestsID.JOINREQUESTS:
+        //                 bytesLength = packet.ReadInt();
+        //                 bytes = packet.ReadBytes(bytesLength);
+        //                 List<Data.JoinRequest> requests = Data.Desrialize<List<Data.JoinRequest>>(Data.Decompress(bytes));
+        //                 UI_Clan.instanse.OpenRequestsList(requests);
+        //                 break;
+        //             case RequestsID.JOINRESPONSE:
+        //                 response = packet.ReadInt();
+        //                 if (UI_ClanJoinRequest.active != null)
+        //                 {
+        //                     UI_ClanJoinRequest.active.Response(response);
+        //                     UI_ClanJoinRequest.active = null;
+        //                 }
+        //                 break;
+        //             case RequestsID.SENDCHAT:
+        //                 response = packet.ReadInt();
+        //                 UI_Chat.instanse.ChatSendResponse(response);
+        //                 break;
+        //             case RequestsID.GETCHATS:
+        //                 bytesLength = packet.ReadInt();
+        //                 bytes = packet.ReadBytes(bytesLength);
+        //                 List<Data.CharMessage> messages = Data.Desrialize<List<Data.CharMessage>>(Data.Decompress(bytes));
+        //                 int chatType = packet.ReadInt();
+        //                 UI_Chat.instanse.ChatSynced(messages, (Data.ChatType)chatType);
+        //                 break;
+        //             case RequestsID.EMAILCODE:
+        //                 response = packet.ReadInt();
+        //                 int expTime = packet.ReadInt();
+        //                 UI_Settings.instanse.EmailSendResponse(response, expTime);
+        //                 break;
+        //             case RequestsID.EMAILCONFIRM:
+        //                 response = packet.ReadInt();
+        //                 string confEmail = packet.ReadString();
+        //                 UI_Settings.instanse.EmailConfirmResponse(response, confEmail);
+        //                 break;
+        //             case RequestsID.KICKMEMBER:
+        //                 databaseID = packet.ReadLong();
+        //                 response = packet.ReadInt();
+        //                 if (response == -1)
+        //                 {
+        //                     string kicker = packet.ReadString();
+        //                     if (UI_Clan.instanse.isActive)
+        //                     {
+        //                         UI_Clan.instanse.Close();
+        //                     }
+        //                 }
+        //                 else
+        //                 {
+        //                     UI_Clan.instanse.kickResponse(databaseID, response);
+        //                 }
+        //                 break;
+        //             case RequestsID.BREW:
+        //                 response = packet.ReadInt();
+        //                 if (response == 3)
+        //                 {
+        //                     Debug.Log("Server spell not found.");
+        //                 }
+        //                 else if (response == 4)
+        //                 {
+        //                     Debug.Log("No capacity.");
+        //                 }
+        //                 else if (response == 2)
+        //                 {
+        //                     Debug.Log("No resources.");
+        //                 }
+        //                 else if (response == 1)
+        //                 {
+        //                     Debug.Log("Train started.");
+        //                     RushSyncRequest();
+        //                 }
+        //                 else
+        //                 {
+        //                     Debug.Log("Nothing happend.");
+        //                 }
+        //                 break;
+        //             case RequestsID.CANCELBREW:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     RushSyncRequest();
+        //                 }
+        //                 break;
+        //             case RequestsID.RESEARCH:
+        //                 response = packet.ReadInt();
+        //                 Data.Research research = null;
+        //                 if (response == 1)
+        //                 {
+        //                     bool found = false;
+
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     research = Data.Desrialize<Data.Research>(Data.Decompress(bytes));
+        //                     for (int i = 0; i < initializationData.research.Count; i++)
+        //                     {
+        //                         if (initializationData.research[i].id == research.id)
+        //                         {
+        //                             initializationData.research[i] = research;
+        //                             found = true;
+        //                             break;
+        //                         }
+        //                     }
+        //                     if (!found)
+        //                     {
+        //                         initializationData.research.Add(research);
+        //                     }
+        //                 }
+        //                 UI_Research.instanse.ResearchResponse(response, research);
+        //                 break;
+        //             case RequestsID.PROMOTEMEMBER:
+        //                 databaseID = packet.ReadLong();
+        //                 response = packet.ReadInt();
+        //                 if (response == -1)
+        //                 {
+        //                     string promoter = packet.ReadString();
+        //                     MessageBox.Open(1, 0.8f, false, MessageResponded, new string[] { promoter + " promoted your clan rank." }, new string[] { "OK" });
+        //                 }
+        //                 else
+        //                 {
+        //                     UI_Clan.instanse.PromoteResponse(databaseID, response);
+        //                 }
+        //                 break;
+        //             case RequestsID.DEMOTEMEMBER:
+        //                 databaseID = packet.ReadLong();
+        //                 response = packet.ReadInt();
+        //                 if (response == -1)
+        //                 {
+        //                     string demoter = packet.ReadString();
+        //                     MessageBox.Open(1, 0.8f, false, MessageResponded, new string[] { demoter + " demoted your clan rank." }, new string[] { "OK" });
+        //                 }
+        //                 else
+        //                 {
+        //                     UI_Clan.instanse.DemoteResponse(databaseID, response);
+        //                 }
+        //                 break;
+        //             case RequestsID.SCOUT:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     int scoutType = packet.ReadInt();
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     Data.Player scoutTarget = Data.Desrialize<Data.Player>(Data.Decompress(bytes));
+        //                     UI_Scout.instanse.Open(scoutTarget, (Data.BattleType)scoutType, null);
+        //                 }
+        //                 break;
+        //             case RequestsID.BUYGEM:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     int gemPack = packet.ReadInt();
+        //                     RushSyncRequest();
+        //                     UI_Store.instanse.GemPurchased();
+        //                 }
+        //                 break;
+        //             case RequestsID.BUYSHIELD:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     int shieldPack = packet.ReadInt();
+        //                     RushSyncRequest();
+        //                     UI_Store.instanse.ShieldPurchased(true, shieldPack);
+        //                 }
+        //                 else
+        //                 {
+        //                     UI_Store.instanse.ShieldPurchased(false, 0);
+        //                 }
+        //                 break;
+        //             case RequestsID.REPORTCHAT:
+        //                 response = packet.ReadInt();
+        //                 UI_Chat.instanse.ReportResult(response);
+        //                 break;
+        //             case RequestsID.PLAYERSRANK:
+        //                 bytesLength = packet.ReadInt();
+        //                 bytes = packet.ReadBytes(bytesLength);
+        //                 Data.PlayersRanking players = Data.Desrialize<Data.PlayersRanking>(Data.Decompress(bytes));
+        //                 UI_PlayersRanking.instanse.OpenResponse(players);
+        //                 break;
+        //             case RequestsID.BOOST:
+        //                 response = packet.ReadInt();
+        //                 RushSyncRequest();
+        //                 break;
+        //             case RequestsID.BUYRESOURCE:
+        //                 response = packet.ReadInt();
+        //                 int resPack = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     RushSyncRequest();
+        //                     UI_Store.instanse.ResourcePurchased(true, resPack);
+        //                 }
+        //                 else
+        //                 {
+        //                     UI_Store.instanse.ResourcePurchased(false, resPack);
+        //                 }
+        //                 break;
+        //             case RequestsID.BATTLEREPORTS:
+        //                 response = packet.ReadInt();
+        //                 List<Data.BattleReportItem> reports = new List<Data.BattleReportItem>();
+        //                 if (response == 1)
+        //                 {
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     reports = Data.Desrialize<List<Data.BattleReportItem>>(Data.Decompress(bytes));
+        //                     if (reports != null && reports.Count > 0)
+        //                     {
+        //                         UI_Main.instanse.ChangeUnreadBattleReports(0);
+        //                     }
+        //                 }
+        //                 UI_BattleReports.instanse.OpenResponse(reports);
+        //                 break;
+        //             case RequestsID.BATTLEREPORT:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     Data.BattleReport report = Data.Desrialize<Data.BattleReport>(Data.Decompress(bytes));
+        //                     bytesLength = packet.ReadInt();
+        //                     bytes = packet.ReadBytes(bytesLength);
+        //                     Data.Player reportP = Data.Desrialize<Data.Player>(Data.Decompress(bytes));
+        //                     UI_BattleReports.instanse.PlayReply(report, reportP);
+        //                 }
+        //                 break;
+        //             case RequestsID.RENAME:
+        //                 response = packet.ReadInt();
+        //                 if (response == 1)
+        //                 {
+        //                     RushSyncRequest();
+        //                 }
+        //                 break;
+        //         }
+        //     }
+        //     catch (System.Exception ex)
+        //     {
+        //         Debug.Log(ex.Message + "\n" + ex.StackTrace);
+        //     }
+        // }
+
+        private void ReceivedPaket(object sender, MessageEventArgs e)
         {
-            try
-            {
-                int id = packet.ReadInt();
-                long databaseID = 0;
-                int response = 0;
-                int bytesLength = 0;
-                byte[] bytes;
+            Debug.Log("Received message: " + e.Data);
+            // try
+            // {
+            //     int id = packet.ReadInt();
+            //     long databaseID = 0;
+            //     int response = 0;
+            //     int bytesLength = 0;
+            //     byte[] bytes;
 
-                switch ((RequestsID)id)
-                {
-                    case RequestsID.AUTH:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            _unreadBattleReports = packet.ReadInt();
-                            UI_Main.instanse.ChangeUnreadBattleReports(_unreadBattleReports);
-                            initializationData = Data.Desrialize<Data.InitializationData>(Data.Decompress(bytes));
-                            bool versionValid = false;
-                            bool isThereNewerVersion = true;
-                            for (int i = 0; i < initializationData.versions.Length; i++)
-                            {
-                                if (initializationData.versions[i] == Application.version)
-                                {
-                                    versionValid = true;
-                                    isThereNewerVersion = (i < (initializationData.versions.Length - 1));
-                                    break;
-                                }
-                            }
-                            if (!versionValid)
-                            {
-                                switch (Language.instanse.language)
-                                {
-                                    case Language.LanguageID.persian:
-                                        MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "این ورژن منقضی شده. لطفاً ورژن جدید بازی را دانلود کنید." }, new string[] { "خروج" });
-                                        break;
-                                    default:
-                                        MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "This version is expired. Please download the new version of the game." }, new string[] { "Exit" });
-                                        break;
-                                }
-                            }
-                            else
-                            {
-                                if (isThereNewerVersion)
-                                {
-                                    /*
-                                    switch (Language.instanse.language)
-                                    {
-                                        case Language.LanguageID.persian:
-                                            MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "ورژن جدیدی از بازی منتشر شده و پیشنهاد میشود بازی را بروزرسانی کنید." }, new string[] { "باشه" });
-                                            break;
-                                        default:
-                                            MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "There is a new version available. We recommend you to update the game." }, new string[] { "OK" });
-                                            break;
-                                    }
-                                    */
-                                }
-                                connected = true;
-                                updating = true;
-                                timer = 0;
-                                PlayerPrefs.SetString(password_key, initializationData.password);
-                                Debug.Log("Sending sync request");
-                                SendSyncRequest();
-                            }
-                        }
-                        else
-                        {
-                            Debug.Log("Unable to authenticate");
-                            switch (Language.instanse.language)
-                            {
-                                case Language.LanguageID.persian:
-                                    MessageBox.Open(0, 0.8f, false, MessageResponded, new string[] { "احراز حویت شما با خطا مواجه شد." }, new string[] { "باشه" });
-                                    break;
-                                default:
-                                    MessageBox.Open(0, 0.8f, false, MessageResponded, new string[] { "Failed to authenticate your account." }, new string[] { "OK" });
-                                    break;
-                            }
-                            Client.instance.Disconnect(false);
-                            // RestartGame();
-                        }
-                        break;
-                    case RequestsID.SYNC:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            int playerBytesLength = packet.ReadInt();
-                            byte[] playerBytes = packet.ReadBytes(playerBytesLength);
-                            string playerData = Data.Decompress(playerBytes);
-                            Data.Player playerSyncData = Data.Desrialize<Data.Player>(playerData);
-                            SyncData(playerSyncData);
-                            if (playerSyncData.banned)
-                            {
-                                switch (Language.instanse.language)
-                                {
-                                    case Language.LanguageID.persian:
-                                        MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "حساب شما مسدود شده است. لطفاً جهت کسب اطلاعات بیشتر با ما تماس بگیرید." }, new string[] { "خروج" });
-                                        break;
-                                    default:
-                                        MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "Your account has been banned. Please contact us for more information." }, new string[] { "Exit" });
-                                        break;
-                                }
-                                break;
-                            }
-                            lastUpdate = DateTime.Now;
-                        }
-                        updating = false;
-                        break;
-                    case RequestsID.BUILD:
-                        response = packet.ReadInt();
-                        switch (response)
-                        {
-                            case 0:
-                                Debug.Log("Unknown");
-                                break;
-                            case 1:
-                                RushSyncRequest();
-                                break;
-                            case 2:
-                                Debug.Log("No resources");
-                                break;
-                            case 3:
-                                Debug.Log("Max level");
-                                break;
-                            case 4:
-                                Debug.Log("Place taken");
-                                break;
-                            case 5:
-                                Debug.Log("No builder");
-                                break;
-                            case 6:
-                                Debug.Log("Max limit reached");
-                                break;
-                        }
-                        break;
-                    case RequestsID.REPLACE:
-                        int replaceResponse = packet.ReadInt();
-                        int replaceX = packet.ReadInt();
-                        int replaceY = packet.ReadInt();
-                        long replaceID = packet.ReadLong();
-                        for (int i = 0; i < UI_Main.instanse._grid.buildings.Count; i++)
-                        {
-                            if (UI_Main.instanse._grid.buildings[i].databaseID == replaceID)
-                            {
-                                switch (replaceResponse)
-                                {
-                                    case 0:
-                                        Debug.Log("No building");
-                                        break;
-                                    case 1:
-                                        UI_Main.instanse._grid.buildings[i].PlacedOnGrid(replaceX, replaceY, true);
-                                        if (UI_Main.instanse._grid.buildings[i] != Building.selectedInstanse)
-                                        {
+            //     switch ((RequestsID)id)
+            //     {
+            //         case RequestsID.AUTH:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 _unreadBattleReports = packet.ReadInt();
+            //                 UI_Main.instanse.ChangeUnreadBattleReports(_unreadBattleReports);
+            //                 initializationData = Data.Desrialize<Data.InitializationData>(Data.Decompress(bytes));
+            //                 bool versionValid = false;
+            //                 bool isThereNewerVersion = true;
+            //                 for (int i = 0; i < initializationData.versions.Length; i++)
+            //                 {
+            //                     if (initializationData.versions[i] == Application.version)
+            //                     {
+            //                         versionValid = true;
+            //                         isThereNewerVersion = (i < (initializationData.versions.Length - 1));
+            //                         break;
+            //                     }
+            //                 }
+            //                 if (!versionValid)
+            //                 {
+            //                     switch (Language.instanse.language)
+            //                     {
+            //                         case Language.LanguageID.persian:
+            //                             MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "این ورژن منقضی شده. لطفاً ورژن جدید بازی را دانلود کنید." }, new string[] { "خروج" });
+            //                             break;
+            //                         default:
+            //                             MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "This version is expired. Please download the new version of the game." }, new string[] { "Exit" });
+            //                             break;
+            //                     }
+            //                 }
+            //                 else
+            //                 {
+            //                     if (isThereNewerVersion)
+            //                     {
+            //                         /*
+            //                         switch (Language.instanse.language)
+            //                         {
+            //                             case Language.LanguageID.persian:
+            //                                 MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "ورژن جدیدی از بازی منتشر شده و پیشنهاد میشود بازی را بروزرسانی کنید." }, new string[] { "باشه" });
+            //                                 break;
+            //                             default:
+            //                                 MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "There is a new version available. We recommend you to update the game." }, new string[] { "OK" });
+            //                                 break;
+            //                         }
+            //                         */
+            //                     }
+            //                     connected = true;
+            //                     updating = true;
+            //                     timer = 0;
+            //                     PlayerPrefs.SetString(password_key, initializationData.password);
+            //                     Debug.Log("Sending sync request");
+            //                     SendSyncRequest();
+            //                 }
+            //             }
+            //             else
+            //             {
+            //                 Debug.Log("Unable to authenticate");
+            //                 switch (Language.instanse.language)
+            //                 {
+            //                     case Language.LanguageID.persian:
+            //                         MessageBox.Open(0, 0.8f, false, MessageResponded, new string[] { "احراز حویت شما با خطا مواجه شد." }, new string[] { "باشه" });
+            //                         break;
+            //                     default:
+            //                         MessageBox.Open(0, 0.8f, false, MessageResponded, new string[] { "Failed to authenticate your account." }, new string[] { "OK" });
+            //                         break;
+            //                 }
+            //                 Client.instance.Disconnect(false);
+            //                 // RestartGame();
+            //             }
+            //             break;
+            //         case RequestsID.SYNC:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 int playerBytesLength = packet.ReadInt();
+            //                 byte[] playerBytes = packet.ReadBytes(playerBytesLength);
+            //                 string playerData = Data.Decompress(playerBytes);
+            //                 Data.Player playerSyncData = Data.Desrialize<Data.Player>(playerData);
+            //                 SyncData(playerSyncData);
+            //                 if (playerSyncData.banned)
+            //                 {
+            //                     switch (Language.instanse.language)
+            //                     {
+            //                         case Language.LanguageID.persian:
+            //                             MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "حساب شما مسدود شده است. لطفاً جهت کسب اطلاعات بیشتر با ما تماس بگیرید." }, new string[] { "خروج" });
+            //                             break;
+            //                         default:
+            //                             MessageBox.Open(1, 0.9f, false, MessageResponded, new string[] { "Your account has been banned. Please contact us for more information." }, new string[] { "Exit" });
+            //                             break;
+            //                     }
+            //                     break;
+            //                 }
+            //                 lastUpdate = DateTime.Now;
+            //             }
+            //             updating = false;
+            //             break;
+            //         case RequestsID.BUILD:
+            //             response = packet.ReadInt();
+            //             switch (response)
+            //             {
+            //                 case 0:
+            //                     Debug.Log("Unknown");
+            //                     break;
+            //                 case 1:
+            //                     RushSyncRequest();
+            //                     break;
+            //                 case 2:
+            //                     Debug.Log("No resources");
+            //                     break;
+            //                 case 3:
+            //                     Debug.Log("Max level");
+            //                     break;
+            //                 case 4:
+            //                     Debug.Log("Place taken");
+            //                     break;
+            //                 case 5:
+            //                     Debug.Log("No builder");
+            //                     break;
+            //                 case 6:
+            //                     Debug.Log("Max limit reached");
+            //                     break;
+            //             }
+            //             break;
+            //         case RequestsID.REPLACE:
+            //             int replaceResponse = packet.ReadInt();
+            //             int replaceX = packet.ReadInt();
+            //             int replaceY = packet.ReadInt();
+            //             long replaceID = packet.ReadLong();
+            //             for (int i = 0; i < UI_Main.instanse._grid.buildings.Count; i++)
+            //             {
+            //                 if (UI_Main.instanse._grid.buildings[i].databaseID == replaceID)
+            //                 {
+            //                     switch (replaceResponse)
+            //                     {
+            //                         case 0:
+            //                             Debug.Log("No building");
+            //                             break;
+            //                         case 1:
+            //                             UI_Main.instanse._grid.buildings[i].PlacedOnGrid(replaceX, replaceY, true);
+            //                             if (UI_Main.instanse._grid.buildings[i] != Building.selectedInstanse)
+            //                             {
 
-                                        }
-                                        RushSyncRequest();
-                                        break;
-                                    case 2:
-                                        Debug.Log("Place taken");
-                                        break;
-                                }
-                                UI_Main.instanse._grid.buildings[i].waitingReplaceResponse = false;
-                                break;
-                            }
-                        }
-                        break;
-                    case RequestsID.COLLECT:
-                        long db = packet.ReadLong();
-                        int collected = packet.ReadInt();
-                        for (int i = 0; i < UI_Main.instanse._grid.buildings.Count; i++)
-                        {
-                            if (db == UI_Main.instanse._grid.buildings[i].data.databaseID)
-                            {
-                                UI_Main.instanse._grid.buildings[i].collecting = false;
-                                switch (UI_Main.instanse._grid.buildings[i].id)
-                                {
-                                    case Data.BuildingID.goldmine:
-                                        UI_Main.instanse._grid.buildings[i].data.goldStorage -= collected;
-                                        break;
-                                    case Data.BuildingID.elixirmine:
-                                        UI_Main.instanse._grid.buildings[i].data.elixirStorage -= collected;
-                                        break;
-                                    case Data.BuildingID.darkelixirmine:
-                                        UI_Main.instanse._grid.buildings[i].data.darkStorage -= collected;
-                                        break;
-                                }
-                                UI_Main.instanse._grid.buildings[i].AdjustUI();
-                                break;
-                            }
-                        }
-                        RushSyncRequest();
-                        break;
-                    case RequestsID.PREUPGRADE:
-                        /*
-                        databaseID = packet.ReadLong();
-                        string re = packet.ReadString();
-                        Data.ServerBuilding sr = Data.Desrialize<Data.ServerBuilding>(re);
-                        UI_BuildingUpgrade.instanse.Open(sr, databaseID);
-                        */
-                        break;
-                    case RequestsID.UPGRADE:
-                        response = packet.ReadInt();
-                        switch (response)
-                        {
-                            case 0:
-                                Debug.Log("Unknown");
-                                break;
-                            case 1:
-                                Debug.Log("Upgrade started");
-                                RushSyncRequest();
-                                break;
-                            case 2:
-                                Debug.Log("No resources");
-                                break;
-                            case 3:
-                                Debug.Log("Max level");
-                                break;
-                            case 5:
-                                Debug.Log("No builder");
-                                break;
-                            case 6:
-                                Debug.Log("Max limit reached");
-                                break;
-                        }
-                        break;
-                    case RequestsID.INSTANTBUILD:
-                        response = packet.ReadInt();
-                        if (response == 2)
-                        {
-                            Debug.Log("No gems.");
-                        }
-                        else if (response == 1)
-                        {
-                            Debug.Log("Instant built.");
-                            RushSyncRequest();
-                        }
-                        else
-                        {
-                            Debug.Log("Nothing happend.");
-                        }
-                        break;
-                    case RequestsID.TRAIN:
-                        response = packet.ReadInt();
-                        if (response == 4)
-                        {
-                            Debug.Log("Server unit not found.");
-                        }
-                        if (response == 3)
-                        {
-                            Debug.Log("No capacity.");
-                        }
-                        if (response == 2)
-                        {
-                            Debug.Log("No resources.");
-                        }
-                        else if (response == 1)
-                        {
-                            RushSyncRequest();
-                        }
-                        else
-                        {
-                            Debug.Log("Nothing happend.");
-                        }
-                        break;
-                    case RequestsID.CANCELTRAIN:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            RushSyncRequest();
-                        }
-                        break;
-                    case RequestsID.BATTLEFIND:
-                        long target = packet.ReadLong();
-                        Data.OpponentData opponent = null;
-                        if (target > 0)
-                        {
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            opponent = Data.Desrialize<Data.OpponentData>(Data.Decompress(bytes));
-                        }
-                        UI_Search.instanse.FindResponded(target, opponent);
-                        break;
-                    case RequestsID.BATTLESTART:
-                        bool matched = packet.ReadBool();
-                        bool attack = packet.ReadBool();
-                        bool confirmed = matched && attack;
-                        List<Data.BattleStartBuildingData> buildings = null;
-                        int wt = 0;
-                        int lt = 0;
-                        if (confirmed)
-                        {
-                            wt = packet.ReadInt();
-                            lt = packet.ReadInt();
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            buildings = Data.Desrialize<List<Data.BattleStartBuildingData>>(Data.Decompress(bytes));
-                        }
-                        UI_Battle.instanse.StartBattleConfirm(confirmed, buildings, wt, lt);
-                        break;
-                    case RequestsID.BATTLEEND:
-                        int stars = packet.ReadInt();
-                        int unitsDeployed = packet.ReadInt();
-                        int lootedGold = packet.ReadInt();
-                        int lootedElixir = packet.ReadInt();
-                        int lootedDark = packet.ReadInt();
-                        int trophies = packet.ReadInt();
-                        int frame = packet.ReadInt();
-                        UI_Battle.instanse.BattleEnded(stars, unitsDeployed, lootedGold, lootedElixir, lootedDark, trophies, frame);
-                        break;
-                    case RequestsID.OPENCLAN:
-                        bool haveClan = packet.ReadBool();
-                        Data.Clan clan = null;
-                        List<Data.ClanMember> warMembers = null;
-                        if (haveClan)
-                        {
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            clan = Data.Desrialize<Data.Clan>(Data.Decompress(bytes));
-                            if (clan.war != null && clan.war.id > 0)
-                            {
-                                bytesLength = packet.ReadInt();
-                                bytes = packet.ReadBytes(bytesLength);
-                                warMembers = Data.Desrialize<List<Data.ClanMember>>(Data.Decompress(bytes));
-                            }
-                        }
-                        UI_Clan.instanse.ClanOpen(clan, warMembers);
-                        break;
-                    case RequestsID.GETCLANS:
-                        bytesLength = packet.ReadInt();
-                        bytes = packet.ReadBytes(bytesLength);
-                        Data.ClansList clans = Data.Desrialize<Data.ClansList>(Data.Decompress(bytes));
-                        UI_Clan.instanse.ClansListOpen(clans);
-                        break;
-                    case RequestsID.CREATECLAN:
-                        response = packet.ReadInt();
-                        UI_Clan.instanse.CreateResponse(response);
-                        break;
-                    case RequestsID.JOINCLAN:
-                        response = packet.ReadInt();
-                        UI_Clan.instanse.JoinResponse(response);
-                        break;
-                    case RequestsID.LEAVECLAN:
-                        response = packet.ReadInt();
-                        UI_Clan.instanse.LeaveResponse(response);
-                        break;
-                    case RequestsID.EDITCLAN:
-                        response = packet.ReadInt();
-                        UI_Clan.instanse.EditResponse(response);
-                        break;
-                    case RequestsID.OPENWAR:
-                        bytesLength = packet.ReadInt();
-                        bytes = packet.ReadBytes(bytesLength);
-                        Data.ClanWarData war = Data.Desrialize<Data.ClanWarData>(Data.Decompress(bytes));
-                        UI_Clan.instanse.WarOpen(war);
-                        break;
-                    case RequestsID.STARTWAR:
-                        response = packet.ReadInt();
-                        UI_Clan.instanse.WarStartResponse(response);
-                        break;
-                    case RequestsID.CANCELWAR:
-                        response = packet.ReadInt();
-                        UI_Clan.instanse.WarSearchCancelResponse(response);
-                        break;
-                    case RequestsID.WARSTARTED:
-                        databaseID = packet.ReadInt();
-                        UI_Clan.instanse.WarStarted(databaseID);
-                        break;
-                    case RequestsID.WARATTACK:
-                        databaseID = packet.ReadLong();
-                        Data.OpponentData warOpponent = null;
-                        if (databaseID > 0)
-                        {
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            warOpponent = Data.Desrialize<Data.OpponentData>(Data.Decompress(bytes));
-                        }
-                        UI_Clan.instanse.AttackResponse(databaseID, warOpponent);
-                        break;
-                    case RequestsID.WARREPORTLIST:
-                        string warReportsData = packet.ReadString();
-                        List<Data.ClanWarData> warReports = Data.Desrialize<List<Data.ClanWarData>>(warReportsData);
-                        UI_Clan.instanse.OpenWarHistoryList(warReports);
-                        break;
-                    case RequestsID.WARREPORT:
-                        bool hasReport = packet.ReadBool();
-                        Data.ClanWarData warReport = null;
-                        if (hasReport)
-                        {
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            warReport = Data.Desrialize<Data.ClanWarData>(Data.Decompress(bytes));
-                        }
-                        UI_Clan.instanse.WarOpen(warReport, true);
-                        break;
-                    case RequestsID.JOINREQUESTS:
-                        bytesLength = packet.ReadInt();
-                        bytes = packet.ReadBytes(bytesLength);
-                        List<Data.JoinRequest> requests = Data.Desrialize<List<Data.JoinRequest>>(Data.Decompress(bytes));
-                        UI_Clan.instanse.OpenRequestsList(requests);
-                        break;
-                    case RequestsID.JOINRESPONSE:
-                        response = packet.ReadInt();
-                        if (UI_ClanJoinRequest.active != null)
-                        {
-                            UI_ClanJoinRequest.active.Response(response);
-                            UI_ClanJoinRequest.active = null;
-                        }
-                        break;
-                    case RequestsID.SENDCHAT:
-                        response = packet.ReadInt();
-                        UI_Chat.instanse.ChatSendResponse(response);
-                        break;
-                    case RequestsID.GETCHATS:
-                        bytesLength = packet.ReadInt();
-                        bytes = packet.ReadBytes(bytesLength);
-                        List<Data.CharMessage> messages = Data.Desrialize<List<Data.CharMessage>>(Data.Decompress(bytes));
-                        int chatType = packet.ReadInt();
-                        UI_Chat.instanse.ChatSynced(messages, (Data.ChatType)chatType);
-                        break;
-                    case RequestsID.EMAILCODE:
-                        response = packet.ReadInt();
-                        int expTime = packet.ReadInt();
-                        UI_Settings.instanse.EmailSendResponse(response, expTime);
-                        break;
-                    case RequestsID.EMAILCONFIRM:
-                        response = packet.ReadInt();
-                        string confEmail = packet.ReadString();
-                        UI_Settings.instanse.EmailConfirmResponse(response, confEmail);
-                        break;
-                    case RequestsID.KICKMEMBER:
-                        databaseID = packet.ReadLong();
-                        response = packet.ReadInt();
-                        if (response == -1)
-                        {
-                            string kicker = packet.ReadString();
-                            if (UI_Clan.instanse.isActive)
-                            {
-                                UI_Clan.instanse.Close();
-                            }
-                        }
-                        else
-                        {
-                            UI_Clan.instanse.kickResponse(databaseID, response);
-                        }
-                        break;
-                    case RequestsID.BREW:
-                        response = packet.ReadInt();
-                        if (response == 3)
-                        {
-                            Debug.Log("Server spell not found.");
-                        }
-                        else if (response == 4)
-                        {
-                            Debug.Log("No capacity.");
-                        }
-                        else if (response == 2)
-                        {
-                            Debug.Log("No resources.");
-                        }
-                        else if (response == 1)
-                        {
-                            Debug.Log("Train started.");
-                            RushSyncRequest();
-                        }
-                        else
-                        {
-                            Debug.Log("Nothing happend.");
-                        }
-                        break;
-                    case RequestsID.CANCELBREW:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            RushSyncRequest();
-                        }
-                        break;
-                    case RequestsID.RESEARCH:
-                        response = packet.ReadInt();
-                        Data.Research research = null;
-                        if (response == 1)
-                        {
-                            bool found = false;
+            //                             }
+            //                             RushSyncRequest();
+            //                             break;
+            //                         case 2:
+            //                             Debug.Log("Place taken");
+            //                             break;
+            //                     }
+            //                     UI_Main.instanse._grid.buildings[i].waitingReplaceResponse = false;
+            //                     break;
+            //                 }
+            //             }
+            //             break;
+            //         case RequestsID.COLLECT:
+            //             long db = packet.ReadLong();
+            //             int collected = packet.ReadInt();
+            //             for (int i = 0; i < UI_Main.instanse._grid.buildings.Count; i++)
+            //             {
+            //                 if (db == UI_Main.instanse._grid.buildings[i].data.databaseID)
+            //                 {
+            //                     UI_Main.instanse._grid.buildings[i].collecting = false;
+            //                     switch (UI_Main.instanse._grid.buildings[i].id)
+            //                     {
+            //                         case Data.BuildingID.goldmine:
+            //                             UI_Main.instanse._grid.buildings[i].data.goldStorage -= collected;
+            //                             break;
+            //                         case Data.BuildingID.elixirmine:
+            //                             UI_Main.instanse._grid.buildings[i].data.elixirStorage -= collected;
+            //                             break;
+            //                         case Data.BuildingID.darkelixirmine:
+            //                             UI_Main.instanse._grid.buildings[i].data.darkStorage -= collected;
+            //                             break;
+            //                     }
+            //                     UI_Main.instanse._grid.buildings[i].AdjustUI();
+            //                     break;
+            //                 }
+            //             }
+            //             RushSyncRequest();
+            //             break;
+            //         case RequestsID.PREUPGRADE:
+            //             /*
+            //             databaseID = packet.ReadLong();
+            //             string re = packet.ReadString();
+            //             Data.ServerBuilding sr = Data.Desrialize<Data.ServerBuilding>(re);
+            //             UI_BuildingUpgrade.instanse.Open(sr, databaseID);
+            //             */
+            //             break;
+            //         case RequestsID.UPGRADE:
+            //             response = packet.ReadInt();
+            //             switch (response)
+            //             {
+            //                 case 0:
+            //                     Debug.Log("Unknown");
+            //                     break;
+            //                 case 1:
+            //                     Debug.Log("Upgrade started");
+            //                     RushSyncRequest();
+            //                     break;
+            //                 case 2:
+            //                     Debug.Log("No resources");
+            //                     break;
+            //                 case 3:
+            //                     Debug.Log("Max level");
+            //                     break;
+            //                 case 5:
+            //                     Debug.Log("No builder");
+            //                     break;
+            //                 case 6:
+            //                     Debug.Log("Max limit reached");
+            //                     break;
+            //             }
+            //             break;
+            //         case RequestsID.INSTANTBUILD:
+            //             response = packet.ReadInt();
+            //             if (response == 2)
+            //             {
+            //                 Debug.Log("No gems.");
+            //             }
+            //             else if (response == 1)
+            //             {
+            //                 Debug.Log("Instant built.");
+            //                 RushSyncRequest();
+            //             }
+            //             else
+            //             {
+            //                 Debug.Log("Nothing happend.");
+            //             }
+            //             break;
+            //         case RequestsID.TRAIN:
+            //             response = packet.ReadInt();
+            //             if (response == 4)
+            //             {
+            //                 Debug.Log("Server unit not found.");
+            //             }
+            //             if (response == 3)
+            //             {
+            //                 Debug.Log("No capacity.");
+            //             }
+            //             if (response == 2)
+            //             {
+            //                 Debug.Log("No resources.");
+            //             }
+            //             else if (response == 1)
+            //             {
+            //                 RushSyncRequest();
+            //             }
+            //             else
+            //             {
+            //                 Debug.Log("Nothing happend.");
+            //             }
+            //             break;
+            //         case RequestsID.CANCELTRAIN:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 RushSyncRequest();
+            //             }
+            //             break;
+            //         case RequestsID.BATTLEFIND:
+            //             long target = packet.ReadLong();
+            //             Data.OpponentData opponent = null;
+            //             if (target > 0)
+            //             {
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 opponent = Data.Desrialize<Data.OpponentData>(Data.Decompress(bytes));
+            //             }
+            //             UI_Search.instanse.FindResponded(target, opponent);
+            //             break;
+            //         case RequestsID.BATTLESTART:
+            //             bool matched = packet.ReadBool();
+            //             bool attack = packet.ReadBool();
+            //             bool confirmed = matched && attack;
+            //             List<Data.BattleStartBuildingData> buildings = null;
+            //             int wt = 0;
+            //             int lt = 0;
+            //             if (confirmed)
+            //             {
+            //                 wt = packet.ReadInt();
+            //                 lt = packet.ReadInt();
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 buildings = Data.Desrialize<List<Data.BattleStartBuildingData>>(Data.Decompress(bytes));
+            //             }
+            //             UI_Battle.instanse.StartBattleConfirm(confirmed, buildings, wt, lt);
+            //             break;
+            //         case RequestsID.BATTLEEND:
+            //             int stars = packet.ReadInt();
+            //             int unitsDeployed = packet.ReadInt();
+            //             int lootedGold = packet.ReadInt();
+            //             int lootedElixir = packet.ReadInt();
+            //             int lootedDark = packet.ReadInt();
+            //             int trophies = packet.ReadInt();
+            //             int frame = packet.ReadInt();
+            //             UI_Battle.instanse.BattleEnded(stars, unitsDeployed, lootedGold, lootedElixir, lootedDark, trophies, frame);
+            //             break;
+            //         case RequestsID.OPENCLAN:
+            //             bool haveClan = packet.ReadBool();
+            //             Data.Clan clan = null;
+            //             List<Data.ClanMember> warMembers = null;
+            //             if (haveClan)
+            //             {
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 clan = Data.Desrialize<Data.Clan>(Data.Decompress(bytes));
+            //                 if (clan.war != null && clan.war.id > 0)
+            //                 {
+            //                     bytesLength = packet.ReadInt();
+            //                     bytes = packet.ReadBytes(bytesLength);
+            //                     warMembers = Data.Desrialize<List<Data.ClanMember>>(Data.Decompress(bytes));
+            //                 }
+            //             }
+            //             UI_Clan.instanse.ClanOpen(clan, warMembers);
+            //             break;
+            //         case RequestsID.GETCLANS:
+            //             bytesLength = packet.ReadInt();
+            //             bytes = packet.ReadBytes(bytesLength);
+            //             Data.ClansList clans = Data.Desrialize<Data.ClansList>(Data.Decompress(bytes));
+            //             UI_Clan.instanse.ClansListOpen(clans);
+            //             break;
+            //         case RequestsID.CREATECLAN:
+            //             response = packet.ReadInt();
+            //             UI_Clan.instanse.CreateResponse(response);
+            //             break;
+            //         case RequestsID.JOINCLAN:
+            //             response = packet.ReadInt();
+            //             UI_Clan.instanse.JoinResponse(response);
+            //             break;
+            //         case RequestsID.LEAVECLAN:
+            //             response = packet.ReadInt();
+            //             UI_Clan.instanse.LeaveResponse(response);
+            //             break;
+            //         case RequestsID.EDITCLAN:
+            //             response = packet.ReadInt();
+            //             UI_Clan.instanse.EditResponse(response);
+            //             break;
+            //         case RequestsID.OPENWAR:
+            //             bytesLength = packet.ReadInt();
+            //             bytes = packet.ReadBytes(bytesLength);
+            //             Data.ClanWarData war = Data.Desrialize<Data.ClanWarData>(Data.Decompress(bytes));
+            //             UI_Clan.instanse.WarOpen(war);
+            //             break;
+            //         case RequestsID.STARTWAR:
+            //             response = packet.ReadInt();
+            //             UI_Clan.instanse.WarStartResponse(response);
+            //             break;
+            //         case RequestsID.CANCELWAR:
+            //             response = packet.ReadInt();
+            //             UI_Clan.instanse.WarSearchCancelResponse(response);
+            //             break;
+            //         case RequestsID.WARSTARTED:
+            //             databaseID = packet.ReadInt();
+            //             UI_Clan.instanse.WarStarted(databaseID);
+            //             break;
+            //         case RequestsID.WARATTACK:
+            //             databaseID = packet.ReadLong();
+            //             Data.OpponentData warOpponent = null;
+            //             if (databaseID > 0)
+            //             {
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 warOpponent = Data.Desrialize<Data.OpponentData>(Data.Decompress(bytes));
+            //             }
+            //             UI_Clan.instanse.AttackResponse(databaseID, warOpponent);
+            //             break;
+            //         case RequestsID.WARREPORTLIST:
+            //             string warReportsData = packet.ReadString();
+            //             List<Data.ClanWarData> warReports = Data.Desrialize<List<Data.ClanWarData>>(warReportsData);
+            //             UI_Clan.instanse.OpenWarHistoryList(warReports);
+            //             break;
+            //         case RequestsID.WARREPORT:
+            //             bool hasReport = packet.ReadBool();
+            //             Data.ClanWarData warReport = null;
+            //             if (hasReport)
+            //             {
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 warReport = Data.Desrialize<Data.ClanWarData>(Data.Decompress(bytes));
+            //             }
+            //             UI_Clan.instanse.WarOpen(warReport, true);
+            //             break;
+            //         case RequestsID.JOINREQUESTS:
+            //             bytesLength = packet.ReadInt();
+            //             bytes = packet.ReadBytes(bytesLength);
+            //             List<Data.JoinRequest> requests = Data.Desrialize<List<Data.JoinRequest>>(Data.Decompress(bytes));
+            //             UI_Clan.instanse.OpenRequestsList(requests);
+            //             break;
+            //         case RequestsID.JOINRESPONSE:
+            //             response = packet.ReadInt();
+            //             if (UI_ClanJoinRequest.active != null)
+            //             {
+            //                 UI_ClanJoinRequest.active.Response(response);
+            //                 UI_ClanJoinRequest.active = null;
+            //             }
+            //             break;
+            //         case RequestsID.SENDCHAT:
+            //             response = packet.ReadInt();
+            //             UI_Chat.instanse.ChatSendResponse(response);
+            //             break;
+            //         case RequestsID.GETCHATS:
+            //             bytesLength = packet.ReadInt();
+            //             bytes = packet.ReadBytes(bytesLength);
+            //             List<Data.CharMessage> messages = Data.Desrialize<List<Data.CharMessage>>(Data.Decompress(bytes));
+            //             int chatType = packet.ReadInt();
+            //             UI_Chat.instanse.ChatSynced(messages, (Data.ChatType)chatType);
+            //             break;
+            //         case RequestsID.EMAILCODE:
+            //             response = packet.ReadInt();
+            //             int expTime = packet.ReadInt();
+            //             UI_Settings.instanse.EmailSendResponse(response, expTime);
+            //             break;
+            //         case RequestsID.EMAILCONFIRM:
+            //             response = packet.ReadInt();
+            //             string confEmail = packet.ReadString();
+            //             UI_Settings.instanse.EmailConfirmResponse(response, confEmail);
+            //             break;
+            //         case RequestsID.KICKMEMBER:
+            //             databaseID = packet.ReadLong();
+            //             response = packet.ReadInt();
+            //             if (response == -1)
+            //             {
+            //                 string kicker = packet.ReadString();
+            //                 if (UI_Clan.instanse.isActive)
+            //                 {
+            //                     UI_Clan.instanse.Close();
+            //                 }
+            //             }
+            //             else
+            //             {
+            //                 UI_Clan.instanse.kickResponse(databaseID, response);
+            //             }
+            //             break;
+            //         case RequestsID.BREW:
+            //             response = packet.ReadInt();
+            //             if (response == 3)
+            //             {
+            //                 Debug.Log("Server spell not found.");
+            //             }
+            //             else if (response == 4)
+            //             {
+            //                 Debug.Log("No capacity.");
+            //             }
+            //             else if (response == 2)
+            //             {
+            //                 Debug.Log("No resources.");
+            //             }
+            //             else if (response == 1)
+            //             {
+            //                 Debug.Log("Train started.");
+            //                 RushSyncRequest();
+            //             }
+            //             else
+            //             {
+            //                 Debug.Log("Nothing happend.");
+            //             }
+            //             break;
+            //         case RequestsID.CANCELBREW:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 RushSyncRequest();
+            //             }
+            //             break;
+            //         case RequestsID.RESEARCH:
+            //             response = packet.ReadInt();
+            //             Data.Research research = null;
+            //             if (response == 1)
+            //             {
+            //                 bool found = false;
 
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            research = Data.Desrialize<Data.Research>(Data.Decompress(bytes));
-                            for (int i = 0; i < initializationData.research.Count; i++)
-                            {
-                                if (initializationData.research[i].id == research.id)
-                                {
-                                    initializationData.research[i] = research;
-                                    found = true;
-                                    break;
-                                }
-                            }
-                            if (!found)
-                            {
-                                initializationData.research.Add(research);
-                            }
-                        }
-                        UI_Research.instanse.ResearchResponse(response, research);
-                        break;
-                    case RequestsID.PROMOTEMEMBER:
-                        databaseID = packet.ReadLong();
-                        response = packet.ReadInt();
-                        if (response == -1)
-                        {
-                            string promoter = packet.ReadString();
-                            MessageBox.Open(1, 0.8f, false, MessageResponded, new string[] { promoter + " promoted your clan rank." }, new string[] { "OK" });
-                        }
-                        else
-                        {
-                            UI_Clan.instanse.PromoteResponse(databaseID, response);
-                        }
-                        break;
-                    case RequestsID.DEMOTEMEMBER:
-                        databaseID = packet.ReadLong();
-                        response = packet.ReadInt();
-                        if (response == -1)
-                        {
-                            string demoter = packet.ReadString();
-                            MessageBox.Open(1, 0.8f, false, MessageResponded, new string[] { demoter + " demoted your clan rank." }, new string[] { "OK" });
-                        }
-                        else
-                        {
-                            UI_Clan.instanse.DemoteResponse(databaseID, response);
-                        }
-                        break;
-                    case RequestsID.SCOUT:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            int scoutType = packet.ReadInt();
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            Data.Player scoutTarget = Data.Desrialize<Data.Player>(Data.Decompress(bytes));
-                            UI_Scout.instanse.Open(scoutTarget, (Data.BattleType)scoutType, null);
-                        }
-                        break;
-                    case RequestsID.BUYGEM:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            int gemPack = packet.ReadInt();
-                            RushSyncRequest();
-                            UI_Store.instanse.GemPurchased();
-                        }
-                        break;
-                    case RequestsID.BUYSHIELD:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            int shieldPack = packet.ReadInt();
-                            RushSyncRequest();
-                            UI_Store.instanse.ShieldPurchased(true, shieldPack);
-                        }
-                        else
-                        {
-                            UI_Store.instanse.ShieldPurchased(false, 0);
-                        }
-                        break;
-                    case RequestsID.REPORTCHAT:
-                        response = packet.ReadInt();
-                        UI_Chat.instanse.ReportResult(response);
-                        break;
-                    case RequestsID.PLAYERSRANK:
-                        bytesLength = packet.ReadInt();
-                        bytes = packet.ReadBytes(bytesLength);
-                        Data.PlayersRanking players = Data.Desrialize<Data.PlayersRanking>(Data.Decompress(bytes));
-                        UI_PlayersRanking.instanse.OpenResponse(players);
-                        break;
-                    case RequestsID.BOOST:
-                        response = packet.ReadInt();
-                        RushSyncRequest();
-                        break;
-                    case RequestsID.BUYRESOURCE:
-                        response = packet.ReadInt();
-                        int resPack = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            RushSyncRequest();
-                            UI_Store.instanse.ResourcePurchased(true, resPack);
-                        }
-                        else
-                        {
-                            UI_Store.instanse.ResourcePurchased(false, resPack);
-                        }
-                        break;
-                    case RequestsID.BATTLEREPORTS:
-                        response = packet.ReadInt();
-                        List<Data.BattleReportItem> reports = new List<Data.BattleReportItem>();
-                        if (response == 1)
-                        {
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            reports = Data.Desrialize<List<Data.BattleReportItem>>(Data.Decompress(bytes));
-                            if (reports != null && reports.Count > 0)
-                            {
-                                UI_Main.instanse.ChangeUnreadBattleReports(0);
-                            }
-                        }
-                        UI_BattleReports.instanse.OpenResponse(reports);
-                        break;
-                    case RequestsID.BATTLEREPORT:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            Data.BattleReport report = Data.Desrialize<Data.BattleReport>(Data.Decompress(bytes));
-                            bytesLength = packet.ReadInt();
-                            bytes = packet.ReadBytes(bytesLength);
-                            Data.Player reportP = Data.Desrialize<Data.Player>(Data.Decompress(bytes));
-                            UI_BattleReports.instanse.PlayReply(report, reportP);
-                        }
-                        break;
-                    case RequestsID.RENAME:
-                        response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            RushSyncRequest();
-                        }
-                        break;
-                }
-            }
-            catch (System.Exception ex)
-            {
-                Debug.Log(ex.Message + "\n" + ex.StackTrace);
-            }
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 research = Data.Desrialize<Data.Research>(Data.Decompress(bytes));
+            //                 for (int i = 0; i < initializationData.research.Count; i++)
+            //                 {
+            //                     if (initializationData.research[i].id == research.id)
+            //                     {
+            //                         initializationData.research[i] = research;
+            //                         found = true;
+            //                         break;
+            //                     }
+            //                 }
+            //                 if (!found)
+            //                 {
+            //                     initializationData.research.Add(research);
+            //                 }
+            //             }
+            //             UI_Research.instanse.ResearchResponse(response, research);
+            //             break;
+            //         case RequestsID.PROMOTEMEMBER:
+            //             databaseID = packet.ReadLong();
+            //             response = packet.ReadInt();
+            //             if (response == -1)
+            //             {
+            //                 string promoter = packet.ReadString();
+            //                 MessageBox.Open(1, 0.8f, false, MessageResponded, new string[] { promoter + " promoted your clan rank." }, new string[] { "OK" });
+            //             }
+            //             else
+            //             {
+            //                 UI_Clan.instanse.PromoteResponse(databaseID, response);
+            //             }
+            //             break;
+            //         case RequestsID.DEMOTEMEMBER:
+            //             databaseID = packet.ReadLong();
+            //             response = packet.ReadInt();
+            //             if (response == -1)
+            //             {
+            //                 string demoter = packet.ReadString();
+            //                 MessageBox.Open(1, 0.8f, false, MessageResponded, new string[] { demoter + " demoted your clan rank." }, new string[] { "OK" });
+            //             }
+            //             else
+            //             {
+            //                 UI_Clan.instanse.DemoteResponse(databaseID, response);
+            //             }
+            //             break;
+            //         case RequestsID.SCOUT:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 int scoutType = packet.ReadInt();
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 Data.Player scoutTarget = Data.Desrialize<Data.Player>(Data.Decompress(bytes));
+            //                 UI_Scout.instanse.Open(scoutTarget, (Data.BattleType)scoutType, null);
+            //             }
+            //             break;
+            //         case RequestsID.BUYGEM:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 int gemPack = packet.ReadInt();
+            //                 RushSyncRequest();
+            //                 UI_Store.instanse.GemPurchased();
+            //             }
+            //             break;
+            //         case RequestsID.BUYSHIELD:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 int shieldPack = packet.ReadInt();
+            //                 RushSyncRequest();
+            //                 UI_Store.instanse.ShieldPurchased(true, shieldPack);
+            //             }
+            //             else
+            //             {
+            //                 UI_Store.instanse.ShieldPurchased(false, 0);
+            //             }
+            //             break;
+            //         case RequestsID.REPORTCHAT:
+            //             response = packet.ReadInt();
+            //             UI_Chat.instanse.ReportResult(response);
+            //             break;
+            //         case RequestsID.PLAYERSRANK:
+            //             bytesLength = packet.ReadInt();
+            //             bytes = packet.ReadBytes(bytesLength);
+            //             Data.PlayersRanking players = Data.Desrialize<Data.PlayersRanking>(Data.Decompress(bytes));
+            //             UI_PlayersRanking.instanse.OpenResponse(players);
+            //             break;
+            //         case RequestsID.BOOST:
+            //             response = packet.ReadInt();
+            //             RushSyncRequest();
+            //             break;
+            //         case RequestsID.BUYRESOURCE:
+            //             response = packet.ReadInt();
+            //             int resPack = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 RushSyncRequest();
+            //                 UI_Store.instanse.ResourcePurchased(true, resPack);
+            //             }
+            //             else
+            //             {
+            //                 UI_Store.instanse.ResourcePurchased(false, resPack);
+            //             }
+            //             break;
+            //         case RequestsID.BATTLEREPORTS:
+            //             response = packet.ReadInt();
+            //             List<Data.BattleReportItem> reports = new List<Data.BattleReportItem>();
+            //             if (response == 1)
+            //             {
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 reports = Data.Desrialize<List<Data.BattleReportItem>>(Data.Decompress(bytes));
+            //                 if (reports != null && reports.Count > 0)
+            //                 {
+            //                     UI_Main.instanse.ChangeUnreadBattleReports(0);
+            //                 }
+            //             }
+            //             UI_BattleReports.instanse.OpenResponse(reports);
+            //             break;
+            //         case RequestsID.BATTLEREPORT:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 Data.BattleReport report = Data.Desrialize<Data.BattleReport>(Data.Decompress(bytes));
+            //                 bytesLength = packet.ReadInt();
+            //                 bytes = packet.ReadBytes(bytesLength);
+            //                 Data.Player reportP = Data.Desrialize<Data.Player>(Data.Decompress(bytes));
+            //                 UI_BattleReports.instanse.PlayReply(report, reportP);
+            //             }
+            //             break;
+            //         case RequestsID.RENAME:
+            //             response = packet.ReadInt();
+            //             if (response == 1)
+            //             {
+            //                 RushSyncRequest();
+            //             }
+            //             break;
+            //     }
+            // }
+            // catch (System.Exception ex)
+            // {
+            //     Debug.Log(ex.Message + "\n" + ex.StackTrace);
+            // }
         }
 
         public void SendSyncRequest()
@@ -771,7 +1413,8 @@
             lastUpdateSent = DateTime.Now;
             Packet p = new Packet((int)RequestsID.SYNC);
             // p.Write(SystemInfo.deviceUniqueIdentifier);
-            Sender.TCP_Send(p);
+            webSocketClient.SendData(p);
+            // Sender.TCP_Send(p);
         }
 
         public void SyncData(Data.Player player)
@@ -927,7 +1570,7 @@
                         break;
                 }
             }
-            RealtimeNetworking.OnDisconnectedFromServer -= DisconnectedFromServer;
+            // RealtimeNetworking.OnDisconnectedFromServer -= DisconnectedFromServer;
         }
 
         private void MessageResponded(int layoutIndex, int buttonIndex)
@@ -963,10 +1606,11 @@
             Time.timeScale = 1f;
             if (_instance != null)
             {
-                RealtimeNetworking.OnDisconnectedFromServer -= _instance.DisconnectedFromServer;
-                RealtimeNetworking.OnPacketReceived -= _instance.ReceivedPaket;
+                // RealtimeNetworking.OnDisconnectedFromServer -= _instance.DisconnectedFromServer;
+                // RealtimeNetworking.OnPacketReceived -= _instance.ReceivedPaket;
+                WebSocketClient.OnMessageReceived -= _instance.ReceivedPaket;
             }
-            Destroy(RealtimeNetworking.instance.gameObject);
+            // Destroy(RealtimeNetworking.instance.gameObject);
             SceneManager.LoadScene(0);
         }
 

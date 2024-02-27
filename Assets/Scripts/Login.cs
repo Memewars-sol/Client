@@ -12,8 +12,10 @@ namespace Summoners.Memewars
     using WebUtils;
     using UnityEngine.SceneManagement;
     using System.Collections;
-    using Summoners.RealtimeNetworking.Client;
     using Solana.Unity.Wallet.Bip39;
+    using WebSocketSharp;
+    using Summoners.RealtimeNetworking.WsClient;
+    using Summoners.RealtimeNetworking.Client;
 
     public class LoginScreen : MonoBehaviour
     {
@@ -33,7 +35,7 @@ namespace Summoners.Memewars
         [SerializeField]
         private TextMeshProUGUI passwordText;
         [SerializeField]
-        private Button loginBtn; 
+        private Button loginBtn;
         [SerializeField]
         private Button loginBtnGoogle;
         [SerializeField]
@@ -53,6 +55,8 @@ namespace Summoners.Memewars
         private float minLoadTime = 2f;
         private float realLoadPortion = 0.8f;
 
+        private static WebSocketClient webSocketClient;
+
         private void OnEnable()
         {
         }
@@ -69,7 +73,7 @@ namespace Summoners.Memewars
             loginBtnWalletAdapter.onClick.AddListener(LoginCheckerWalletAdapter);
             // loginBtnSms.onClick.AddListener(LoginCheckerSms);
             // loginBtnXNFT.onClick.AddListener(LoginCheckerWalletAdapter);
-            
+
             // loginBtnXNFT.gameObject.SetActive(false);
 
             if (Application.platform is RuntimePlatform.LinuxEditor or RuntimePlatform.WindowsEditor or RuntimePlatform.OSXEditor)
@@ -78,11 +82,13 @@ namespace Summoners.Memewars
                 loginBtnWalletAdapter.onClick.AddListener(() =>
                     Debug.LogWarning("Wallet adapter login is not yet supported in the editor"));
             }
-            
-            RealtimeNetworking.OnPacketReceived += ReceivedPaket;
-            RealtimeNetworking.OnConnectingToServerResult += ConnectResult;
-            RealtimeNetworking.Connect();
 
+            // RealtimeNetworking.OnPacketReceived += ReceivedPaket;
+            // RealtimeNetworking.OnConnectingToServerResult += ConnectResult;
+            // RealtimeNetworking.Connect();
+
+            webSocketClient = WebSocketClient.GetInstance();
+            WebSocketClient.OnMessageReceived += ReceivedPaket;
         }
         private async void LoginTest()
         {
@@ -100,7 +106,7 @@ namespace Summoners.Memewars
             var account = await Web3.Instance.LoginWalletAdapter();
             CheckAccount(account);
         }
-        
+
         private async void LoginCheckerWeb3Auth(Provider provider)
         {
             var account = await Web3.Instance.LoginWeb3Auth(provider);
@@ -146,11 +152,13 @@ namespace Summoners.Memewars
             if (request.result == UnityWebRequest.Result.Success)
             {
                 StartCoroutine(LoadGame());
-            } */ 
+            } */
 
             // send for authentication
             var packet = new Packet((int)Player.RequestsID.PREAUTH);
-            Sender.TCP_Send(packet);
+            webSocketClient.SendData(packet);
+
+            // Sender.TCP_Send(packet);
         }
 
         /* public void OnClose()
@@ -174,27 +182,56 @@ namespace Summoners.Memewars
             }
         }
 
-        private void ReceivedPaket(Packet packet)
+        // private void ReceivedPaket(Packet packet)
+        // {
+        //     try
+        //     {
+        //         int id = packet.ReadInt();
+        //         switch ((Player.RequestsID)id) {
+        //             case Player.RequestsID.PREAUTH:
+        //                 bool IsVerified = packet.ReadInt() == 1;
+
+        //                 // load game if verified in preauth
+        //                 if(IsVerified)
+        //                     StartCoroutine(LoadGame());
+        //                 else
+        //                     Debug.Log("Signature mismatch");
+        //                 break;
+
+        //             default:
+        //                 Debug.Log((Player.RequestsID)id);
+        //                 break;
+
+        //         }
+        //     }
+        //     catch (Exception exception)
+        //     {
+        //         Debug.Log(exception.ToString());
+        //     }
+        // }
+
+        private void ReceivedPaket(object sender, MessageEventArgs e)
         {
             try
             {
-                int id = packet.ReadInt();
-                switch ((Player.RequestsID)id) {
-                    case Player.RequestsID.PREAUTH:
-                        bool IsVerified = packet.ReadInt() == 1;
+                Debug.Log("Received message: " + e.Data);
+                // int id = packet.ReadInt();
+                // switch ((Player.RequestsID)id) {
+                //     case Player.RequestsID.PREAUTH:
+                //         bool IsVerified = packet.ReadInt() == 1;
 
-                        // load game if verified in preauth
-                        if(IsVerified) 
-                            StartCoroutine(LoadGame());
-                        else
-                            Debug.Log("Signature mismatch");
-                        break;
+                //         // load game if verified in preauth
+                //         if(IsVerified)
+                //             StartCoroutine(LoadGame());
+                //         else
+                //             Debug.Log("Signature mismatch");
+                //         break;
 
-                    default:
-                        Debug.Log((Player.RequestsID)id);
-                        break;
-                    
-                }
+                //     default:
+                //         Debug.Log((Player.RequestsID)id);
+                //         break;
+
+                // }
             }
             catch (Exception exception)
             {
@@ -204,10 +241,11 @@ namespace Summoners.Memewars
 
         private void OnDestroy()
         {
-            RealtimeNetworking.OnPacketReceived -= ReceivedPaket;
+            // RealtimeNetworking.OnPacketReceived -= ReceivedPaket;
+            WebSocketClient.OnMessageReceived -= ReceivedPaket;
         }
 
-        
+
         private IEnumerator LoadGame()
         {
             _loadingPanel.gameObject.SetActive(true);
