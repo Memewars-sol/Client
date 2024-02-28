@@ -179,7 +179,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_0
+      name: Chat1
       rect:
         serializedVersion: 2
         x: 50
@@ -187,7 +187,7 @@ TextureImporter:
         width: 90
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_1
+      name: Chat3
       rect:
         serializedVersion: 2
         x: 178
@@ -208,7 +208,7 @@ TextureImporter:
         width: 145
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,7 +221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_2
+      name: Chat4
       rect:
         serializedVersion: 2
         x: 356
@@ -229,7 +229,7 @@ TextureImporter:
         width: 96
         height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,7 +242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_3
+      name: Chat2
       rect:
         serializedVersion: 2
         x: 50
@@ -250,7 +250,7 @@ TextureImporter:
         width: 90
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,7 +263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_4
+      name: Chat5
       rect:
         serializedVersion: 2
         x: 356
@@ -271,7 +271,7 @@ TextureImporter:
         width: 96
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,7 +284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_5
+      name: SmallChat1
       rect:
         serializedVersion: 2
         x: 51
@@ -292,7 +292,7 @@ TextureImporter:
         width: 54
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -305,7 +305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_6
+      name: SmallChat2
       rect:
         serializedVersion: 2
         x: 116
@@ -313,7 +313,7 @@ TextureImporter:
         width: 54
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,7 +326,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_7
+      name: SmallChat3
       rect:
         serializedVersion: 2
         x: 181
@@ -334,7 +334,7 @@ TextureImporter:
         width: 54
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -347,7 +347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_8
+      name: SmallChat10
       rect:
         serializedVersion: 2
         x: 264
@@ -355,7 +355,7 @@ TextureImporter:
         width: 50
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,7 +368,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_9
+      name: SmallChat13
       rect:
         serializedVersion: 2
         x: 338
@@ -376,7 +376,7 @@ TextureImporter:
         width: 49
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,7 +389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_10
+      name: SmallChat16
       rect:
         serializedVersion: 2
         x: 403
@@ -397,7 +397,7 @@ TextureImporter:
         width: 49
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,7 +410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_11
+      name: SmallChat4
       rect:
         serializedVersion: 2
         x: 51
@@ -418,7 +418,7 @@ TextureImporter:
         width: 54
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -431,7 +431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_12
+      name: SmallChat5
       rect:
         serializedVersion: 2
         x: 116
@@ -439,7 +439,7 @@ TextureImporter:
         width: 54
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -452,7 +452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_13
+      name: SmallChat6
       rect:
         serializedVersion: 2
         x: 181
@@ -460,7 +460,7 @@ TextureImporter:
         width: 54
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -473,7 +473,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_14
+      name: SmallChat11
       rect:
         serializedVersion: 2
         x: 264
@@ -481,7 +481,7 @@ TextureImporter:
         width: 49
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,7 +494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_15
+      name: SmallChat14
       rect:
         serializedVersion: 2
         x: 338
@@ -502,7 +502,7 @@ TextureImporter:
         width: 49
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -515,7 +515,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_16
+      name: SmallChat17
       rect:
         serializedVersion: 2
         x: 403
@@ -523,7 +523,7 @@ TextureImporter:
         width: 51
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -536,7 +536,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_17
+      name: SmallChat7
       rect:
         serializedVersion: 2
         x: 51
@@ -544,7 +544,7 @@ TextureImporter:
         width: 56
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -557,7 +557,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_18
+      name: SmallChat8
       rect:
         serializedVersion: 2
         x: 116
@@ -565,7 +565,7 @@ TextureImporter:
         width: 55
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -578,7 +578,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_19
+      name: SmallChat9
       rect:
         serializedVersion: 2
         x: 179
@@ -586,7 +586,7 @@ TextureImporter:
         width: 56
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -599,7 +599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_20
+      name: SmallChat12
       rect:
         serializedVersion: 2
         x: 264
@@ -607,7 +607,7 @@ TextureImporter:
         width: 50
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -620,7 +620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_21
+      name: SmallChat15
       rect:
         serializedVersion: 2
         x: 338
@@ -628,7 +628,7 @@ TextureImporter:
         width: 49
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -641,7 +641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_22
+      name: SmallChat18
       rect:
         serializedVersion: 2
         x: 403
@@ -649,7 +649,7 @@ TextureImporter:
         width: 49
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -664,7 +664,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dfa2cee6513e940429cd7a932ea0f5c8
     internalID: 0
     vertices: []
     indices: 
@@ -672,29 +672,29 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_0: -6214270582549737546
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_1: 1073025869174625002
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_10: 8373753818210661251
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_11: -8557026856082098657
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_12: 6764825352275926308
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_13: 8654562644226728857
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_14: -128272281716676673
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_15: -6940266882527753538
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_16: 7245518222504363679
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_17: 6866991244947047088
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_18: 6124684547676997049
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_19: 1762386517375757340
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_2: 7096804255055799577
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_20: 469929526742768826
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_21: 5541078045299023955
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_22: 402073205900217554
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_3: 6551532919163906178
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_4: 433471416860169342
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_5: -3921585983532912167
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_6: 9137925645252564116
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_7: 5465804267999737992
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_8: -6720158755920827466
-      DALL_E_2024-02-24_11.35.21_-_Design_a_series_of_pixel_art_icons_representing_a_chatbox__each_with_a_unique_variation._The_icons_should_be_simple__colorful__and_clear__with_each_va-removebg-preview_9: 2330358996459995066
+      Chat1: -6214270582549737546
+      Chat2: 6551532919163906178
+      Chat3: 1073025869174625002
+      Chat4: 7096804255055799577
+      Chat5: 433471416860169342
+      SmallChat1: -3921585983532912167
+      SmallChat10: -6720158755920827466
+      SmallChat11: -128272281716676673
+      SmallChat12: 469929526742768826
+      SmallChat13: 2330358996459995066
+      SmallChat14: -6940266882527753538
+      SmallChat15: 5541078045299023955
+      SmallChat16: 8373753818210661251
+      SmallChat17: 7245518222504363679
+      SmallChat18: 402073205900217554
+      SmallChat2: 9137925645252564116
+      SmallChat3: 5465804267999737992
+      SmallChat4: -8557026856082098657
+      SmallChat5: 6764825352275926308
+      SmallChat6: 8654562644226728857
+      SmallChat7: 6866991244947047088
+      SmallChat8: 6124684547676997049
+      SmallChat9: 1762386517375757340
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

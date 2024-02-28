@@ -158,7 +158,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_0
+      name: Castle
       rect:
         serializedVersion: 2
         x: 0
@@ -166,7 +166,7 @@ TextureImporter:
         width: 116
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_1
+      name: Shop
       rect:
         serializedVersion: 2
         x: 134
@@ -187,7 +187,7 @@ TextureImporter:
         width: 111
         height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_2
+      name: BuildingList
       rect:
         serializedVersion: 2
         x: 273
@@ -208,7 +208,7 @@ TextureImporter:
         width: 104
         height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,7 +221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_3
+      name: Checklist
       rect:
         serializedVersion: 2
         x: 404
@@ -229,7 +229,7 @@ TextureImporter:
         width: 96
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,7 +242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_4
+      name: SettingSmile
       rect:
         serializedVersion: 2
         x: 9
@@ -250,7 +250,7 @@ TextureImporter:
         width: 100
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,7 +263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_5
+      name: Gear
       rect:
         serializedVersion: 2
         x: 141
@@ -271,7 +271,7 @@ TextureImporter:
         width: 99
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,7 +284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_6
+      name: Scroll
       rect:
         serializedVersion: 2
         x: 273
@@ -292,7 +292,7 @@ TextureImporter:
         width: 109
         height: 108
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -305,7 +305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_7
+      name: RedFlag
       rect:
         serializedVersion: 2
         x: 402
@@ -313,7 +313,7 @@ TextureImporter:
         width: 98
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,15 +326,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_8
+      name: LoveFOlder
       rect:
         serializedVersion: 2
-        x: 7
+        x: 5
         y: 153
         width: 103
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -347,7 +347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_9
+      name: Sword
       rect:
         serializedVersion: 2
         x: 136
@@ -355,7 +355,7 @@ TextureImporter:
         width: 104
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,7 +368,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_10
+      name: Gear2
       rect:
         serializedVersion: 2
         x: 281
@@ -376,7 +376,7 @@ TextureImporter:
         width: 88
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,7 +389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_11
+      name: Knife
       rect:
         serializedVersion: 2
         x: 402
@@ -397,7 +397,7 @@ TextureImporter:
         width: 98
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,7 +410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_12
+      name: Castle2
       rect:
         serializedVersion: 2
         x: 7
@@ -418,7 +418,7 @@ TextureImporter:
         width: 103
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -431,7 +431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_13
+      name: Flag2
       rect:
         serializedVersion: 2
         x: 140
@@ -439,7 +439,7 @@ TextureImporter:
         width: 105
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -452,7 +452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_14
+      name: Cart
       rect:
         serializedVersion: 2
         x: 264
@@ -460,7 +460,7 @@ TextureImporter:
         width: 113
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -473,7 +473,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_15
+      name: Trophy
       rect:
         serializedVersion: 2
         x: 404
@@ -481,7 +481,7 @@ TextureImporter:
         width: 96
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -496,7 +496,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: accbd5c5efb9c496bb2a18d3027d27eb
     internalID: 0
     vertices: []
     indices: 
@@ -504,22 +504,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_0: 651762172270173054
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_1: 3754276488155081589
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_10: -3578187197587458623
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_11: 5779669377178898140
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_12: 5574366554758574136
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_13: 9163544461123317405
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_14: -3548500206996878370
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_15: 5122767014014604387
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_2: 7778096090245705933
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_3: 506183628240192577
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_4: 1778811234841347230
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_5: -238049352064308297
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_6: 8757993098600071561
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_7: -2663061369803911243
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_8: 5586387837944847826
-      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_9: -7912956358160192174
+      BuildingList: 7778096090245705933
+      Cart: -3548500206996878370
+      Castle: 651762172270173054
+      Castle2: 5574366554758574136
+      Checklist: 506183628240192577
+      Flag2: 9163544461123317405
+      Gear: -238049352064308297
+      Gear2: -3578187197587458623
+      Knife: 5779669377178898140
+      LoveFOlder: 5586387837944847826
+      RedFlag: -2663061369803911243
+      Scroll: 8757993098600071561
+      SettingSmile: 1778811234841347230
+      Shop: 3754276488155081589
+      Sword: -7912956358160192174
+      Trophy: 5122767014014604387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
