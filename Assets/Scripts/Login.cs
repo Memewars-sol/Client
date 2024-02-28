@@ -90,6 +90,21 @@ namespace Summoners.Memewars
             webSocketClient = WebSocketClient.GetInstance();
             WebSocketClient.OnMessageReceived += ReceivedPaket;
         }
+
+        public void StartWs()
+        {
+            webSocketClient = WebSocketClient.GetInstance();
+            WebSocketClient.OnMessageReceived += ReceivedPaket;
+        }
+        
+        public void TestWs()
+        {
+
+            var packet = new Packet((int)Player.RequestsID.PREAUTH);
+            Debug.Log("start: PreAuth");
+            webSocketClient.SendData(packet);
+        }
+
         private async void LoginTest()
         {
             var password = "asdasd";
@@ -156,6 +171,7 @@ namespace Summoners.Memewars
 
             // send for authentication
             var packet = new Packet((int)Player.RequestsID.PREAUTH);
+            Debug.Log("ws: PreAuth");
             webSocketClient.SendData(packet);
 
             // Sender.TCP_Send(packet);
@@ -214,7 +230,7 @@ namespace Summoners.Memewars
         {
             try
             {
-                Debug.Log("Received message: " + e.Data);
+                Debug.Log("LoginCS Received message: " + e.Data);
                 // int id = packet.ReadInt();
                 // switch ((Player.RequestsID)id) {
                 //     case Player.RequestsID.PREAUTH:

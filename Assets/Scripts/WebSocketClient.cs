@@ -5,7 +5,7 @@ namespace Summoners.RealtimeNetworking.WsClient
     using WebSocketSharp;
     using System.Threading;
     using Newtonsoft.Json;
-
+    using Summoners.RealtimeNetworking.Client;
 
 
     public class WebSocketClient : MonoBehaviour
@@ -62,19 +62,21 @@ namespace Summoners.RealtimeNetworking.WsClient
 
         private void Connect()
         {
-            // Create a new WebSocket instance
-            ws = new WebSocket(serverUrl);
-            ws.Log.Level = LogLevel.Trace;
-            ws.Log.File = "/Users/lucas/Documents/coc/ws.log";
+            if (ws == null) {
+                // Create a new WebSocket instance
+                ws = new WebSocket(serverUrl);
+                ws.Log.Level = LogLevel.Trace;
+                ws.Log.File = "/Users/lucas/Documents/coc/ws.log";
 
-            // Add event handlers
-            ws.OnOpen += OnOpen;
-            ws.OnMessage += OnMessage;
-            ws.OnError += OnError;
-            ws.OnClose += OnClose;
+                // Add event handlers
+                ws.OnOpen += OnOpen;
+                ws.OnMessage += OnMessage;
+                ws.OnError += OnError;
+                ws.OnClose += OnClose;
 
-            // Connect to the WebSocket server
-            ws.Connect();
+                // Connect to the WebSocket server
+                ws.Connect();
+            }
         }
 
         private void Disconnect()
@@ -127,15 +129,22 @@ namespace Summoners.RealtimeNetworking.WsClient
         //     }
         // }
 
-        public void SendData(dynamic packet)
+        public void SendData(Packet packet)
         {
             // Serialize the Packet object to JSON
-            string json = JsonConvert.SerializeObject(packet);
             // Convert the JSON string to bytes
             // byte[] data = Encoding.UTF8.GetBytes(json);
-            if (ws != null && ws.IsAlive)
+            if (ws != null)
             {
-                ws.Send(json);
+
+                // Serialize the Packet object to JSON
+                // string json = JsonConvert.SerializeObject(packet);
+
+                // Convert the JSON string to bytes
+                // byte[] data = Encoding.UTF8.GetBytes(json);
+
+                // ws.Send(json);
+                ws.Send(packet.SerializeToString());
             }
             else
             {

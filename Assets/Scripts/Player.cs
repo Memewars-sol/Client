@@ -92,6 +92,7 @@
 
             Packet packet = new Packet((int)RequestsID.AUTH);
             // Sender.TCP_Send(packet);
+            Debug.Log("ws: Auth");
             webSocketClient.SendData(packet);
         }
 
@@ -775,7 +776,7 @@
 
         private void ReceivedPaket(object sender, MessageEventArgs e)
         {
-            Debug.Log("Received message: " + e.Data);
+            Debug.Log("Player.cs Received message: " + e.Data);
             // try
             // {
             //     int id = packet.ReadInt();
@@ -1413,6 +1414,7 @@
             lastUpdateSent = DateTime.Now;
             Packet p = new Packet((int)RequestsID.SYNC);
             // p.Write(SystemInfo.deviceUniqueIdentifier);
+            Debug.Log("ws: SendSyncRequest");
             webSocketClient.SendData(p);
             // Sender.TCP_Send(p);
         }

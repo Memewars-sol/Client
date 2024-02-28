@@ -71,6 +71,28 @@ namespace Summoners.RealtimeNetworking.Client
             buffer.InsertRange(0, BitConverter.GetBytes(_value)); // Insert the int at the start of the buffer
         }
 
+        // Serialize the packet data into a byte array
+        public byte[] Serialize()
+        {
+            List<byte> serializedData = new List<byte>();
+
+            // Add the length of the packet's content
+            serializedData.AddRange(BitConverter.GetBytes(buffer.Count));
+
+            // Add the packet content
+            serializedData.AddRange(buffer);
+
+            return serializedData.ToArray();
+        }
+
+        // Convert the serialized data into a base64 string
+        public string SerializeToString()
+        {
+            byte[] serializedData = Serialize();
+            return Convert.ToBase64String(serializedData);
+        }
+
+
         /// <summary>Gets the packet's content in array form.</summary>
         public byte[] ToArray()
         {
