@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.37.29_-_Design_a_pixel_art_icon_where_a_sword_is_cutting_a_stone_into_two_pieces__clearly_depicting_the_action_of_separation_or_division._The_icon_should_capt-removebg-preview_0
+      name: SwordStone
       rect:
         serializedVersion: 2
         x: 21
@@ -130,7 +130,7 @@ TextureImporter:
         width: 447
         height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,7 +151,7 @@ TextureImporter:
         width: 90
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,7 +172,7 @@ TextureImporter:
         width: 74
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,7 +193,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,7 +208,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d598863b3c1094cc785ffd62cdcb4448
     internalID: 0
     vertices: []
     indices: 
@@ -216,10 +216,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DALL_E_2024-02-24_12.37.29_-_Design_a_pixel_art_icon_where_a_sword_is_cutting_a_stone_into_two_pieces__clearly_depicting_the_action_of_separation_or_division._The_icon_should_capt-removebg-preview_0: 136477026322704561
       DALL_E_2024-02-24_12.37.29_-_Design_a_pixel_art_icon_where_a_sword_is_cutting_a_stone_into_two_pieces__clearly_depicting_the_action_of_separation_or_division._The_icon_should_capt-removebg-preview_1: 1530768213478267938
       DALL_E_2024-02-24_12.37.29_-_Design_a_pixel_art_icon_where_a_sword_is_cutting_a_stone_into_two_pieces__clearly_depicting_the_action_of_separation_or_division._The_icon_should_capt-removebg-preview_2: 864203051457291552
       DALL_E_2024-02-24_12.37.29_-_Design_a_pixel_art_icon_where_a_sword_is_cutting_a_stone_into_two_pieces__clearly_depicting_the_action_of_separation_or_division._The_icon_should_capt-removebg-preview_3: -647304214704718851
+      SwordStone: 136477026322704561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
