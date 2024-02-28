@@ -213,6 +213,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1066,7 +1079,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icon3_0: -4473438565404442286
+      icon3_1: 208773013390063016
+      icon3_10: 8666266493259434581
+      icon3_11: -6000568815968957159
+      icon3_12: 6764080891467642941
+      icon3_13: 1713361668132980865
+      icon3_14: -6977816657964169207
+      icon3_15: 2966750517703737864
+      icon3_16: 4087621114488481813
+      icon3_17: -8331132923230134707
+      icon3_18: 5635445874526575006
+      icon3_19: -3537708358324828794
+      icon3_2: -6461850427530914369
+      icon3_20: 6434200055653400807
+      icon3_21: -436425100857371008
+      icon3_22: -904904193708503534
+      icon3_23: 3002697260694814267
+      icon3_24: 9016373096238566761
+      icon3_25: 1661810499847126654
+      icon3_26: -5919661783685329434
+      icon3_27: 7663997588260289831
+      icon3_28: -7096195512547890684
+      icon3_29: -3886077643802766404
+      icon3_3: 6514335857063276654
+      icon3_30: 3334355017426950644
+      icon3_31: 1547463401828955255
+      icon3_32: -5858625001412506483
+      icon3_33: -5388508360938604004
+      icon3_34: -6097589197703197973
+      icon3_35: -3743888135556449179
+      icon3_36: 516359202890489201
+      icon3_37: -3191472665791143067
+      icon3_38: 8956438075454184793
+      icon3_39: 7608677117543233510
+      icon3_4: -1731879221405422722
+      icon3_5: 7014222959935459825
+      icon3_6: -3618050610563064784
+      icon3_7: -4890569761422098017
+      icon3_8: -7292148646821879669
+      icon3_9: 1936866364180628686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
