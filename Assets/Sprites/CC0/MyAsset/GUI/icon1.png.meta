@@ -1,0 +1,527 @@
+fileFormatVersion: 2
+guid: 64dca457d127343c18e4eaf7f40c2ecd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2222896094826061351
+    second: icon1_0
+  - first:
+      213: -1291213572037101134
+    second: icon1_1
+  - first:
+      213: 4485672991747649483
+    second: icon1_2
+  - first:
+      213: 5888767801657961059
+    second: icon1_3
+  - first:
+      213: 7731394822526862308
+    second: icon1_4
+  - first:
+      213: 2416242271878165605
+    second: icon1_5
+  - first:
+      213: -1259827510022005288
+    second: icon1_6
+  - first:
+      213: 6906388482916363297
+    second: icon1_7
+  - first:
+      213: 6845280471073396867
+    second: icon1_8
+  - first:
+      213: 8230665144501031215
+    second: icon1_9
+  - first:
+      213: 7682345653417842410
+    second: icon1_10
+  - first:
+      213: 8829719267061065763
+    second: icon1_11
+  - first:
+      213: -1660025336536991513
+    second: icon1_12
+  - first:
+      213: 8506642264362193991
+    second: icon1_13
+  - first:
+      213: -5766337218871243532
+    second: icon1_14
+  - first:
+      213: -4758187046727025876
+    second: icon1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icon1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 363
+        width: 116
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ed5b8883059de10800000000000000
+      internalID: 2222896094826061351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 363
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9b09de810b41ee0800000000000000
+      internalID: -1291213572037101134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 363
+        width: 104
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcfaea3e1df404e30800000000000000
+      internalID: 4485672991747649483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 363
+        width: 96
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36aa4969d1b19b150800000000000000
+      internalID: 5888767801657961059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 250
+        width: 100
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3020fd0ae6b4b60800000000000000
+      internalID: 7731394822526862308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 250
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564b4926b87388120800000000000000
+      internalID: 2416242271878165605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_6
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 237
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd9fd2fd81348ee0800000000000000
+      internalID: -1259827510022005288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_7
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 250
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c241dcbbb68df50800000000000000
+      internalID: 6906388482916363297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 153
+        width: 103
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3889f3212525ffe50800000000000000
+      internalID: 6845280471073396867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_9
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 131
+        width: 104
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f215c2b4752393270800000000000000
+      internalID: 8230665144501031215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_10
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 140
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae69cb14bac2d9a60800000000000000
+      internalID: 7682345653417842410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_11
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 131
+        width: 98
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328e89b34e6798a70800000000000000
+      internalID: 8829719267061065763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 9
+        width: 103
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8709960c766f8e0800000000000000
+      internalID: -1660025336536991513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 9
+        width: 105
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74412aeb11aad0670800000000000000
+      internalID: 8506642264362193991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 9
+        width: 113
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fcc01ec9dad9ffa0800000000000000
+      internalID: -5766337218871243532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon1_15
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 9
+        width: 96
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b78f8471687fdb0800000000000000
+      internalID: -4758187046727025876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_0: 651762172270173054
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_1: 3754276488155081589
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_10: -3578187197587458623
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_11: 5779669377178898140
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_12: 5574366554758574136
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_13: 9163544461123317405
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_14: -3548500206996878370
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_15: 5122767014014604387
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_2: 7778096090245705933
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_3: 506183628240192577
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_4: 1778811234841347230
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_5: -238049352064308297
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_6: 8757993098600071561
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_7: -2663061369803911243
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_8: 5586387837944847826
+      DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_9: -7912956358160192174
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
