@@ -188,7 +188,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_0
+      name: Glass1
       rect:
         serializedVersion: 2
         x: 30
@@ -196,7 +196,7 @@ TextureImporter:
         width: 63
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_1
+      name: Glass2
       rect:
         serializedVersion: 2
         x: 107
@@ -217,7 +217,7 @@ TextureImporter:
         width: 63
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,7 +230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_2
+      name: Glass3
       rect:
         serializedVersion: 2
         x: 181
@@ -238,7 +238,7 @@ TextureImporter:
         width: 62
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,7 +251,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_3
+      name: Glass4
       rect:
         serializedVersion: 2
         x: 255
@@ -259,7 +259,7 @@ TextureImporter:
         width: 63
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,15 +272,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_4
+      name: Glass5
       rect:
         serializedVersion: 2
         x: 330
-        y: 353
+        y: 355
         width: 64
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,7 +293,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_5
+      name: Glass6
       rect:
         serializedVersion: 2
         x: 406
@@ -301,7 +301,7 @@ TextureImporter:
         width: 63
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,7 +314,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_6
+      name: Glass7
       rect:
         serializedVersion: 2
         x: 29
@@ -322,7 +322,7 @@ TextureImporter:
         width: 65
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,7 +335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_7
+      name: Glass8
       rect:
         serializedVersion: 2
         x: 106
@@ -343,7 +343,7 @@ TextureImporter:
         width: 64
         height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,7 +356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_8
+      name: Glass9
       rect:
         serializedVersion: 2
         x: 181
@@ -364,7 +364,7 @@ TextureImporter:
         width: 62
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,7 +377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_9
+      name: Glass10
       rect:
         serializedVersion: 2
         x: 256
@@ -385,7 +385,7 @@ TextureImporter:
         width: 61
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -398,7 +398,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_10
+      name: Glass11
       rect:
         serializedVersion: 2
         x: 330
@@ -406,7 +406,7 @@ TextureImporter:
         width: 64
         height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,7 +419,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_11
+      name: Glass12
       rect:
         serializedVersion: 2
         x: 406
@@ -427,7 +427,7 @@ TextureImporter:
         width: 63
         height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,7 +440,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_12
+      name: Glass13
       rect:
         serializedVersion: 2
         x: 30
@@ -448,7 +448,7 @@ TextureImporter:
         width: 63
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -461,7 +461,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_13
+      name: Glass14
       rect:
         serializedVersion: 2
         x: 107
@@ -469,7 +469,7 @@ TextureImporter:
         width: 63
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -482,7 +482,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_14
+      name: Glass15
       rect:
         serializedVersion: 2
         x: 181
@@ -490,7 +490,7 @@ TextureImporter:
         width: 62
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -503,16 +503,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_15
+      name: Glass16
       rect:
         serializedVersion: 2
         x: 250
-        y: 200
+        y: 151
         width: 74
-        height: 43
+        height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 5, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -524,15 +524,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_16
+      name: Glass18
       rect:
         serializedVersion: 2
-        x: 330
-        y: 151
-        width: 68
-        height: 92
+        x: 323
+        y: 153
+        width: 75
+        height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -553,7 +553,7 @@ TextureImporter:
         width: 7
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -566,15 +566,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_18
+      name: Glass19
       rect:
         serializedVersion: 2
-        x: 406
-        y: 151
+        x: 404
+        y: 153
         width: 63
         height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -587,7 +587,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_19
+      name: Glass17
       rect:
         serializedVersion: 2
         x: 256
@@ -595,7 +595,7 @@ TextureImporter:
         width: 61
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -608,7 +608,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_20
+      name: Glass25
       rect:
         serializedVersion: 2
         x: 406
@@ -616,7 +616,7 @@ TextureImporter:
         width: 63
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -629,7 +629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_21
+      name: Glass20
       rect:
         serializedVersion: 2
         x: 29
@@ -637,7 +637,7 @@ TextureImporter:
         width: 65
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -650,7 +650,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_22
+      name: Glass21
       rect:
         serializedVersion: 2
         x: 107
@@ -658,7 +658,7 @@ TextureImporter:
         width: 63
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -671,7 +671,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_23
+      name: Glass22
       rect:
         serializedVersion: 2
         x: 181
@@ -679,7 +679,7 @@ TextureImporter:
         width: 62
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -692,7 +692,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_24
+      name: Glass23
       rect:
         serializedVersion: 2
         x: 255
@@ -700,7 +700,7 @@ TextureImporter:
         width: 63
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -713,7 +713,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_25
+      name: Glass24
       rect:
         serializedVersion: 2
         x: 330
@@ -721,7 +721,7 @@ TextureImporter:
         width: 64
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -736,7 +736,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 225113b4f87854ccbae9ff40befb0f11
     internalID: 0
     vertices: []
     indices: 
@@ -744,32 +744,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_0: -1396166475563894817
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_1: 8719699544942722251
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_10: 4774449993654988054
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_11: 4663002724761554448
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_12: 9060090501092287361
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_13: 4504378726972122437
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_14: 4549999381144183347
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_15: 3014741996359956899
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_16: -101027902831605794
       DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_17: 7672333442918482557
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_18: -1206454412087226759
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_19: 1593193086083739409
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_2: 5200915457534273176
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_20: -6048015547773834977
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_21: -591338528503789588
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_22: 7356917364987174743
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_23: -2789116655762571847
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_24: -8799897427710502755
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_25: 8200343332624183992
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_3: 7903519531113632826
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_4: -7767494436209879624
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_5: 7570384132754381308
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_6: 3590086623120475880
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_7: 2594647764887765859
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_8: -5614885951230773574
-      DALL_E_2024-02-24_12.09.55_-_Design_a_series_of_pixel_art_icons_depicting_hourglasses__each_with_unique_variations._These_icons_should_capture_the_timeless_design_of_an_hourglass_-removebg-preview_9: -833682778990946259
+      Glass1: -1396166475563894817
+      Glass10: -833682778990946259
+      Glass11: 4774449993654988054
+      Glass12: 4663002724761554448
+      Glass13: 9060090501092287361
+      Glass14: 4504378726972122437
+      Glass15: 4549999381144183347
+      Glass16: 3014741996359956899
+      Glass17: 1593193086083739409
+      Glass18: -101027902831605794
+      Glass19: -1206454412087226759
+      Glass2: 8719699544942722251
+      Glass20: -591338528503789588
+      Glass21: 7356917364987174743
+      Glass22: -2789116655762571847
+      Glass23: -8799897427710502755
+      Glass24: 8200343332624183992
+      Glass25: -6048015547773834977
+      Glass3: 5200915457534273176
+      Glass4: 7903519531113632826
+      Glass5: -7767494436209879624
+      Glass6: 7570384132754381308
+      Glass7: 3590086623120475880
+      Glass8: 2594647764887765859
+      Glass9: -5614885951230773574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
