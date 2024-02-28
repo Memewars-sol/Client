@@ -6298,8 +6298,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1420996820}
   soundSource: {fileID: 490585841}
-  mainMusic: {fileID: 8300000, guid: 744820e7fb0bf1a4f80acd476dfea1f4, type: 3}
-  battleMusic: {fileID: 8300000, guid: 034a8b74658e54945ac6c64917e0faaf, type: 3}
+  mainMusic: {fileID: 8300000, guid: ab8668e0601cb4377a4c3fa717732ac6, type: 3}
+  battleMusic: {fileID: 8300000, guid: 0f2c1bc1edd0140199928c3cf0afdc32, type: 3}
   buttonClickSound: {fileID: 8300000, guid: 16612bc64723f664084d1661a4f93bfc, type: 3}
   goldCollect: {fileID: 0}
   elixirCollect: {fileID: 0}
