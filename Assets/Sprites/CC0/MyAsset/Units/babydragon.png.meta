@@ -202,7 +202,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      babydragon_0: 7892671619444580448
+      babydragon_1: 9073206805530329417
+      babydragon_2: 8307376131810365697
+      babydragon_3: 1152375003562939638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

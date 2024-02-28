@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: fc41f7a8e91124e329d17c63cd7a48d5
+guid: 64dca457d127343c18e4eaf7f40c2ecd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 651762172270173054
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_0
+      213: 2222896094826061351
+    second: icon1_0
   - first:
-      213: 3754276488155081589
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_1
+      213: -1291213572037101134
+    second: icon1_1
   - first:
-      213: 7778096090245705933
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_2
+      213: 4485672991747649483
+    second: icon1_2
   - first:
-      213: 506183628240192577
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_3
+      213: 5888767801657961059
+    second: icon1_3
   - first:
-      213: 1778811234841347230
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_4
+      213: 7731394822526862308
+    second: icon1_4
   - first:
-      213: -238049352064308297
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_5
+      213: 2416242271878165605
+    second: icon1_5
   - first:
-      213: 8757993098600071561
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_6
+      213: -1259827510022005288
+    second: icon1_6
   - first:
-      213: -2663061369803911243
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_7
+      213: 6906388482916363297
+    second: icon1_7
   - first:
-      213: 5586387837944847826
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_8
+      213: 6845280471073396867
+    second: icon1_8
   - first:
-      213: -7912956358160192174
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_9
+      213: 8230665144501031215
+    second: icon1_9
   - first:
-      213: -3578187197587458623
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_10
+      213: 7682345653417842410
+    second: icon1_10
   - first:
-      213: 5779669377178898140
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_11
+      213: 8829719267061065763
+    second: icon1_11
   - first:
-      213: 5574366554758574136
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_12
+      213: -1660025336536991513
+    second: icon1_12
   - first:
-      213: 9163544461123317405
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_13
+      213: 8506642264362193991
+    second: icon1_13
   - first:
-      213: -3548500206996878370
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_14
+      213: -5766337218871243532
+    second: icon1_14
   - first:
-      213: 5122767014014604387
-    second: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_15
+      213: -4758187046727025876
+    second: icon1_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_0
+      name: icon1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7b53341e368b0900800000000000000
-      internalID: 651762172270173054
+      spriteID: 72ed5b8883059de10800000000000000
+      internalID: 2222896094826061351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_1
+      name: icon1_1
       rect:
         serializedVersion: 2
         x: 134
@@ -180,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57ba511339ed91430800000000000000
-      internalID: 3754276488155081589
+      spriteID: 2b9b09de810b41ee0800000000000000
+      internalID: -1291213572037101134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_2
+      name: icon1_2
       rect:
         serializedVersion: 2
         x: 273
@@ -201,14 +201,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc033f71f2951fb60800000000000000
-      internalID: 7778096090245705933
+      spriteID: bcfaea3e1df404e30800000000000000
+      internalID: 4485672991747649483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_3
+      name: icon1_3
       rect:
         serializedVersion: 2
         x: 404
@@ -222,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1440068f353560700800000000000000
-      internalID: 506183628240192577
+      spriteID: 36aa4969d1b19b150800000000000000
+      internalID: 5888767801657961059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_4
+      name: icon1_4
       rect:
         serializedVersion: 2
         x: 9
@@ -243,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e94413fb46b9fa810800000000000000
-      internalID: 1778811234841347230
+      spriteID: 4e3020fd0ae6b4b60800000000000000
+      internalID: 7731394822526862308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_5
+      name: icon1_5
       rect:
         serializedVersion: 2
         x: 141
@@ -264,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7bbe133206742bcf0800000000000000
-      internalID: -238049352064308297
+      spriteID: 564b4926b87388120800000000000000
+      internalID: 2416242271878165605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_6
+      name: icon1_6
       rect:
         serializedVersion: 2
         x: 273
@@ -285,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98141634254aa8970800000000000000
-      internalID: 8757993098600071561
+      spriteID: 8dd9fd2fd81348ee0800000000000000
+      internalID: -1259827510022005288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_7
+      name: icon1_7
       rect:
         serializedVersion: 2
         x: 402
@@ -306,14 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bfc5cd2bc7ea0bd0800000000000000
-      internalID: -2663061369803911243
+      spriteID: 12c241dcbbb68df50800000000000000
+      internalID: 6906388482916363297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_8
+      name: icon1_8
       rect:
         serializedVersion: 2
         x: 7
@@ -327,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ddd3420426d68d40800000000000000
-      internalID: 5586387837944847826
+      spriteID: 3889f3212525ffe50800000000000000
+      internalID: 6845280471073396867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_9
+      name: icon1_9
       rect:
         serializedVersion: 2
         x: 136
@@ -348,14 +348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25d61bced188f2290800000000000000
-      internalID: -7912956358160192174
+      spriteID: f215c2b4752393270800000000000000
+      internalID: 8230665144501031215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_10
+      name: icon1_10
       rect:
         serializedVersion: 2
         x: 281
@@ -369,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c5f2fba3b9b75ec0800000000000000
-      internalID: -3578187197587458623
+      spriteID: ae69cb14bac2d9a60800000000000000
+      internalID: 7682345653417842410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_11
+      name: icon1_11
       rect:
         serializedVersion: 2
         x: 402
@@ -390,14 +390,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cde83f13da2853050800000000000000
-      internalID: 5779669377178898140
+      spriteID: 328e89b34e6798a70800000000000000
+      internalID: 8829719267061065763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_12
+      name: icon1_12
       rect:
         serializedVersion: 2
         x: 7
@@ -411,14 +411,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 830f338e8d02c5d40800000000000000
-      internalID: 5574366554758574136
+      spriteID: 7e8709960c766f8e0800000000000000
+      internalID: -1660025336536991513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_13
+      name: icon1_13
       rect:
         serializedVersion: 2
         x: 140
@@ -432,14 +432,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9ee0c803237b2f70800000000000000
-      internalID: 9163544461123317405
+      spriteID: 74412aeb11aad0670800000000000000
+      internalID: 8506642264362193991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_14
+      name: icon1_14
       rect:
         serializedVersion: 2
         x: 264
@@ -453,14 +453,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edb0d8cccd131cec0800000000000000
-      internalID: -3548500206996878370
+      spriteID: 4fcc01ec9dad9ffa0800000000000000
+      internalID: -5766337218871243532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DALL_E_2024-02-24_11.33.55_-_Create_a_set_of_pixel_art_icons_for_a_video_game__including_a_building__sword__chatbox__setting_gear__scroll__shopping_cart__and_trophy._Provide_a_few-removebg-preview_15
+      name: icon1_15
       rect:
         serializedVersion: 2
         x: 404
@@ -474,8 +474,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 364dd692579b71740800000000000000
-      internalID: 5122767014014604387
+      spriteID: c2b78f8471687fdb0800000000000000
+      internalID: -4758187046727025876
       vertices: []
       indices: 
       edges: []

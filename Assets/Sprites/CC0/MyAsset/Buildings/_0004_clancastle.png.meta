@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0004_clancastle_0: 4826523197254607647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

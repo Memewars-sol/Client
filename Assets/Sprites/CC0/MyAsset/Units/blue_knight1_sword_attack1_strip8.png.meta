@@ -298,7 +298,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue_knight1_sword_attack1_strip8_0: -5680886781481360552
+      blue_knight1_sword_attack1_strip8_1: -245191012817306939
+      blue_knight1_sword_attack1_strip8_2: -4030031082560935301
+      blue_knight1_sword_attack1_strip8_3: -1177245073613505505
+      blue_knight1_sword_attack1_strip8_4: 317778649828548367
+      blue_knight1_sword_attack1_strip8_5: -1004655323438666370
+      blue_knight1_sword_attack1_strip8_6: 6279106658689710037
+      blue_knight1_sword_attack1_strip8_7: 5279946155813204115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

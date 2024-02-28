@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0015_tesla_0: 2221945122529793598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

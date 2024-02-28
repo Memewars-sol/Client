@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0011_wizardtower_0: 1642449929910608685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spartan1_spear_0: 7384364587005884060
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

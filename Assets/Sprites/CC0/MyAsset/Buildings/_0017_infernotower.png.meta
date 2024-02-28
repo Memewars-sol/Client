@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0017_infernotower_0: 8986516424020897920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

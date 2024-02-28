@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0006_townhall_0: -4382582127196820597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

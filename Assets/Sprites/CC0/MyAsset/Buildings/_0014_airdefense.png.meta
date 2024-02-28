@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0014_airdefense_0: -365769854991962045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

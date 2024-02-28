@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0008_elixircollector_0: 7824999922974545324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

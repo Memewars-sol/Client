@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0012_archertower_0: -4263959346570876262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

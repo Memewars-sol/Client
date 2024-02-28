@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Iron Ingot_0: 7403729094146400693
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cannonball_01_0: -5234562256071226502
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

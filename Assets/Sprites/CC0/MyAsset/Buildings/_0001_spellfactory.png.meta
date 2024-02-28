@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      _0001_spellfactory_0: 782683679456598844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

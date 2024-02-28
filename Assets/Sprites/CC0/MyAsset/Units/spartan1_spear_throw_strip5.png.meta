@@ -226,7 +226,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spartan1_spear_throw_strip5_0: -2722227862497374651
+      spartan1_spear_throw_strip5_1: -6380926678335095271
+      spartan1_spear_throw_strip5_2: 4660185680900606692
+      spartan1_spear_throw_strip5_3: 7743457637034280732
+      spartan1_spear_throw_strip5_4: 8199806475126734718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

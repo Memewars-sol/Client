@@ -202,7 +202,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      swordman_0: 4889083202587923353
+      swordman_1: -257725841966299965
+      swordman_2: -6212328770657576365
+      swordman_3: -218021081985725533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

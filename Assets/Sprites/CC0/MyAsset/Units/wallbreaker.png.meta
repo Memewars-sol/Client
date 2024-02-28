@@ -298,7 +298,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wallbreaker_0: 4180007251001537202
+      wallbreaker_1: -1840942098139742350
+      wallbreaker_2: -3431634408799300335
+      wallbreaker_3: -3840585433970857030
+      wallbreaker_4: 6081005075395158340
+      wallbreaker_5: -2987496094026642242
+      wallbreaker_6: 792503267919076482
+      wallbreaker_7: 4125334270905490585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

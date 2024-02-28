@@ -226,7 +226,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spartan1_nw_attack_strip5_0: 8400643141582345269
+      spartan1_nw_attack_strip5_1: -7454612233659389950
+      spartan1_nw_attack_strip5_2: 355920387022506995
+      spartan1_nw_attack_strip5_3: 4355419156050976268
+      spartan1_nw_attack_strip5_4: 8639745133691269551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
