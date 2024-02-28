@@ -238,7 +238,7 @@ TextureImporter:
         width: 15
         height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,7 +259,7 @@ TextureImporter:
         width: 8
         height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,7 +280,7 @@ TextureImporter:
         width: 26
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,7 +293,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pick1
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_3
       rect:
         serializedVersion: 2
         x: 39
@@ -301,7 +301,7 @@ TextureImporter:
         width: 125
         height: 134
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,7 +322,7 @@ TextureImporter:
         width: 27
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,7 +335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pick2
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_5
       rect:
         serializedVersion: 2
         x: 198
@@ -343,7 +343,7 @@ TextureImporter:
         width: 126
         height: 134
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -364,7 +364,7 @@ TextureImporter:
         width: 27
         height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,7 +377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pick3
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_7
       rect:
         serializedVersion: 2
         x: 356
@@ -385,7 +385,7 @@ TextureImporter:
         width: 127
         height: 135
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -406,7 +406,7 @@ TextureImporter:
         width: 33
         height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -427,7 +427,7 @@ TextureImporter:
         width: 33
         height: 42
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -448,7 +448,7 @@ TextureImporter:
         width: 34
         height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -469,7 +469,7 @@ TextureImporter:
         width: 36
         height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,7 +490,7 @@ TextureImporter:
         width: 36
         height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -511,7 +511,7 @@ TextureImporter:
         width: 36
         height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -524,7 +524,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gem1
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_14
       rect:
         serializedVersion: 2
         x: 38
@@ -532,7 +532,7 @@ TextureImporter:
         width: 124
         height: 129
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -553,7 +553,7 @@ TextureImporter:
         width: 25
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -574,7 +574,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -595,7 +595,7 @@ TextureImporter:
         width: 10
         height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -616,7 +616,7 @@ TextureImporter:
         width: 12
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -637,7 +637,7 @@ TextureImporter:
         width: 26
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -658,7 +658,7 @@ TextureImporter:
         width: 26
         height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -671,7 +671,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gem3
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_21
       rect:
         serializedVersion: 2
         x: 361
@@ -679,7 +679,7 @@ TextureImporter:
         width: 110
         height: 114
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -700,7 +700,7 @@ TextureImporter:
         width: 26
         height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -721,7 +721,7 @@ TextureImporter:
         width: 12
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -734,7 +734,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gem2
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_24
       rect:
         serializedVersion: 2
         x: 211
@@ -742,7 +742,7 @@ TextureImporter:
         width: 95
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -763,7 +763,7 @@ TextureImporter:
         width: 11
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -784,7 +784,7 @@ TextureImporter:
         width: 13
         height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -805,7 +805,7 @@ TextureImporter:
         width: 13
         height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -826,7 +826,7 @@ TextureImporter:
         width: 12
         height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -847,7 +847,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -868,7 +868,7 @@ TextureImporter:
         width: 26
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -889,7 +889,7 @@ TextureImporter:
         width: 11
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -910,7 +910,7 @@ TextureImporter:
         width: 10
         height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -931,7 +931,7 @@ TextureImporter:
         width: 11
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -952,7 +952,7 @@ TextureImporter:
         width: 26
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -973,7 +973,7 @@ TextureImporter:
         width: 27
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -994,7 +994,7 @@ TextureImporter:
         width: 26
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1007,7 +1007,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shield1
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_37
       rect:
         serializedVersion: 2
         x: 39
@@ -1015,7 +1015,7 @@ TextureImporter:
         width: 123
         height: 145
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1028,7 +1028,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shield2
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_38
       rect:
         serializedVersion: 2
         x: 198
@@ -1036,7 +1036,7 @@ TextureImporter:
         width: 122
         height: 145
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1049,7 +1049,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shield3
+      name: DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_39
       rect:
         serializedVersion: 2
         x: 355
@@ -1057,7 +1057,7 @@ TextureImporter:
         width: 123
         height: 145
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1072,7 +1072,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 486300f4ad49f49119eb00c5c83a2021
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1086,6 +1086,7 @@ TextureImporter:
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_11: -1912560088263874531
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_12: 4194387513365854697
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_13: -3614992154568272010
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_14: -5782144382075791667
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_15: -942721043668160741
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_16: 4976383350216867642
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_17: 6431064546294526011
@@ -1093,13 +1094,16 @@ TextureImporter:
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_19: -5294241226888773103
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_2: -7804090026430431147
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_20: 3135915056494278563
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_21: 4568850716429491917
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_22: 8163678741922799188
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_23: -35964672107628255
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_24: 4009339945415191223
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_25: -7212924282608066819
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_26: 4532246929541958076
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_27: 6303055582326474473
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_28: -8181154344784412127
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_29: 928558434604094540
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_3: 2046136810453833855
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_30: -4479583155486786271
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_31: 2968814116326157269
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_32: 2727877396838627327
@@ -1107,19 +1111,15 @@ TextureImporter:
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_34: 1792535105380358170
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_35: 5689690934483408725
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_36: 6892015492452122283
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_37: -6509995836051641048
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_38: 3457344456873033809
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_39: 3670735475323428461
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_4: -1535974371266716741
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_5: 1225976759079185003
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_6: 6445880156672363944
+      DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_7: -3065057114164273708
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_8: -5538870297300736023
       DALL_E_2024-02-24_11.44.41_-_Design_pixel_art_icons_for_a_mining_pick_and_a_shield__each_with_a_few_unique_variations._The_icons_should_be_vibrant__clear__and_easily_recognizable_-removebg-preview_9: 3513130306394421680
-      Gem1: -5782144382075791667
-      Gem2: 4009339945415191223
-      Gem3: 4568850716429491917
-      Pick1: 2046136810453833855
-      Pick2: 1225976759079185003
-      Pick3: -3065057114164273708
-      Shield1: -6509995836051641048
-      Shield2: 3457344456873033809
-      Shield3: 3670735475323428461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
