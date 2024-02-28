@@ -36,11 +36,17 @@ namespace Summoners.Memewars
         private bool _inCamp = false;
         private Building _camp = null;
 
+        [SerializeField] private Transform animationPath = null;
+        private Animator _anim = null;
         private void Awake()
         {
             if (moveEffect != null)
             {
                 moveEffect.gameObject.SetActive(false);
+            }
+            if (animationPath)
+            {
+                _anim = animationPath.GetComponent<Animator>();
             }
         }
 
@@ -60,7 +66,10 @@ namespace Summoners.Memewars
             _id = id;
             i = index;
             lastPosition = transform.position;
-            front.gameObject.SetActive(true);
+            if (!animationPath)
+                front.gameObject.SetActive(true);
+            else
+                front.gameObject.SetActive(false);
             back.gameObject.SetActive(false);
             right.gameObject.SetActive(false);
             left.gameObject.SetActive(false);
@@ -114,6 +123,9 @@ namespace Summoners.Memewars
 
         public void Attack()
         {
+            if (animationPath)
+                _anim.SetTrigger("StartAttack");
+            Debug.Log("test");
             // Play Attack Animation
         }
 
@@ -163,10 +175,29 @@ namespace Summoners.Memewars
                     }
                 }
             }
-            front.gameObject.SetActive(d == Direction.front);
-            back.gameObject.SetActive(d == Direction.back);
-            right.gameObject.SetActive(d == Direction.right);
-            left.gameObject.SetActive(d == Direction.left);
+            if (animationPath)
+            {
+                Vector3 direction = target - transform.position;
+                if (direction.x > 0)
+                {
+                    Vector3 scale = animationPath.transform.localScale;
+                    if (scale.x < 0)
+                        animationPath.transform.localScale = new Vector3 (scale.x * - 1, scale.y, scale.z);
+                }
+                else
+                {
+                    Vector3 scale = animationPath.transform.localScale;
+                    if (scale.x > 0)
+                        animationPath.transform.localScale = new Vector3(scale.x * -1, scale.y, scale.z);
+                }
+            }
+            else
+            {
+                front.gameObject.SetActive(d == Direction.front);
+                back.gameObject.SetActive(d == Direction.back);
+                right.gameObject.SetActive(d == Direction.right);
+                left.gameObject.SetActive(d == Direction.left);
+            }
         }
 
     }
