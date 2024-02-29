@@ -114,6 +114,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -274,7 +300,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue_knight1_sword_roll_strip7_0: -5597731986732754884
+      blue_knight1_sword_roll_strip7_1: 6651999789528898513
+      blue_knight1_sword_roll_strip7_2: 4440834066861642903
+      blue_knight1_sword_roll_strip7_3: -7334285933593809597
+      blue_knight1_sword_roll_strip7_4: 4072994705253155610
+      blue_knight1_sword_roll_strip7_5: -6182188775828385337
+      blue_knight1_sword_roll_strip7_6: -6793218916289962594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10128,7 +10128,7 @@ MonoBehaviour:
   webSocketsRpc: 
   autoConnectOnStartup: 0
   web3AuthWalletOptions:
-    appName: Web3Auth Sample App
+    appName: Dominion
     logoLight: 
     logoDark: 
     defaultLanguage: 0
@@ -10136,7 +10136,7 @@ MonoBehaviour:
     themeName: primary
     themeColor: '#123456'
     redirectUrl: torusapp://com.torus.Web3AuthUnity/auth
-    clientId: BAwFgL-r7wzQKmtcdiz2uHJKNZdK7gzEf2q-m55xfzSZOw8jLOyIi4AVvvzaEQO5nv2dFLEmf9LBkF8kaq3aErg
+    clientId: BDB4CGOrwGqh2wbcMGx1TFUdVNioekJ1K4cZKCXLhNvv1_TxNYgOWWoS_zzpuWpVkfefmJ1WwZPc05jTkP99K1U
     network: 1
     loginConfig: []
   solanaWalletAdapterOptions:
