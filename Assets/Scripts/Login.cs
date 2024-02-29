@@ -164,7 +164,7 @@ namespace Summoners.Memewars
             if (successful)
             {
                 // auto login test account
-                LoginTest();
+                // LoginTest();
                 Debug.Log("Connected to server successfully.");
 
             }

@@ -73,3 +73,7 @@ crashlytics-build.properties
 # Default ignored files
 /shelf/
 /workspace.xml
+
+
+# ignore android files
+.utmp/*
