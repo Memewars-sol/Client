@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      android_icon_0: -3315402459343309039
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
