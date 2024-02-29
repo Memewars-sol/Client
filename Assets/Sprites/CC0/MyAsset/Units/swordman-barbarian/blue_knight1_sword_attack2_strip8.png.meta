@@ -117,6 +117,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -298,7 +324,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue_knight1_sword_attack2_strip8_0: -2300851858118577267
+      blue_knight1_sword_attack2_strip8_1: 5860945602812316777
+      blue_knight1_sword_attack2_strip8_2: -2038380817882985071
+      blue_knight1_sword_attack2_strip8_3: -4796530440745967574
+      blue_knight1_sword_attack2_strip8_4: 3850297196596601514
+      blue_knight1_sword_attack2_strip8_5: 6070736819662033867
+      blue_knight1_sword_attack2_strip8_6: -2054293735265039509
+      blue_knight1_sword_attack2_strip8_7: -8105886670021308838
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

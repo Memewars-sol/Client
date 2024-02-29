@@ -35358,7 +35358,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Train Units
+  m_text: Tain Units
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ff29254fab86ba43a4a76d2e27f2902, type: 2}
   m_sharedMaterial: {fileID: -1847478308233949354, guid: 7ff29254fab86ba43a4a76d2e27f2902, type: 2}
@@ -35407,7 +35407,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -35431,7 +35431,9 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
   preserveNumbers: 0
   farsi: 1
-  originalText: Train Units
+  originalText: 'Tr
+
+    ain Units'
   fixTags: 1
   forceFix: 0
 --- !u!114 &837772659
@@ -40203,7 +40205,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 0
@@ -68467,23 +68469,23 @@ MonoBehaviour:
   townhallIcon: {fileID: -4382582127196820597, guid: cac98385064a841869c83e26a0ec0468, type: 3}
   buildershutIcon: {fileID: 2853892434892329259, guid: 594e78df34e7545b187c6ca192047a76, type: 3}
   wallIcons:
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
-  - {fileID: 21300000, guid: d2be85204e8b60f44a9d433b2a3548c1, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
+  - {fileID: -3795164465459864013, guid: f659b780cf1704990b606f9588282d00, type: 3}
   goldmineIcon: {fileID: -6097260385343195527, guid: 27ecd6663285449c187ad54a986ed993, type: 3}
   elixirmineIcon: {fileID: 7824999922974545324, guid: bdc08f5db345940dc8915b26ae1dfd07, type: 3}
   darkmineIcon: {fileID: 0}

@@ -117,6 +117,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -298,7 +324,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spartan1_spear_walk_strip8_0: -1363598518765592270
+      spartan1_spear_walk_strip8_1: 1096429124334397784
+      spartan1_spear_walk_strip8_2: 7265996000242210894
+      spartan1_spear_walk_strip8_3: -7374280061903913028
+      spartan1_spear_walk_strip8_4: -1195813859956908378
+      spartan1_spear_walk_strip8_5: -1236116532825306934
+      spartan1_spear_walk_strip8_6: 2500140800743266903
+      spartan1_spear_walk_strip8_7: -4438064961325507150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
