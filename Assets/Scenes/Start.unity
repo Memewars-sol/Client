@@ -10135,9 +10135,9 @@ MonoBehaviour:
     mode: 2
     themeName: primary
     themeColor: '#123456'
-    redirectUrl: torusapp://com.torus.Web3AuthUnity/auth
+    redirectUrl: dominionapp://com.multiverse.dominion/auth
     clientId: BDB4CGOrwGqh2wbcMGx1TFUdVNioekJ1K4cZKCXLhNvv1_TxNYgOWWoS_zzpuWpVkfefmJ1WwZPc05jTkP99K1U
-    network: 1
+    network: 4
     loginConfig: []
   solanaWalletAdapterOptions:
     solanaMobileWalletAdapterOptions:
