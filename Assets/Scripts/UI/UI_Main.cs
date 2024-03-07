@@ -5,6 +5,7 @@ namespace Summoners.Memewars
     using UnityEngine;
     using TMPro;
     using UnityEngine.UI;
+    using UnityEngine.SceneManagement;
 
     public class UI_Main : MonoBehaviour
     {
@@ -46,6 +47,32 @@ namespace Summoners.Memewars
         public UI_Button buttonCollectElixir = null;
         public UI_Button buttonCollectDarkElixir = null;
         public UI_Bar barBuild = null;
+
+        //Addition -----------------------
+        [Header("Overworld")]
+        [SerializeField] private Button _overworldButton = null;
+        [SerializeField] private GameObject _overworldPath = null;
+        [SerializeField] private GameObject _mapPath = null;
+        [SerializeField] private GameObject _buildingsPath = null;
+        private bool onOverworld = false;
+
+        [Header("Addition")]
+        [SerializeField] private Button _menuButton = null;
+        [SerializeField] private Image _menuImg = null;
+        [SerializeField] private Sprite _openSprite = null;
+        [SerializeField] private Sprite _closeSprite = null;
+        private bool menuOpen = false;
+
+
+        [Header("Helper")]
+        [SerializeField] private Transform _path;
+
+
+        [Header("Forum")]
+        [SerializeField] private Button _forumsButton;
+        //--------------------------------
+
+
         private static UI_Main _instance = null; public static UI_Main instanse { get { return _instance; } }
 
         private bool _active = true;public bool isActive { get { return _active; } }
@@ -92,7 +119,29 @@ namespace Summoners.Memewars
             _buyResourceButton.onClick.AddListener(BuyResource);
             _battleReportsButton.onClick.AddListener(BattleReportsButtonClicked);
             // SoundManager.instanse.PlayMusic(SoundManager.instanse.mainMusic);
+
+            //Addition -----------------------
+            _menuButton.onClick.AddListener(OpenCloseMenuClicked);
+            _overworldButton.onClick.AddListener(OverworldClicked);
+            //--------------------------------
+
         }
+
+        //Addition -----------------------
+        private void OpenCloseMenuClicked()
+        {
+            menuOpen = !menuOpen;
+            _menuImg.sprite = menuOpen ? _openSprite : _closeSprite;
+        }
+
+        private void OverworldClicked()
+        {
+            onOverworld = !onOverworld;
+            _overworldPath.SetActive(onOverworld);
+            _mapPath.SetActive(!onOverworld);
+            _buildingsPath.SetActive(!onOverworld);
+        }
+        //--------------------------------
 
         public void ChangeUnreadBattleReports(int count)
         {
@@ -208,7 +257,7 @@ namespace Summoners.Memewars
                             var prefab = GetBuildingPrefab(Player.instanse.data.buildings[i].id);
                             if (prefab.Item1)
                             {
-                                building = Instantiate(prefab.Item1, Vector3.zero, Quaternion.identity);
+                                building = Instantiate(prefab.Item1, Vector3.zero, Quaternion.identity, _path);
                                 building.rows = prefab.Item2.rows;
                                 building.columns = prefab.Item2.columns;
                                 building.databaseID = Player.instanse.data.buildings[i].databaseID;
@@ -312,6 +361,17 @@ namespace Summoners.Memewars
                     _shieldText.text = "None";
                 }
             }
+
+            //Addition -----------------------
+            float scale = menuOpen ? Mathf.Lerp(_shopButton.transform.localScale.x, 1, 0.1f) : Mathf.Lerp(_shopButton.transform.localScale.x, 0, 0.1f);
+            _shopButton.transform.localScale = new Vector3(scale, scale, scale);
+            _rankingButton.transform.localScale = new Vector3(scale, scale, scale);
+            _overworldButton.transform.localScale = new Vector3(scale, scale, scale);
+            _buyResourceButton.transform.localScale = new Vector3(scale, scale, scale);
+            _settingsButton.transform.localScale = new Vector3(scale, scale, scale);
+            _forumsButton.transform.localScale = new Vector3(scale, scale, scale);
+            //--------------------------------
+
         }
 
         private void AddShield()
@@ -331,6 +391,8 @@ namespace Summoners.Memewars
             SoundManager.instanse.PlaySound(SoundManager.instanse.buttonClickSound);
             UI_Store.instanse.Open(3);
         }
+
+
 
     }
 }

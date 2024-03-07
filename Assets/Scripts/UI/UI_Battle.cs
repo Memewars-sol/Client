@@ -58,6 +58,8 @@
         private float itemHeight = 1;
         private byte[] opponentBytes = null;
 
+        [Header("Helper")]
+        [SerializeField] private Transform _path;
         public class BuildingOnGrid
         {
             public long id = 0;
@@ -77,6 +79,8 @@
             public int x;
             public int y;
         }
+        
+
 
         private void Start()
         {
@@ -304,7 +308,7 @@
                 if (prefab.Item1 != null)
                 {
                     BuildingOnGrid building = new BuildingOnGrid();
-                    building.building = Instantiate(prefab.Item1, Vector3.zero, Quaternion.identity);
+                    building.building = Instantiate(prefab.Item1, Vector3.zero, Quaternion.identity, _path);
                     building.building.rows = prefab.Item2.rows;
                     building.building.columns = prefab.Item2.columns;
                     building.building.databaseID = battleBuildings[i].building.databaseID;

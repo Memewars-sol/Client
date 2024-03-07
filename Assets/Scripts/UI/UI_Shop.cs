@@ -20,6 +20,9 @@ namespace Summoners.Memewars
         [SerializeField] private UI_Building _buildingPrefab = null;
         [SerializeField] private Data.BuildingID[] _buildingsAvailable = null;
 
+        [Header("Addition")]
+        [SerializeField] private Transform _path = null;
+
         private bool _active = false; public bool isActive { get { return _active; } }
         private static UI_Shop _instance = null; public static UI_Shop instanse { get { return _instance; } }
         private List<UI_Building> ui_buildings = new List<UI_Building>();
@@ -144,7 +147,7 @@ namespace Summoners.Memewars
                 UI_Shop.instanse.SetStatus(false);
                 UI_Main.instanse.SetStatus(true);
 
-                Building building = Instantiate(prefab.Item1, position, Quaternion.identity);
+                Building building = Instantiate(prefab.Item1, position, Quaternion.identity, _path);
                 building.rows = data.rows;
                 building.columns = data.columns;
 

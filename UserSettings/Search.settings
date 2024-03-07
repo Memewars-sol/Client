@@ -13,7 +13,7 @@ scopes = {
 	"last_search.0B486DF2" = ""
 	"OpenInspectorPreview.0B486DF2" = "0"
 	"currentGroup.0B486DF2" = null
-	"last_search.5A656512" = "ref=\"Assets/Sprites/CC0/PixelartSodiers/soldier_f.png\""
+	"last_search.5A656512" = "Instantiate"
 	"OpenInspectorPreview.5A656512" = "0"
 	"currentGroup.5A656512" = null
 	"last_search.45C55C1A" = ""
@@ -75,6 +75,9 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"Instant"
+	"Instantiate"
+	"Insta"
 ]
 searchItemFavorites = [
 ]
