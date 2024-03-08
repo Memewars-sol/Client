@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GuildLogoTemp1_0: -1125714774483040843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
