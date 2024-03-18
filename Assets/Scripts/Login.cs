@@ -161,17 +161,16 @@ namespace Summoners.Memewars
 
         private void ConnectResult(bool successful)
         {
-            if (successful)
-            {
-                // auto login test account
-                LoginTest();
-                Debug.Log("Connected to server successfully.");
-
-            }
-            else
+            if (!successful)
             {
                 Debug.Log("Failed to connect the server.");
+                return;
             }
+
+            // auto login test account
+            // LoginTest();
+            Debug.Log("Connected to server successfully.");
+
         }
 
         private void ReceivedPaket(Packet packet)
