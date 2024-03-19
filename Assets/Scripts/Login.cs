@@ -14,6 +14,8 @@ namespace Summoners.Memewars
     using System.Collections;
     using Summoners.RealtimeNetworking.Client;
     using Solana.Unity.Wallet.Bip39;
+    using Summoners.Models;
+    using System.Collections.Generic;
 
     public class LoginScreen : MonoBehaviour
     {
@@ -170,7 +172,8 @@ namespace Summoners.Memewars
             // auto login test account
             // LoginTest();
             Debug.Log("Connected to server successfully.");
-
+            // Land.Get(1);
+            // Guild.Get(1);
         }
 
         private void ReceivedPaket(Packet packet)
@@ -178,6 +181,9 @@ namespace Summoners.Memewars
             try
             {
                 int id = packet.ReadInt();
+                byte[] bytes;
+                int bytesLength;
+
                 switch ((Player.RequestsID)id) {
                     case Player.RequestsID.PREAUTH:
                         bool IsVerified = packet.ReadInt() == 1;
@@ -188,6 +194,66 @@ namespace Summoners.Memewars
                         else
                             Debug.Log("Signature mismatch");
                         break;
+
+                    // case Player.RequestsID.GET_LAND:
+                    //     if(packet.ReadInt() != 1) {
+                    //         Debug.Log("Unable to get land");
+                    //         return;
+                    //     }
+                    //     bytesLength = packet.ReadInt();
+                    //     bytes = packet.ReadBytes(bytesLength);
+                    //     var land = Data.Desrialize<Land>(Data.Decompress(bytes));
+                    //     Debug.Log("Gotten land");
+                    //     Debug.Log(land.X);
+                    //     Debug.Log(land.Y);
+                    //     Debug.Log(land.CitizenCap);
+                    //     Debug.Log(land.IsBooked);
+                    //     Land.GetMap();
+                    //     break;
+
+                    // case Player.RequestsID.GET_MAP:
+                    //     if(packet.ReadInt() != 1) {
+                    //         Debug.Log("Unable to get land");
+                    //         return;
+                    //     }
+                    //     bytesLength = packet.ReadInt();
+                    //     bytes = packet.ReadBytes(bytesLength);
+                    //     var lands = Data.Desrialize<List<Land>>(Data.Decompress(bytes));
+                    //     Debug.Log("Gotten map");
+                    //     Debug.Log(lands.Count);
+                    //     Debug.Log(lands[100].X);
+                    //     Debug.Log(lands[100].Y);
+                    //     Debug.Log(lands[100].CitizenCap);
+                    //     Debug.Log(lands[100].IsBooked);
+                    //     Guild.GetAll();
+                    //     break;
+
+                    // case Player.RequestsID.GET_ALL_GUILDS:
+                    //     if(packet.ReadInt() != 1) {
+                    //         Debug.Log("Unable to get land");
+                    //         return;
+                    //     }
+                    //     bytesLength = packet.ReadInt();
+                    //     bytes = packet.ReadBytes(bytesLength);
+                    //     var guilds = Data.Desrialize<List<Guild>>(Data.Decompress(bytes));
+                    //     Debug.Log("Gotten guilds");
+                    //     Debug.Log(guilds.Count);
+                    //     Debug.Log(guilds[0].Name);
+                    //     Debug.Log(guilds[0].Logo);
+                    //     break;
+
+                    // case Player.RequestsID.GET_GUILD:
+                    //     if(packet.ReadInt() != 1) {
+                    //         Debug.Log("Unable to get land");
+                    //         return;
+                    //     }
+                    //     bytesLength = packet.ReadInt();
+                    //     bytes = packet.ReadBytes(bytesLength);
+                    //     var guild = Data.Desrialize<Guild>(Data.Decompress(bytes));
+                    //     Debug.Log("Gotten guild");
+                    //     Debug.Log(guild.Name);
+                    //     Debug.Log(guild.Logo);
+                    //     break;
 
                     default:
                         Debug.Log((Player.RequestsID)id);

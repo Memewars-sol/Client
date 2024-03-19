@@ -29,8 +29,79 @@
 
         public enum RequestsID
         {
-            AUTH = 1, SYNC = 2, BUILD = 3, REPLACE = 4, COLLECT = 5, PREUPGRADE = 6, UPGRADE = 7, INSTANTBUILD = 8, TRAIN = 9, CANCELTRAIN = 10, BATTLEFIND = 11, BATTLESTART = 12, BATTLEFRAME = 13, BATTLEEND = 14, OPENCLAN = 15, GETCLANS = 16, JOINCLAN = 17, LEAVECLAN = 18, EDITCLAN = 19, CREATECLAN = 20, OPENWAR = 21, STARTWAR = 22, CANCELWAR = 23, WARSTARTED = 24, WARATTACK = 25, WARREPORTLIST = 26, WARREPORT = 27, JOINREQUESTS = 28, JOINRESPONSE = 29, GETCHATS = 30, SENDCHAT = 31, SENDCODE = 32, CONFIRMCODE = 33, EMAILCODE = 34, EMAILCONFIRM = 35, LOGOUT = 36, KICKMEMBER = 37, BREW = 38, CANCELBREW = 39, RESEARCH = 40, PROMOTEMEMBER = 41, DEMOTEMEMBER = 42, SCOUT = 43, BUYSHIELD = 44, BUYGEM = 45, BYUGOLD = 46, REPORTCHAT = 47, PLAYERSRANK = 48, BOOST = 49, BUYRESOURCE = 50, BATTLEREPORTS = 51, BATTLEREPORT = 52, RENAME = 53, PREAUTH = 54
+            AUTH = 1, 
+            SYNC = 2, 
+            BUILD = 3, 
+            REPLACE = 4, 
+            COLLECT = 5, 
+            PREUPGRADE = 6, 
+            UPGRADE = 7,
+            INSTANTBUILD = 8, 
+            TRAIN = 9, 
+            CANCELTRAIN = 10, 
+            BATTLEFIND = 11, 
+            BATTLESTART = 12, 
+            BATTLEFRAME = 13, 
+            BATTLEEND = 14, 
+            OPENCLAN = 15, 
+            GETCLANS = 16, 
+            JOINCLAN = 17, 
+            LEAVECLAN = 18, 
+            EDITCLAN = 19, 
+            CREATECLAN = 20, 
+            OPENWAR = 21, 
+            STARTWAR = 22, 
+            CANCELWAR = 23, 
+            WARSTARTED = 24, 
+            WARATTACK = 25, 
+            WARREPORTLIST = 26, 
+            WARREPORT = 27, 
+            JOINREQUESTS = 28, 
+            JOINRESPONSE = 29, 
+            GETCHATS = 30, 
+            SENDCHAT = 31, 
+            SENDCODE = 32, 
+            CONFIRMCODE = 33, 
+            EMAILCODE = 34, 
+            EMAILCONFIRM = 35, 
+            LOGOUT = 36, 
+            KICKMEMBER = 37, 
+            BREW = 38, 
+            CANCELBREW = 39, 
+            RESEARCH = 40, 
+            PROMOTEMEMBER = 41, 
+            DEMOTEMEMBER = 42, 
+            SCOUT = 43, 
+            BUYSHIELD = 44, 
+            BUYGEM = 45, 
+            BUYGOLD = 46, 
+            REPORTCHAT = 47, 
+            PLAYERSRANK = 48, 
+            BOOST = 49, 
+            BUYRESOURCE = 50, 
+            
+            BATTLEREPORTS = 51, 
+            BATTLEREPORT = 52, 
+            RENAME = 53, 
+            PREAUTH = 54,
+            GET_LAND = 55,
+            GET_MAP = 56,
+            GET_GUILD = 57,
+            GET_ALL_GUILDS = 58,
+            GET_FORUM_POSTS = 59,
+            GET_FORUM_POST = 60,
+            JOIN_GUILD = 61,
+            CHANGE_GUILD = 62,
+            EXIT_GUILD = 63,
+            CREATE_FORUM_POST = 64,
+            CREATE_FORUM_COMMENT = 65,
+            PUSH_FORUM_POST_TO_GOVERNANCE = 66,
+            BUY_LAND = 67,
+            BUY_LAND_CALLBACK = 68,
+            DELETE_FORUM_COMMENT = 69,
+            DELETE_FORUM_POST = 70,
         }
+
 
         public enum Panel
         {
@@ -110,26 +181,30 @@
 
         private void Update()
         {
-            if (connected)
+            if (!connected)
             {
-                if (!_inBattle)
-                {
-                    if (timer <= 0)
-                    {
-                        if (updating == false)
-                        {
-                            updating = true;
-                            timer = syncTime;
-                            SendSyncRequest();
-                        }
-                    }
-                    else
-                    {
-                        timer -= Time.deltaTime;
-                    }
-                }
-                data.nowTime = data.nowTime.AddSeconds(Time.deltaTime);
+                return;
             }
+
+            if (_inBattle)
+            {
+                return;
+            }
+
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+
+            if (updating)
+            {
+                return;
+            }
+            
+            updating = true;
+            timer = syncTime;
+            SendSyncRequest();
+            data.nowTime = data.nowTime.AddSeconds(Time.deltaTime);
         }
 
         private void ReceivedPaket(Packet packet)
