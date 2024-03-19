@@ -13,6 +13,7 @@ namespace Summoners.Models {
         public string VotingId { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedAt { get; set; }
+        public int CommentCount { get; set; }
         public List<ForumComment> Comments { get; set; }
         
         public static void GetAll() {
@@ -40,9 +41,15 @@ namespace Summoners.Models {
             Sender.TCP_Send(packet);
         }
 
-        public static void Comment(long post_id, string comment) {
-            var packet = new Packet((int)Player.RequestsID.CREATE_FORUM_COMMENT);
+        public static void PushToGovernance(long post_id) {
+            var packet = new Packet((int)Player.RequestsID.PUSH_FORUM_POST_TO_GOVERNANCE);
             packet.Write(post_id);
+            Sender.TCP_Send(packet);
+        }
+
+        public static void Comment(long comment_id, string comment) {
+            var packet = new Packet((int)Player.RequestsID.CREATE_FORUM_COMMENT);
+            packet.Write(comment_id);
             packet.Write(comment);
             Sender.TCP_Send(packet);
         }

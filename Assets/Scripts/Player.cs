@@ -6,6 +6,7 @@
     using Summoners.RealtimeNetworking.Client;
     using UnityEngine.SceneManagement;
     using System;
+    using Summoners.Models;
 
     public class Player : MonoBehaviour
     {
@@ -186,7 +187,13 @@
                 return;
             }
 
+            data.nowTime = data.nowTime.AddSeconds(Time.deltaTime);
             if (_inBattle)
+            {
+                return;
+            }
+            
+            if (updating)
             {
                 return;
             }
@@ -194,17 +201,12 @@
             if (timer > 0)
             {
                 timer -= Time.deltaTime;
-            }
-
-            if (updating)
-            {
                 return;
             }
             
             updating = true;
             timer = syncTime;
             SendSyncRequest();
-            data.nowTime = data.nowTime.AddSeconds(Time.deltaTime);
         }
 
         private void ReceivedPaket(Packet packet)
@@ -227,7 +229,7 @@
                             bytes = packet.ReadBytes(bytesLength);
                             _unreadBattleReports = packet.ReadInt();
                             UI_Main.instanse.ChangeUnreadBattleReports(_unreadBattleReports);
-                            initializationData = Data.Desrialize<Data.InitializationData>(Data.Decompress(bytes));
+                            initializationData = Data.Deserialize<Data.InitializationData>(Data.Decompress(bytes));
                             bool versionValid = false;
                             bool isThereNewerVersion = true;
                             for (int i = 0; i < initializationData.versions.Length; i++)
@@ -290,6 +292,16 @@
                             Client.instance.Disconnect(false);
                             // RestartGame();
                         }
+
+                        Guild.Join(2);
+                        // Guild.Change(2);
+                        ForumPost.GetAll();
+                        ForumPost.PushToGovernance(12);
+                        // Land.Buy(2);
+                        // ForumPost.Create("Test Title", "Test Description", "Test Content");
+                        // ForumPost.Comment(6, "Test Comment");
+                        // ForumPost.DeleteComment(7);
+                        // ForumPost.Delete(5);
                         break;
                     case RequestsID.SYNC:
                         response = packet.ReadInt();
@@ -298,7 +310,7 @@
                             int playerBytesLength = packet.ReadInt();
                             byte[] playerBytes = packet.ReadBytes(playerBytesLength);
                             string playerData = Data.Decompress(playerBytes);
-                            Data.Player playerSyncData = Data.Desrialize<Data.Player>(playerData);
+                            Data.Player playerSyncData = Data.Deserialize<Data.Player>(playerData);
                             SyncData(playerSyncData);
                             if (playerSyncData.banned)
                             {
@@ -487,7 +499,7 @@
                         {
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            opponent = Data.Desrialize<Data.OpponentData>(Data.Decompress(bytes));
+                            opponent = Data.Deserialize<Data.OpponentData>(Data.Decompress(bytes));
                         }
                         UI_Search.instanse.FindResponded(target, opponent);
                         break;
@@ -504,7 +516,7 @@
                             lt = packet.ReadInt();
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            buildings = Data.Desrialize<List<Data.BattleStartBuildingData>>(Data.Decompress(bytes));
+                            buildings = Data.Deserialize<List<Data.BattleStartBuildingData>>(Data.Decompress(bytes));
                         }
                         UI_Battle.instanse.StartBattleConfirm(confirmed, buildings, wt, lt);
                         break;
@@ -526,12 +538,12 @@
                         {
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            clan = Data.Desrialize<Data.Clan>(Data.Decompress(bytes));
+                            clan = Data.Deserialize<Data.Clan>(Data.Decompress(bytes));
                             if (clan.war != null && clan.war.id > 0)
                             {
                                 bytesLength = packet.ReadInt();
                                 bytes = packet.ReadBytes(bytesLength);
-                                warMembers = Data.Desrialize<List<Data.ClanMember>>(Data.Decompress(bytes));
+                                warMembers = Data.Deserialize<List<Data.ClanMember>>(Data.Decompress(bytes));
                             }
                         }
                         UI_Clan.instanse.ClanOpen(clan, warMembers);
@@ -539,7 +551,7 @@
                     case RequestsID.GETCLANS:
                         bytesLength = packet.ReadInt();
                         bytes = packet.ReadBytes(bytesLength);
-                        Data.ClansList clans = Data.Desrialize<Data.ClansList>(Data.Decompress(bytes));
+                        Data.ClansList clans = Data.Deserialize<Data.ClansList>(Data.Decompress(bytes));
                         UI_Clan.instanse.ClansListOpen(clans);
                         break;
                     case RequestsID.CREATECLAN:
@@ -561,7 +573,7 @@
                     case RequestsID.OPENWAR:
                         bytesLength = packet.ReadInt();
                         bytes = packet.ReadBytes(bytesLength);
-                        Data.ClanWarData war = Data.Desrialize<Data.ClanWarData>(Data.Decompress(bytes));
+                        Data.ClanWarData war = Data.Deserialize<Data.ClanWarData>(Data.Decompress(bytes));
                         UI_Clan.instanse.WarOpen(war);
                         break;
                     case RequestsID.STARTWAR:
@@ -583,13 +595,13 @@
                         {
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            warOpponent = Data.Desrialize<Data.OpponentData>(Data.Decompress(bytes));
+                            warOpponent = Data.Deserialize<Data.OpponentData>(Data.Decompress(bytes));
                         }
                         UI_Clan.instanse.AttackResponse(databaseID, warOpponent);
                         break;
                     case RequestsID.WARREPORTLIST:
                         string warReportsData = packet.ReadString();
-                        List<Data.ClanWarData> warReports = Data.Desrialize<List<Data.ClanWarData>>(warReportsData);
+                        List<Data.ClanWarData> warReports = Data.Deserialize<List<Data.ClanWarData>>(warReportsData);
                         UI_Clan.instanse.OpenWarHistoryList(warReports);
                         break;
                     case RequestsID.WARREPORT:
@@ -599,14 +611,14 @@
                         {
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            warReport = Data.Desrialize<Data.ClanWarData>(Data.Decompress(bytes));
+                            warReport = Data.Deserialize<Data.ClanWarData>(Data.Decompress(bytes));
                         }
                         UI_Clan.instanse.WarOpen(warReport, true);
                         break;
                     case RequestsID.JOINREQUESTS:
                         bytesLength = packet.ReadInt();
                         bytes = packet.ReadBytes(bytesLength);
-                        List<Data.JoinRequest> requests = Data.Desrialize<List<Data.JoinRequest>>(Data.Decompress(bytes));
+                        List<Data.JoinRequest> requests = Data.Deserialize<List<Data.JoinRequest>>(Data.Decompress(bytes));
                         UI_Clan.instanse.OpenRequestsList(requests);
                         break;
                     case RequestsID.JOINRESPONSE:
@@ -624,7 +636,7 @@
                     case RequestsID.GETCHATS:
                         bytesLength = packet.ReadInt();
                         bytes = packet.ReadBytes(bytesLength);
-                        List<Data.CharMessage> messages = Data.Desrialize<List<Data.CharMessage>>(Data.Decompress(bytes));
+                        List<Data.CharMessage> messages = Data.Deserialize<List<Data.CharMessage>>(Data.Decompress(bytes));
                         int chatType = packet.ReadInt();
                         UI_Chat.instanse.ChatSynced(messages, (Data.ChatType)chatType);
                         break;
@@ -694,7 +706,7 @@
 
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            research = Data.Desrialize<Data.Research>(Data.Decompress(bytes));
+                            research = Data.Deserialize<Data.Research>(Data.Decompress(bytes));
                             for (int i = 0; i < initializationData.research.Count; i++)
                             {
                                 if (initializationData.research[i].id == research.id)
@@ -744,7 +756,7 @@
                             int scoutType = packet.ReadInt();
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            Data.Player scoutTarget = Data.Desrialize<Data.Player>(Data.Decompress(bytes));
+                            Data.Player scoutTarget = Data.Deserialize<Data.Player>(Data.Decompress(bytes));
                             UI_Scout.instanse.Open(scoutTarget, (Data.BattleType)scoutType, null);
                         }
                         break;
@@ -777,7 +789,7 @@
                     case RequestsID.PLAYERSRANK:
                         bytesLength = packet.ReadInt();
                         bytes = packet.ReadBytes(bytesLength);
-                        Data.PlayersRanking players = Data.Desrialize<Data.PlayersRanking>(Data.Decompress(bytes));
+                        Data.PlayersRanking players = Data.Deserialize<Data.PlayersRanking>(Data.Decompress(bytes));
                         UI_PlayersRanking.instanse.OpenResponse(players);
                         break;
                     case RequestsID.BOOST:
@@ -804,7 +816,7 @@
                         {
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            reports = Data.Desrialize<List<Data.BattleReportItem>>(Data.Decompress(bytes));
+                            reports = Data.Deserialize<List<Data.BattleReportItem>>(Data.Decompress(bytes));
                             if (reports != null && reports.Count > 0)
                             {
                                 UI_Main.instanse.ChangeUnreadBattleReports(0);
@@ -818,10 +830,10 @@
                         {
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            Data.BattleReport report = Data.Desrialize<Data.BattleReport>(Data.Decompress(bytes));
+                            Data.BattleReport report = Data.Deserialize<Data.BattleReport>(Data.Decompress(bytes));
                             bytesLength = packet.ReadInt();
                             bytes = packet.ReadBytes(bytesLength);
-                            Data.Player reportP = Data.Desrialize<Data.Player>(Data.Decompress(bytes));
+                            Data.Player reportP = Data.Deserialize<Data.Player>(Data.Decompress(bytes));
                             UI_BattleReports.instanse.PlayReply(report, reportP);
                         }
                         break;
@@ -830,6 +842,114 @@
                         if (response == 1)
                         {
                             RushSyncRequest();
+                        }
+                        break;
+                    case RequestsID.JOIN_GUILD:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Guild Joined");
+                        }
+                        break;
+                    case RequestsID.CHANGE_GUILD:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Guild Changed");
+                        }
+                        break;
+                    case RequestsID.EXIT_GUILD:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Guild Exited");
+                        }
+                        break;
+                    case RequestsID.BUY_LAND:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Land Bought");
+                        }
+
+                        else {
+                            Debug.Log("Land already booked by another address");
+                        }
+                        break;
+                    case RequestsID.CREATE_FORUM_POST:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Post Created");
+                        }
+                        break;
+                    case RequestsID.GET_FORUM_POSTS:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            bytesLength = packet.ReadInt();
+                            bytes = packet.ReadBytes(bytesLength);
+                            var posts = Data.Deserialize<List<ForumPost>>(Data.Decompress(bytes));
+                            Debug.Log("Gotten posts");
+                            Debug.Log("Post Count:");
+                            Debug.Log(posts.Count);
+                            Debug.Log("Post Id:");
+                            Debug.Log(posts[0].Id);
+                            Debug.Log("Post Comment Count:");
+                            Debug.Log(posts[0].CommentCount);
+                            Debug.Log("Post Description:");
+                            Debug.Log(posts[0].Description);
+                            break;
+                        }
+
+                        Debug.Log("Unable to get posts");
+                        break;
+                    case RequestsID.GET_FORUM_POST:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            bytesLength = packet.ReadInt();
+                            bytes = packet.ReadBytes(bytesLength);
+                            var post = Data.Deserialize<ForumPost>(Data.Decompress(bytes));
+                            Debug.Log("Gotten post");
+                            Debug.Log(post.Comments.Count);
+                            Debug.Log(post.Description);
+                        }
+
+                        Debug.Log("Unable to get post");
+                        break;
+                    case RequestsID.DELETE_FORUM_POST:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Post Deleted");
+                            break;
+                        }
+                        Debug.Log("Unable to delete post");
+                        break;
+                    case RequestsID.CREATE_FORUM_COMMENT:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Comment Created");
+                            break;
+                        }
+                        break;
+                    case RequestsID.DELETE_FORUM_COMMENT:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Comment Deleted");
+                            break;
+                        }
+                        Debug.Log("Unable to delete comment");
+                        break;
+                    case RequestsID.PUSH_FORUM_POST_TO_GOVERNANCE:
+                        response = packet.ReadInt();
+                        if (response == 1)
+                        {
+                            Debug.Log("Post Pushed To Governance");
+                            break;
                         }
                         break;
                 }
