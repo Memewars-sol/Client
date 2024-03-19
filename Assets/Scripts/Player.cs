@@ -293,15 +293,18 @@
                             // RestartGame();
                         }
 
-                        Guild.Join(2);
+                        Guild.GetAll(); // get all guilds
+                        Land.GetMap(); // get the overworld map
+                        Land.Get(2); // get land id 2
+                        Guild.Join(2); // join guild id 2
                         // Guild.Change(2);
                         ForumPost.GetAll();
-                        ForumPost.PushToGovernance(12);
-                        // Land.Buy(2);
+                        ForumPost.PushToGovernance(12); // 12 = post id
+                        // Land.Buy(2); // buy land id 2
                         // ForumPost.Create("Test Title", "Test Description", "Test Content");
-                        // ForumPost.Comment(6, "Test Comment");
-                        // ForumPost.DeleteComment(7);
-                        // ForumPost.Delete(5);
+                        // ForumPost.Comment(6, "Test Comment"); // comment post id 6
+                        // ForumPost.DeleteComment(7); // delete comment id 7
+                        // ForumPost.Delete(5); // delete post id 5
                         break;
                     case RequestsID.SYNC:
                         response = packet.ReadInt();
@@ -951,6 +954,64 @@
                             Debug.Log("Post Pushed To Governance");
                             break;
                         }
+                        break;
+
+                    case RequestsID.GET_LAND:
+                        if(packet.ReadInt() != 1) {
+                            Debug.Log("Unable to get land");
+                            return;
+                        }
+                        bytesLength = packet.ReadInt();
+                        bytes = packet.ReadBytes(bytesLength);
+                        var land = Data.Deserialize<Land>(Data.Decompress(bytes));
+                        Debug.Log("Gotten land");
+                        Debug.Log(land.X);
+                        Debug.Log(land.Y);
+                        Debug.Log(land.CitizenCap);
+                        Debug.Log(land.IsBooked);
+                        break;
+
+                    case RequestsID.GET_MAP:
+                        if(packet.ReadInt() != 1) {
+                            Debug.Log("Unable to get land");
+                            return;
+                        }
+                        bytesLength = packet.ReadInt();
+                        bytes = packet.ReadBytes(bytesLength);
+                        var lands = Data.Deserialize<List<Land>>(Data.Decompress(bytes));
+                        Debug.Log("Gotten map");
+                        Debug.Log(lands.Count);
+                        Debug.Log(lands[100].X);
+                        Debug.Log(lands[100].Y);
+                        Debug.Log(lands[100].CitizenCap);
+                        Debug.Log(lands[100].IsBooked);
+                        break;
+
+                    case RequestsID.GET_ALL_GUILDS:
+                        if(packet.ReadInt() != 1) {
+                            Debug.Log("Unable to get land");
+                            return;
+                        }
+                        bytesLength = packet.ReadInt();
+                        bytes = packet.ReadBytes(bytesLength);
+                        var guilds = Data.Deserialize<List<Guild>>(Data.Decompress(bytes));
+                        Debug.Log("Gotten guilds");
+                        Debug.Log(guilds.Count);
+                        Debug.Log(guilds[0].Name);
+                        Debug.Log(guilds[0].Logo);
+                        break;
+
+                    case RequestsID.GET_GUILD:
+                        if(packet.ReadInt() != 1) {
+                            Debug.Log("Unable to get land");
+                            return;
+                        }
+                        bytesLength = packet.ReadInt();
+                        bytes = packet.ReadBytes(bytesLength);
+                        var guild = Data.Deserialize<Guild>(Data.Decompress(bytes));
+                        Debug.Log("Gotten guild");
+                        Debug.Log(guild.Name);
+                        Debug.Log(guild.Logo);
                         break;
                 }
             }
