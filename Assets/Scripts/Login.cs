@@ -14,6 +14,8 @@ namespace Summoners.Memewars
     using System.Collections;
     using Summoners.RealtimeNetworking.Client;
     using Solana.Unity.Wallet.Bip39;
+    using Summoners.Models;
+    using System.Collections.Generic;
 
     public class LoginScreen : MonoBehaviour
     {
@@ -161,17 +163,15 @@ namespace Summoners.Memewars
 
         private void ConnectResult(bool successful)
         {
-            if (successful)
-            {
-                // auto login test account
-                LoginTest();
-                Debug.Log("Connected to server successfully.");
-
-            }
-            else
+            if (!successful)
             {
                 Debug.Log("Failed to connect the server.");
+                return;
             }
+
+            // auto login test account
+            LoginTest();
+            Debug.Log("Connected to server successfully.");
         }
 
         private void ReceivedPaket(Packet packet)
@@ -179,6 +179,7 @@ namespace Summoners.Memewars
             try
             {
                 int id = packet.ReadInt();
+
                 switch ((Player.RequestsID)id) {
                     case Player.RequestsID.PREAUTH:
                         bool IsVerified = packet.ReadInt() == 1;
