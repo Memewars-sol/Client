@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class IconRemover : MonoBehaviour
 {
     [SerializeField] GameObject overworld;
-    [SerializeField] GameObject Icon;
+    [SerializeField] GameObject[] DisableThis;
 
-    private void Update()
+    public void Refresh()
     {
-        Icon.SetActive(!overworld.activeInHierarchy);
+        for (int i = 0; i < DisableThis.Length; i++)
+        {
+            DisableThis[i].SetActive(overworld.activeInHierarchy);
+        }
     }
 }

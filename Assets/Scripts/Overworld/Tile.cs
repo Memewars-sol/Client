@@ -99,24 +99,37 @@ public class Tile : MonoBehaviour
         size = transform.localScale.x;
     }
 
+
+    public int neighbourCount;
     
     public void UpdateVisuals(bool zoomedIn)
     {
-        switch (cost)
+        if (zoomedIn)
         {
-            case 1: spriteRenderer.sprite = zoomedIn ? guild1 : box; break;
-            case 2: spriteRenderer.sprite = zoomedIn ? guild2 : box; break;
-            case 3: spriteRenderer.sprite = zoomedIn ? guild3 : box; break;
-            default: break;
+            spriteRenderer.color = Color.white;
+            switch (cost)
+            {
+                case 1: spriteRenderer.sprite = guild1; break;
+                case 2: spriteRenderer.sprite = guild2; break;
+                case 3: spriteRenderer.sprite = guild3; break;
+                default: break;
+            }
+        }
+        else
+        {
+            spriteRenderer.sprite = box;
+            switch (cost)
+            {
+                case 1: spriteRenderer.color = neighbourCount == 4 ? Color.yellow * 0.9f : Color.yellow; break;
+                case 2: spriteRenderer.color = neighbourCount == 4 ? Color.cyan * 0.9f : Color.cyan; break;
+                case 3: spriteRenderer.color = neighbourCount == 4 ? Color.red * 0.9f: Color.red; break;
+                default: break;
+            }
         }
     }
 
     private void Update()
     {
-        if (cam.orthographicSize < 8)
-            transform.localScale = new Vector3(size * 0.9f, size * 0.9f, 0);
-        else
-            transform.localScale = new Vector3(size, size, 0);
         UpdateVisuals(cam.orthographicSize < 8);
 
         if (Active) activeTimer += Time.deltaTime;
@@ -137,6 +150,6 @@ public class Tile : MonoBehaviour
         // place the cell at that coordinate in world space.
         // Vector2Int cannot be implicitly cast to Vector3, therefore need to manually
         // create and assign the values.
-        transform.position = new Vector3(coordinate.x - 15, coordinate.y + 2, 0.0f);
+        transform.position = new Vector3((coordinate.x - 22.8f) / 1.3f, (coordinate.y - 2.1f) / 1.3f, 0.0f);
     }
 }

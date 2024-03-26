@@ -292,11 +292,11 @@
                             Client.instance.Disconnect(false);
                             // RestartGame();
                         }
-
                         Guild.GetAll(); // get all guilds
                         Land.GetMap(); // get the overworld map
-                        Land.Get(2); // get land id 2
                         Guild.Join(2); // join guild id 2
+                        Land.Get(2); // get land id 2
+
                         // Guild.Change(2);
                         ForumPost.GetAll();
                         ForumPost.PushToGovernance(12); // 12 = post id
@@ -566,10 +566,12 @@
                         UI_Clan.instanse.JoinResponse(response);
                         break;
                     case RequestsID.LEAVECLAN:
+                        Debug.Log("Leaving Clan received");
                         response = packet.ReadInt();
                         UI_Clan.instanse.LeaveResponse(response);
                         break;
                     case RequestsID.EDITCLAN:
+                        Debug.Log("Edit Clan received");
                         response = packet.ReadInt();
                         UI_Clan.instanse.EditResponse(response);
                         break;
@@ -765,12 +767,12 @@
                         break;
                     case RequestsID.BUYGEM:
                         response = packet.ReadInt();
-                        if (response == 1)
-                        {
-                            int gemPack = packet.ReadInt();
-                            RushSyncRequest();
-                            UI_Store.instanse.GemPurchased();
-                        }
+                        //if (response == 1)
+                        //{
+                        //    int gemPack = packet.ReadInt();
+                        //    RushSyncRequest();
+                        //    UI_Store.instanse.GemPurchased();
+                        //}
                         break;
                     case RequestsID.BUYSHIELD:
                         response = packet.ReadInt();
@@ -957,7 +959,7 @@
                         break;
 
                     case RequestsID.GET_LAND:
-                        if(packet.ReadInt() != 1) {
+                        if (packet.ReadInt() != 1) {
                             Debug.Log("Unable to get land");
                             return;
                         }
@@ -988,8 +990,10 @@
                         break;
 
                     case RequestsID.GET_ALL_GUILDS:
-                        if(packet.ReadInt() != 1) {
+                        Debug.Log("received");
+                        if (packet.ReadInt() != 1) {
                             Debug.Log("Unable to get land");
+
                             return;
                         }
                         bytesLength = packet.ReadInt();
@@ -999,10 +1003,11 @@
                         Debug.Log(guilds.Count);
                         Debug.Log(guilds[0].Name);
                         Debug.Log(guilds[0].Logo);
+                        DeleteThis.guilds = guilds;
                         break;
 
                     case RequestsID.GET_GUILD:
-                        if(packet.ReadInt() != 1) {
+                        if (packet.ReadInt() != 1) {
                             Debug.Log("Unable to get land");
                             return;
                         }
