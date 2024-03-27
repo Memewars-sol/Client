@@ -150,6 +150,6 @@ public class Tile : MonoBehaviour
         // place the cell at that coordinate in world space.
         // Vector2Int cannot be implicitly cast to Vector3, therefore need to manually
         // create and assign the values.
-        transform.position = new Vector3((coordinate.x - 22.8f) / 1.3f, (coordinate.y - 2.1f) / 1.3f, 0.0f);
+        transform.position = new Vector3((coordinate.x - 45f) / 2.5f, (coordinate.y - 8.2f) / 2.5f, 0.0f);
     }
 }

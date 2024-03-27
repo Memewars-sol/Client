@@ -292,14 +292,14 @@
                             Client.instance.Disconnect(false);
                             // RestartGame();
                         }
-                        Guild.GetAll(); // get all guilds
-                        Land.GetMap(); // get the overworld map
-                        Guild.Join(2); // join guild id 2
-                        Land.Get(2); // get land id 2
+                        //Guild.GetAll(); // get all guilds
+                        //Land.GetMap(); // get the overworld map
+                        //Guild.Join(2); // join guild id 2
+                        //Land.Get(2); // get land id 2
 
                         // Guild.Change(2);
-                        ForumPost.GetAll();
-                        ForumPost.PushToGovernance(12); // 12 = post id
+                        //ForumPost.GetAll();
+                        //ForumPost.PushToGovernance(12); // 12 = post id
                         // Land.Buy(2); // buy land id 2
                         // ForumPost.Create("Test Title", "Test Description", "Test Content");
                         // ForumPost.Comment(6, "Test Comment"); // comment post id 6
@@ -566,12 +566,10 @@
                         UI_Clan.instanse.JoinResponse(response);
                         break;
                     case RequestsID.LEAVECLAN:
-                        Debug.Log("Leaving Clan received");
                         response = packet.ReadInt();
                         UI_Clan.instanse.LeaveResponse(response);
                         break;
                     case RequestsID.EDITCLAN:
-                        Debug.Log("Edit Clan received");
                         response = packet.ReadInt();
                         UI_Clan.instanse.EditResponse(response);
                         break;
@@ -898,12 +896,12 @@
                             Debug.Log("Gotten posts");
                             Debug.Log("Post Count:");
                             Debug.Log(posts.Count);
-                            Debug.Log("Post Id:");
-                            Debug.Log(posts[0].Id);
-                            Debug.Log("Post Comment Count:");
-                            Debug.Log(posts[0].CommentCount);
-                            Debug.Log("Post Description:");
-                            Debug.Log(posts[0].Description);
+                            //Debug.Log("Post Id:");
+                            //Debug.Log(posts[0].Id);
+                            //Debug.Log("Post Comment Count:");
+                            //Debug.Log(posts[0].CommentCount);
+                            //Debug.Log("Post Description:");
+                            //Debug.Log(posts[0].Description);
                             break;
                         }
 
@@ -990,7 +988,6 @@
                         break;
 
                     case RequestsID.GET_ALL_GUILDS:
-                        Debug.Log("received");
                         if (packet.ReadInt() != 1) {
                             Debug.Log("Unable to get land");
 
@@ -1003,7 +1000,7 @@
                         Debug.Log(guilds.Count);
                         Debug.Log(guilds[0].Name);
                         Debug.Log(guilds[0].Logo);
-                        DeleteThis.guilds = guilds;
+                        UI_Guild.guilds = guilds;
                         break;
 
                     case RequestsID.GET_GUILD:

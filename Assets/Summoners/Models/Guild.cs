@@ -22,7 +22,6 @@ namespace Summoners.Models
         public static void GetAll() {
             Packet packet = new Packet((int)Player.RequestsID.GET_ALL_GUILDS);
             Sender.TCP_Send(packet);
-            Debug.Log("sent");
 
         }
 
